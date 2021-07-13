@@ -3,7 +3,7 @@ Testing GIT
 UPDATING GIT ----------------------------------------
 git status
 git add .
-git commit
+git commit -m "message here"
 git push origin main
 
 

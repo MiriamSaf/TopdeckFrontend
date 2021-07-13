@@ -7570,9 +7570,9 @@ var _litHtml = require("lit-html");
 
 var _Toast = _interopRequireDefault(require("./Toast"));
 
-function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13683,7 +13683,8 @@ class UserAPI {
          headers: { "Authorization": `Bearer ${localStorage.accessToken}`},
          body: userData
      })
-      // if response not ok
+  
+     // if response not ok
      if(!response.ok){
        // console log error
        const err = await response.json()
@@ -13691,7 +13692,8 @@ class UserAPI {
        // throw error (exit this function)      
        throw new Error('Problem updating user')
      }
-      // convert response payload into json - store as data
+  
+     // convert response payload into json - store as data
      const data = await response.json()
      
      // return data
@@ -14152,7 +14154,7 @@ class newPackageView {
   }
 
   render() {
-    const template = (0, _litHtml.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      <td-app-header title=\"New Package\" user=\"", "\"></td-app-header>\n      <div class=\"page-content\">        \n        <h1>New Package</h1>\n        \n        <sl-form class=\"page-form\" @sl-submit=", ">\n          <div class=\"input-group\">\n            <sl-input name=\"title\" type=\"text\" placeholder=\"Package Title\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-textarea name=\"description\" rows=\"2\" placeholder=\"Short Description\" required></sl-textarea>\n          </div>\n          <div class=\"input-group\">\n            <sl-textarea name=\"longDescription\" rows=\"4\" placeholder=\"Long Description\" required></sl-textarea>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"date\" type=\"date\" placeholder=\"Start Date\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"duration\" type=\"number\" placeholder=\"Package duration\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"vibe\" type=\"text\" placeholder=\"Package Vibe\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"country\" type=\"text\" placeholder=\"Package country\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"region\" type=\"text\" placeholder=\"Package map region\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"region\" type=\"text\" placeholder=\"Package map region\" required></sl-input>\n          </div>\n\n          <div class=\"input-group\" style=\"margin-bottom: 2em;\">\n            <label>Trip Type</label><br>\n            <sl-radio-group label=\"Select length\" no-fieldset>\n              <sl-radio name=\"type\" value=\"s\">Best Sellers</sl-radio>\n              <sl-radio name=\"type\" value=\"m\">Top Trips</sl-radio>\n              <sl-radio name=\"type\" value=\"l\">Specials</sl-radio>\n            </sl-radio-group>\n          </div>\n\n          <div class=\"input-group\">\n            <sl-input name=\"depatureLocation\" type=\"text\" placeholder=\"Depature Location\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"endLocation\" type=\"text\" placeholder=\"End Location\" required></sl-input>\n          </div>\n\n          <div class=\"input-group\">              \n            <sl-input name=\"price\" type=\"text\" placeholder=\"Price\" required>\n              <span slot=\"prefix\">$</span>\n            </sl-input>\n          </div>\n\n          <div class=\"input-group\" style=\"margin-bottom: 2em;\">\n            <label>Image</label><br>\n            <input type=\"file\" name=\"image\" />              \n          </div>\n\n          <sl-button type=\"primary\" class=\"submit-btn\" submit>Add Package</sl-button>\n        </sl-form>        \n\n      </div>      \n    "])), JSON.stringify(_Auth.default.currentUser), this.newPackageSubmitHandler);
+    const template = (0, _litHtml.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      <td-app-header title=\"New Package\" user=\"", "\"></td-app-header>\n      <div class=\"page-content\">        \n        <h1>New Package</h1>\n        \n        <sl-form class=\"page-form\" @sl-submit=", ">\n          <div class=\"input-group\">\n            <sl-input name=\"title\" type=\"text\" placeholder=\"Package Title\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-textarea name=\"description\" rows=\"2\" placeholder=\"Short Description\" required></sl-textarea>\n          </div>\n          <div class=\"input-group\">\n            <sl-textarea name=\"longDescription\" rows=\"4\" placeholder=\"Long Description\" required></sl-textarea>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"date\" type=\"date\" placeholder=\"Start Date\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"duration\" type=\"number\" placeholder=\"Package duration\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"vibe\" type=\"text\" placeholder=\"Package Vibe\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"country\" type=\"text\" placeholder=\"Package country\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"region\" type=\"text\" placeholder=\"Package map region\" required></sl-input>\n          </div>\n\n          <div class=\"input-group\" style=\"margin-bottom: 2em;\">\n            <label>Trip Type</label><br>\n            <sl-radio-group label=\"Select length\" no-fieldset>\n              <sl-radio name=\"type\" value=\"s\">Best Sellers</sl-radio>\n              <sl-radio name=\"type\" value=\"m\">Top Trips</sl-radio>\n              <sl-radio name=\"type\" value=\"l\">Specials</sl-radio>\n            </sl-radio-group>\n          </div>\n\n          <div class=\"input-group\">\n            <sl-input name=\"depatureLocation\" type=\"text\" placeholder=\"Depature Location\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"endLocation\" type=\"text\" placeholder=\"End Location\" required></sl-input>\n          </div>\n\n          <div class=\"input-group\">              \n            <sl-input name=\"price\" type=\"text\" placeholder=\"Price\" required>\n              <span slot=\"prefix\">$</span>\n            </sl-input>\n          </div>\n\n          <div class=\"input-group\" style=\"margin-bottom: 2em;\">\n            <label>Image</label><br>\n            <input type=\"file\" name=\"image\" />              \n          </div>\n\n          <sl-button type=\"primary\" class=\"submit-btn\" submit>Add Package</sl-button>\n        </sl-form>        \n\n      </div>      \n    "])), JSON.stringify(_Auth.default.currentUser), this.newPackageSubmitHandler);
     (0, _litHtml.render)(template, _App.default.rootEl);
   }
 
@@ -16712,7 +16714,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53808" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64078" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -75,9 +75,6 @@ class newPackageView {
           <div class="input-group">
             <sl-input name="region" type="text" placeholder="Package map region" required></sl-input>
           </div>
-          <div class="input-group">
-            <sl-input name="region" type="text" placeholder="Package map region" required></sl-input>
-          </div>
 
           <div class="input-group" style="margin-bottom: 2em;">
             <label>Trip Type</label><br>
