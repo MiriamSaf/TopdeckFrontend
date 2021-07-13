@@ -497,12 +497,16 @@ figure {
 
   /*Section 3 - feedback section 
   --------------------------*/
+  #home-feedback-section {
+    height: 75vh;
+  }
+
   #feedback-sm-container {
     flex-direction: column;
   }
 
   #feedback-box {
-    margin-top: 5vh;
+    margin-top: 8vh;
   }
 
   #feedback-box h1 {
@@ -514,6 +518,19 @@ figure {
     border-top: 5px solid #FFF;
     border-left: 0px;
     width: 55vh;
+    height: 0vh;
+  }
+
+  /*left feedback box*/
+  #feedback-box h2 {
+    color: #FFF;
+    font-size: 5vh;
+    margin-top: 1vh;
+  }
+
+  /*styles star img*/
+  #feedback-box img {
+    width: 30vh;
   }
 }
 sl-dialog::part(title) {
