@@ -16,13 +16,13 @@
     "lit-element": "^2.5.1",
     "lit-html": "^1.4.1",
     "moment": "^2.29.1",
-    "parcel-plugin-static-files-copy": "^2.6.0",
     "sass": "^1.35.1",
     "scss": "^0.2.4"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-beta.2",
-    "parcel-bundler": "^1.12.5"
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-static-files-copy": "^2.6.0"
   },
   "browserslist": [
     "since 2017-06"
