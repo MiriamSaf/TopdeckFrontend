@@ -58,7 +58,6 @@ customElements.define('td-app-header', class AppHeader extends LitElement {
     const pathname = e.target.closest('a').pathname
     const appSideMenu = this.shadowRoot.querySelector('.app-header-main')
     gotoRoute(pathname)
-
   }
 
   render(){    

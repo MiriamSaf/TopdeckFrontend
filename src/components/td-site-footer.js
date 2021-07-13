@@ -13,15 +13,11 @@ customElements.define('td-site-footer', class SiteFooter extends LitElement {
    
   }
 
-
-  menuClick(e){
+  iconClick(e){
     e.preventDefault()
     const pathname = e.target.closest('a').pathname
-    const appSideMenu = this.shadowRoot.querySelector('.app-side-menu')
     gotoRoute(pathname)
-    
   }
-
 
   render(){    
     return html`
@@ -67,7 +63,7 @@ footer{
     font-size: 6vh; 
 }
 
-.footer-items h2{
+.footer-items h2 {
     font-size: 5vh;
     font-weight: lighter;
 }
@@ -97,6 +93,11 @@ footer{
   margin: 1vh;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 
  
       /* RESPONSIVE - MOBILE ------------------- */
@@ -113,19 +114,19 @@ footer{
         <div id = "home-footer">
           <div id = "footer-column-left" class = "footer-items">
             <h1>About</h1>
-            <h2>What we are about</h2>
-            <h2>Where we travel to</h2>
-            <h2>How we travel</h2>
-            <h2>FAQ's</h2>
+            <a href="/findus" @click="${this.iconClick}"><h2>What we are about</h2></a>
+            <a href="/packages" @click="${this.iconClick}"><h2>Where we travel to</h2></a>
+            <a href="/ourStory" @click="${this.iconClick}"><h2>How we travel</h2></a>
+            <a href="/faqs" @click="${this.iconClick}"><h2>FAQ's</h2></a>
           </div>
 
 
         <div id = "footer-column-mid" class = "footer-items">
           <h1>Find a trip</h1>
-          <h2>#party</h2>
-          <h2>#chill</h2>
-          <h2>#adventure</h2>
-          <h2>#culture</h2>
+          <a href="/packages" @click="${this.iconClick}"><h2>#party</h2></a>
+          <a href="/packages" @click="${this.iconClick}"><h2>#chill</h2></a>
+          <a href="/packages" @click="${this.iconClick}"><h2>#adventure</h2></a>
+          <a href="/packages" @click="${this.iconClick}"><h2>#culture</h2></a>
         </div>
 
         <div id = "footer-column-right" class = "footer-item">
@@ -136,13 +137,29 @@ footer{
 
           <div class = "footer-right-item" id = "footer-icon-holder">
           <!-- Topdeck icons -->
-            <sl-icon name="facebook"></sl-icon>
-            <sl-icon name="youtube"></sl-icon>
-            <sl-icon name="instagram"></sl-icon>
+            <a href="https://www.facebook.com/TopdeckTravel/" target="_blank">
+              <sl-icon name="facebook"></sl-icon>
+            </a>  
+            <a href="https://www.youtube.com/user/TopDeckTravel/" target="_blank">
+              <sl-icon name="youtube"></sl-icon>
+            </a>
+            <a href="https://www.instagram.com/topdecktravel/" target="_blank">
+              <sl-icon name="instagram"></sl-icon>
+            </a> 
+ 
+
+            
           <br>
-            <img src = "images/white-tiktok.png" alt = "tiktok icon"  class = "footer-icon-img">
-            <img src = "images/white-snapchat.png" alt = "snapchat icon" class = "footer-icon-img">
-            <sl-icon name="twitter"></sl-icon>
+            <a href="https://www.tiktok.com/" target="_blank">
+              <img src = "images/white-tiktok.png" alt = "tiktok icon"  class = "footer-icon-img">
+            </a>
+            <a href="https://www.snapchat.com/" target="_blank">
+              <img src = "images/white-snapchat.png" alt = "snapchat icon" class = "footer-icon-img">
+            </a>
+            <a href="https://twitter.com/TopdeckTravel/" target="_blank">
+              <sl-icon name="twitter"></sl-icon>
+            </a>
+            
           </div>
 
           

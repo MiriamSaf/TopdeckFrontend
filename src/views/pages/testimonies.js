@@ -7,7 +7,7 @@ import Auth from './../../Auth'
 class TestimoniesView {
   init(){    
     console.log('TestimoniesView.init')
-    document.title = 'Template'    
+    document.title = 'Testimonies'    
     this.render()    
     Utils.pageIntroAnim()    
   }
