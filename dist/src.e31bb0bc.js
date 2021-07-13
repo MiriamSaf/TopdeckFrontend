@@ -7570,9 +7570,9 @@ var _litHtml = require("lit-html");
 
 var _Toast = _interopRequireDefault(require("./Toast"));
 
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13683,8 +13683,7 @@ class UserAPI {
          headers: { "Authorization": `Bearer ${localStorage.accessToken}`},
          body: userData
      })
-  
-     // if response not ok
+      // if response not ok
      if(!response.ok){
        // console log error
        const err = await response.json()
@@ -13692,8 +13691,7 @@ class UserAPI {
        // throw error (exit this function)      
        throw new Error('Problem updating user')
      }
-  
-     // convert response payload into json - store as data
+      // convert response payload into json - store as data
      const data = await response.json()
      
      // return data
@@ -16593,7 +16591,7 @@ customElements.define('td-site-footer', class SiteFooter extends _litElement.Lit
   }
 
 });
-},{"@polymer/lit-element":"../node_modules/@polymer/lit-element/lit-element.js","../Router":"Router.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"@polymer/lit-element":"../node_modules/@polymer/lit-element/lit-element.js","../Router":"Router.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -16625,7 +16623,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -16660,12 +16658,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/master.scss":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/master.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\static\\images\\HOME-1.jpg":[["HOME-1.14760647.jpg","../static/images/HOME-1.jpg"],"../static/images/HOME-1.jpg"],"./..\\..\\static\\images\\HOME-Popular-Bali.jpg":[["HOME-Popular-Bali.1538d806.jpg","../static/images/HOME-Popular-Bali.jpg"],"../static/images/HOME-Popular-Bali.jpg"],"./..\\..\\static\\images\\HOME-Popular-Med.jpg":[["HOME-Popular-Med.5e94e1bc.jpg","../static/images/HOME-Popular-Med.jpg"],"../static/images/HOME-Popular-Med.jpg"],"./..\\..\\static\\images\\Home-Man-By-Train.jpg":[["Home-Man-By-Train.e235c88a.jpg","../static/images/Home-Man-By-Train.jpg"],"../static/images/Home-Man-By-Train.jpg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\..\\static\\images\\HOME-1.jpg":[["HOME-1.14760647.jpg","../static/images/HOME-1.jpg"],"../static/images/HOME-1.jpg"],"./..\\..\\static\\images\\HOME-Popular-Bali.jpg":[["HOME-Popular-Bali.1538d806.jpg","../static/images/HOME-Popular-Bali.jpg"],"../static/images/HOME-Popular-Bali.jpg"],"./..\\..\\static\\images\\HOME-Popular-Med.jpg":[["HOME-Popular-Med.5e94e1bc.jpg","../static/images/HOME-Popular-Med.jpg"],"../static/images/HOME-Popular-Med.jpg"],"./..\\..\\static\\images\\Home-Man-By-Train.jpg":[["Home-Man-By-Train.e235c88a.jpg","../static/images/Home-Man-By-Train.jpg"],"../static/images/Home-Man-By-Train.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _App = _interopRequireDefault(require("./App.js"));
@@ -16686,7 +16684,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 document.addEventListener('DOMContentLoaded', () => {
   _App.default.init();
 }); // all imports available to all other pages
-},{"./App.js":"App.js","./components/td-app-header":"components/td-app-header.js","./components/td-packages":"components/td-packages.js","./components/td-site-footer":"components/td-site-footer.js","./scss/master.scss":"scss/master.scss"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./App.js":"App.js","./components/td-app-header":"components/td-app-header.js","./components/td-packages":"components/td-packages.js","./components/td-site-footer":"components/td-site-footer.js","./scss/master.scss":"scss/master.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -16714,7 +16712,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62808" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53808" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -16890,5 +16888,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/src.e31bb0bc.js.map

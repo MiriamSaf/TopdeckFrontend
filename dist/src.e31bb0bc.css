@@ -7,6 +7,7 @@
   --base-font-family: "Open Sans", "Times New Roman", Times, serif;
   --headings-font-family: "Roboto Condensed", "Open Sans";
   --body-bg: #fff;
+  --base-responsive-heading: 9vh;
   --brand-color: #222C39;
   --link-color: --brand-color;
   --app-header-height: 14vh;
@@ -466,7 +467,7 @@ figure {
   }
 
   #home-hero-text h1 {
-    font-size: 9vh;
+    font-size: var(--base-responsive-heading);
   }
 
   /*section 2 Top Deck Tours 
@@ -510,7 +511,7 @@ figure {
   }
 
   #feedback-box h1 {
-    font-size: 9vh;
+    font-size: var(--base-responsive-heading);
   }
 
   #vert-line {
@@ -531,6 +532,33 @@ figure {
   /*styles star img*/
   #feedback-box img {
     width: 30vh;
+  }
+
+  /*section 4 Quiz Section 
+  --------------------------*/
+  #home-quiz-section {
+    height: 100vh;
+  }
+
+  #quiz-h1-box {
+    padding-top: 35vh;
+    width: 50vh;
+  }
+
+  #home-quiz-section h1 {
+    font-size: 11vh !important;
+  }
+
+  /*secton 5 - grid images
+  --------------------------*/
+  #home-grid-section h2 {
+    margin-top: 5vh;
+    font-size: var(--base-responsive-heading);
+  }
+
+  .img-gallery {
+    margin-left: 10vh;
+    margin-right: 10vh;
   }
 }
 sl-dialog::part(title) {
