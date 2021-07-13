@@ -99,6 +99,10 @@
 
        /*secton 5 - grid images
       --------------------------*/
+      #home-grid-section {
+        height: 100vh;
+      }
+      
       #home-grid-section h2{
         margin-top: 5vh;
         font-size: var(--base-responsive-heading);
