@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto+Condensed:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto+Condensed:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto+Condensed:wght@300;400&display=swap");
+:root {
+  --base-txt-color: #222;
+  --heading-color: #333;
+  --base-font-family: "Open Sans", "Times New Roman", Times, serif;
+  --headings-font-family: "Roboto Condensed", "Open Sans";
+  --body-bg: #fff;
+  --brand-color: #222C39;
+  --link-color: --brand-color;
+  --app-header-height: 14vh;
+  --app-header-txt-color: #000;
+  --app-header-title-font-size: 1.6em;
+  --sl-color-primary-50: #f4f4f4;
+  --sl-color-primary-100: #7890af;
+  --sl-color-primary-200: #5b7699;
+  --sl-color-primary-300: #485d79;
+  --sl-color-primary-400: #354559;
+  --sl-color-primary-500: #222C39;
+  --sl-color-primary-600: #0f1319;
+  --sl-color-primary-700: black;
+  --sl-color-primary-800: black;
+  --sl-color-primary-900: black;
+  --sl-focus-ring-color-primary: rgba(34, 44, 57, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  margin: 0;
+  padding: 0;
+}
+
+.view-screen {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--base-txt-color);
+  font-family: "Open Sans", "Times New Roman", Times, serif;
+  font-weight: 300;
+  background: var(--body-bg);
+}
+
+h1, h2, h3, h5, h6 {
+  margin: 0 0 0.5em;
+  color: var(--heading-color);
+  font-family: "Roboto Condensed", "Open Sans";
+  font-weight: 300;
+}
+
+/*section 1 Home hero section
+--------------------------*/
+#home-hero-section {
+  background-image: url("/HOME-1.14760647.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#home-hero-text h3, h1 {
+  text-align: center;
+  font-weight: normal;
+  color: #FFF;
+}
+
+#home-hero-text {
+  position: relative;
+  padding-top: 60vh;
+}
+
+#home-hero-text h3 {
+  font-size: 6vh;
+  text-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#home-hero-text h1 {
+  font-size: 16vh;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+a {
+  color: var(--link-color);
+}
+
+/*section 2 Top Deck Tours 
+--------------------------*/
+#home-poptour-section {
+  height: 100vh;
+  background-color: #FFF;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#pop-h1 {
+  padding-top: 10vh;
+  font-size: 10vh;
+  font-weight: bold;
+  color: #222C39;
+  padding-bottom: 1vh;
+}
+
+#med-reset,
+#bali-adventure {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 75vh;
+  border-radius: 10px;
+  color: #FFF;
+  position: relative;
+}
+
+#bali-adventure {
+  background-image: url("/HOME-Popular-Bali.1538d806.jpg");
+}
+
+#med-reset {
+  background-image: url("/HOME-Popular-Med.5e94e1bc.jpg");
+}
+
+.slider-txt {
+  text-align: left;
+  /*positions at bottom of container*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(58, 57, 57, 0.274);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.slider-txt h3 {
+  color: #FFF;
+  margin: 0 0 0em;
+  font-size: 7vh;
+  margin-left: 3vh;
+}
+
+.slider-txt h4 {
+  font-size: 5vh;
+  font-weight: lighter;
+  font-family: var(--headings-font-family);
+  margin-left: 3vh;
+}
+
+.slider-txt span {
+  font-family: var(--headings-font-family);
+  font-size: 3vh;
+  font-weight: lighter;
+}
+
+#adv-slide {
+  background-color: #F0C6D8;
+}
+
+#chill-slide {
+  background-color: #F9DE7E;
+}
+
+/*styles the small div below the image with the #*/
+.slider-item {
+  border-radius: 10px;
+  text-align: center;
+  width: 28vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  left: 2.5vh;
+  bottom: -2vh;
+  position: relative;
+}
+
+#dots {
+  text-align: center;
+  color: #222C39;
+  margin-top: 5vh;
+}
+
+/*GLIDER STYLES 
+--------------------------*/
+figure {
+  display: block;
+  margin: 1em;
+  padding: 0.7em;
+}
+
+.glider-contain {
+  width: 100% !important;
+  margin-top: 1%;
+  margin: auto;
+}
+
+.glider {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+/*Section 3 - feedback section 
+--------------------------*/
+#home-feedback-section {
+  height: 100vh;
+  background-color: #222C39;
+}
+
+#feedback-sm-container {
+  display: flex;
+  flex-direction: row;
+  /*puts all items across the centre*/
+  align-items: center;
+  justify-content: center;
+}
+
+#feedback-box {
+  width: 62vh;
+  margin-top: 20vh;
+}
+
+#feedback-box h1 {
+  font-size: 13vh;
+  overflow-wrap: normal;
+}
+
+.highlight {
+  color: #F9DE7E;
+}
+
+/*vertical line in between flexbox items*/
+#vert-line {
+  margin-top: 20vh;
+  border-left: 5px solid #FFF;
+  height: 55vh;
+}
+
+/*left feedback box*/
+#feedback-box h2 {
+  color: #FFF;
+  font-size: 7.8vh;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+/*styles star img*/
+#feedback-box img {
+  width: 40vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*section 4 Quiz Section 
+--------------------------*/
+#home-quiz-section {
+  height: 100vh;
+  background-image: url("/Home-Man-By-Train.e235c88a.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#quiz-h1-box {
+  padding-top: 30vh;
+  width: 100vh;
+  display: flex;
+  /*justify-content: flex-end;*/
+  flex-direction: column;
+  margin-left: auto;
+}
+
+#home-quiz-section h1 {
+  font-size: 18vh;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/*take the quiz button*/
+#btn-outline {
+  width: 30vh !important;
+  border-radius: 3px;
+  border: 2px solid #FFF;
+  color: #FFF;
+  border-color: #FFF;
+  text-align: center;
+  margin: auto;
+  padding: 3vh;
+  font-size: 3vh;
+}
+
+#quiz-btn:hover {
+  cursor: pointer;
+}
+
+/*secton 5 - grid images
+--------------------------*/
+#home-grid-section {
+  height: 90vh;
+  background-color: #FFF;
+}
+
+#home-grid-section h2 {
+  color: #222C39;
+  font-weight: bolder;
+  margin-top: 7vh;
+  font-size: 10vh;
+  text-align: center;
+}
+
+.img-gallery {
+  margin-top: 6vh;
+  margin-left: 20vh;
+  margin-right: 20vh;
+  /*grid styling based off of
+  "Simple CSS Image Grid". 2021. Ehtmlu.Com. https://ehtmlu.com/blog/simple-css-image-grid/.*/
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.img-gallery img {
+  width: 100%;
+}
+
+.app-splash {
+  position: fixed;
+  background: #fff;
+  color: #777;
+  display: flex;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.app-splash .app-logo {
+  width: 180px;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.calign {
+  text-align: center;
+}
+
+.large-text {
+  font-size: 1.6em;
+}
+
+.brand-color {
+  color: var(--brand-color);
+}
+
+.generic-entry {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+  padding: 1em;
+  background: #fff;
+}
+
+#root {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.page-content {
+  position: relative;
+  top: var(--app-header-height);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 30px;
+  overflow-y: scroll;
+}
+.page-content.no-pad {
+  padding: 0;
+}
+
+.page-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signinup-box,
+.signup-box {
+  max-width: 320px;
+  text-align: center;
+}
+.signinup-box h1,
+.signup-box h1 {
+  color: black;
+}
+
+.signinup-logo {
+  width: 200px;
+  margin-bottom: 1em;
+}
+
+.guide-step {
+  padding: 1em;
+  margin: 1.5em auto;
+  max-width: 600px;
+}
+.guide-step img {
+  width: 100%;
+  height: auto;
+}
+
+.packages-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.packages-grid .package-card {
+  width: calc(33.3% - 1em);
+  margin: 0.5em;
+}
+
+.package-dialog {
+  --width: 70%;
+}
+
+.package-dialog::part(body) {
+  margin-top: -3em;
+}
+
+@media all and (max-width: 768px) {
+  .signinup-box {
+    width: 90%;
+    max-width: none;
+  }
+}
+.input-group {
+  margin-bottom: 0.5em;
+}
+
+.page-form {
+  max-width: 700px;
+}
+
+/* RESPONSIVE - TABLET SIZE
+------------------- */
+@media all and (max-width: 768px) {
+  /*HOME PAGE
+  --------------------------*/
+  /*section 1 Home hero section
+  --------------------------*/
+  #home-hero-text h3 {
+    font-size: 4vh;
+  }
+
+  #home-hero-text h1 {
+    font-size: 9vh;
+  }
+
+  /*section 2 Top Deck Tours 
+  --------------------------*/
+  #pop-h1 {
+    padding-top: 6vh;
+    font-size: 7vh;
+    padding-bottom: 0vh;
+  }
+
+  #med-reset,
+#bali-adventure {
+    height: 32vh;
+    width: 60vh;
+  }
+
+  .slider-txt h3 {
+    font-size: 5vh;
+  }
+
+  .slider-txt h4 {
+    font-size: 3vh;
+  }
+
+  .slider-item {
+    width: 20vh;
+  }
+}
+sl-dialog::part(title) {
+  font-weight: 500;
+  font-size: 1.6em;
+}
+
+@media all and (max-width: 768px) {
+  sl-dialog::part(panel) {
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    max-width: none;
+  }
+}
+#toasts {
+  position: fixed;
+  left: 50%;
+  top: 1em;
+  transform: translateX(-50%);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.toast-entry {
+  background: #fff;
+  margin: 0 auto;
+  color: #333;
+  border-radius: 200px;
+  box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.14);
+  padding: 0.7em 1.3em;
+  font-size: 1em;
+  margin-bottom: 0.25em;
+  text-align: center;
+  transition: all 0.2 ease;
+}
+.toast-entry.is-error {
+  background: #d4195d;
+  color: #fff;
+}
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */
