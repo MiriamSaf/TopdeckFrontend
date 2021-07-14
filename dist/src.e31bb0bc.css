@@ -578,7 +578,31 @@ figure {
   }
 
   #home-hero-text h1 {
-    font-size: var(base-responsive-mobile-head);
+    font-size: 8vh;
+  }
+
+  /*section 2 Top Deck Tours 
+  --------------------------*/
+  #pop-h1 {
+    padding-top: 6vh;
+    font-size: 5.3vh;
+    padding-bottom: 0vh;
+  }
+
+  #med-reset,
+#bali-adventure {
+    height: 30vh;
+    width: 48vh;
+  }
+
+  /*Section 3 - feedback section 
+  --------------------------*/
+  #feedback-box h1 {
+    font-size: var(--base-responsive-mobile-head);
+  }
+
+  #vert-line {
+    width: 45vh;
   }
 }
 sl-dialog::part(title) {
