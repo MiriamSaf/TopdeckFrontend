@@ -1,0 +1,19 @@
+ /* RESPONSIVE - MOBILE SIZE
+---------------------------- */
+@media all and (max-width: 414px){    
+
+    /*HOME PAGE
+    --------------------------*/
+
+    /*section 1 Home hero section
+    --------------------------*/
+    #home-hero-text h3{
+        font-size: 3.5vh;
+        }
+        
+        #home-hero-text h1{
+        font-size: var(base-responsive-mobile-head);
+        }
+    
+
+}
