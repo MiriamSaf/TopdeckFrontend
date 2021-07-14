@@ -597,12 +597,64 @@ figure {
 
   /*Section 3 - feedback section 
   --------------------------*/
+  #home-feedback-section {
+    height: 65vh;
+  }
+
   #feedback-box h1 {
     font-size: var(--base-responsive-mobile-head);
   }
 
   #vert-line {
     width: 45vh;
+  }
+
+  /*left feedback box*/
+  #feedback-box h2 {
+    color: #FFF;
+    font-size: 4vh;
+    margin-top: -1.5vh;
+  }
+
+  #feedback-box {
+    width: 50vh;
+  }
+
+  /*styles star img*/
+  #feedback-box img {
+    width: 25vh;
+  }
+
+  /*section 4 Quiz Section 
+  --------------------------*/
+  #quiz-h1-box {
+    padding-top: 45vh;
+    width: 45vh;
+  }
+
+  #home-quiz-section h1 {
+    font-size: 10vh !important;
+  }
+
+  #btn-outline {
+    width: 28vh !important;
+    padding: 2vh;
+  }
+
+  /*secton 5 - grid images
+  --------------------------*/
+  #home-grid-section {
+    height: 100vh;
+  }
+
+  #home-grid-section h2 {
+    margin-top: 5vh;
+    font-size: var(--base-responsive-mobile-head);
+  }
+
+  .img-gallery {
+    margin-left: 5vh;
+    margin-right: 5vh;
   }
 }
 sl-dialog::part(title) {
