@@ -460,6 +460,8 @@ figure {
 ---------------------------- */
 @media all and (max-width: 768px) {
   /*HOME PAGE
+  --------------------------
+  --------------------------
   --------------------------*/
   /*section 1 Home hero section
   --------------------------*/
@@ -567,9 +569,12 @@ figure {
   }
 }
 /* RESPONSIVE - MOBILE SIZE
+ iPhone 6/7/8 Plus
 ---------------------------- */
 @media all and (max-width: 414px) {
   /*HOME PAGE
+  --------------------------
+  --------------------------
   --------------------------*/
   /*section 1 Home hero section
   --------------------------*/
@@ -655,6 +660,19 @@ figure {
   .img-gallery {
     margin-left: 5vh;
     margin-right: 5vh;
+  }
+}
+/*SLIGHTLY smaller mobile view
+iPhone 6/7/8 
+*/
+@media all and (max-width: 375px) {
+  /*Homepage 
+  --------------------------*/
+  /*secton 5 - grid images
+  --------------------------*/
+  .img-gallery {
+    margin-left: 3vh;
+    margin-right: 3vh;
   }
 }
 sl-dialog::part(title) {
