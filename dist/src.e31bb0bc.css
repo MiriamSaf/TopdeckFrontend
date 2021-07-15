@@ -455,7 +455,8 @@ figure {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  /*so will have whitespace beneath*/
+  height: 80vh;
   position: relative;
 }
 
