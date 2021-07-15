@@ -31,6 +31,7 @@ class packagesView {
       <div class="page-content">  
 
       <div id = "packg-hero-section">
+        <h1 class = "pckg-hero-h1">Find a trip</h1>
         
       </div>
 

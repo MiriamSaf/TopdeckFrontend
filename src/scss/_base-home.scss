@@ -1,0 +1,297 @@
+ /*HOME PAGE STYLES
+  --------------------------
+  --------------------------
+  --------------------------*/
+
+  /*for home screen*/
+  .view-screen {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+  }
+  /*section 1 Home hero section
+  --------------------------*/
+  #home-hero-section{
+    background-image: url("./../../static/images/HOME-1.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+  
+  #home-hero-text h3,h1{
+    text-align: center;
+    font-weight:normal;
+    color: #FFF;
+  }
+  
+  #home-hero-text{
+    position: relative;
+    padding-top: 60vh;
+  }
+  
+  #home-hero-text h3{
+    font-size: 6vh;
+    text-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  #home-hero-text h1{
+    font-size: 16vh;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  // links ---------------
+  a {
+    color: var(--link-color);
+  }
+  
+  
+  
+  /*section 2 Top Deck Tours 
+  --------------------------*/
+  
+  #home-poptour-section{
+    height: 100vh;
+    background-color: #FFF;
+    //background-image: url("./../../static/images/gray-worldmap.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #pop-h1{
+    padding-top: 10vh;
+    font-size: 10vh;
+    font-weight: bold;
+    color: #222C39;
+    padding-bottom: 1vh;
+  }
+  
+  
+  #med-reset,
+  #bali-adventure{
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 75vh;
+    border-radius: 10px;
+    color: #FFF;
+    position: relative;
+  }
+  #bali-adventure{
+    background-image: url("./../../static/images/HOME-Popular-Bali.jpg");
+  }
+  
+  #med-reset{
+    background-image: url("./../../static/images/HOME-Popular-Med.jpg");
+  }
+  
+  .slider-txt{
+    text-align: left;
+    /*positions at bottom of container*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgba(58, 57, 57, 0.274);
+    border-radius:0px 0px 10px 10px; 
+  }
+  
+  
+  .slider-txt h3{
+    color: #FFF;
+    margin: 0 0 0em;
+    font-size: 7vh;
+    margin-left: 3vh;
+  }
+  
+  .slider-txt h4{
+    font-size: 5vh; 
+    font-weight: lighter;
+    font-family: var(--headings-font-family);
+    margin-left: 3vh !important;
+    margin: 0;
+  }
+  
+  .slider-txt span{
+    font-family: var(--headings-font-family);
+    font-size: 3vh;
+    font-weight: lighter;
+  }
+  
+  #adv-slide{
+    background-color: #F0C6D8;
+  }
+  
+  #chill-slide{
+    background-color: #F9DE7E;
+  }
+  
+  /*styles the small div below the image with the #*/
+  .slider-item{
+    border-radius: 10px;
+    text-align: center;
+    width: 28vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    left: 2.5vh;
+    bottom: -2vh;
+    position: relative;
+  }
+  
+  #dots{
+    text-align: center;
+    color: #222C39;
+    margin-top: 5vh;
+  }
+  
+  /*GLIDER STYLES 
+  --------------------------*/
+  
+  figure{
+    display: block;
+    margin: 1em;
+    padding: .7em;
+  }
+  
+  .glider-contain{
+    width: 100% !important;
+    margin-top: 1%;
+    margin: auto;
+  }
+  
+  .glider{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  /*Section 3 - feedback section 
+  --------------------------*/
+  #home-feedback-section{
+    height: 100vh;
+    background-color: #222C39;
+  }
+  
+  #feedback-sm-container{
+    display: flex;
+    flex-direction: row;
+    /*puts all items across the centre*/
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #feedback-box{
+    width: 62vh;
+    margin-top: 20vh;
+  }
+  
+  #feedback-box h1{
+   font-size: 13vh;
+   overflow-wrap:normal;
+  }
+  
+  .highlight{
+    color: #F9DE7E;
+  }
+  /*vertical line in between flexbox items*/
+  #vert-line{
+    margin-top: 20vh;
+    border-left: 5px solid #FFF;
+    height: 55vh;
+  }
+  
+  /*left feedback box*/
+  #feedback-box h2{
+    color: #FFF;
+    font-size: 7.8vh;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+  /*styles star img*/
+  #feedback-box img{
+    width: 40vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  
+  /*section 4 Quiz Section 
+  --------------------------*/
+  #home-quiz-section{
+    height: 100vh;
+    background-image: url("./../../static/images/Home-Man-By-Train.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
+  #quiz-h1-box{
+    padding-top: 30vh;
+    width: 100vh;
+    display: flex;
+    /*justify-content: flex-end;*/
+    flex-direction: column; 
+    margin-left: auto;
+  }
+  
+  
+  #home-quiz-section h1{
+    font-size: 18vh;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;;
+  }
+  
+  /*take the quiz button*/
+  #btn-outline{
+    width: 30vh !important;
+    border-radius: 3px;
+    border:2px solid #FFF;
+    color: #FFF;
+    border-color: #FFF;
+    text-align: center;
+    margin: auto;
+    padding: 3vh;
+    font-size: 3vh;
+  }
+  
+  #quiz-btn:hover{
+    cursor:pointer;
+  }
+  
+  
+  /*secton 5 - grid images
+  --------------------------*/
+  #home-grid-section{
+    height: 90vh;
+    background-color: #FFF;
+  }
+  
+  #home-grid-section h2{
+    color: #222C39;
+    font-weight: bolder;
+    margin-top: 7vh;
+    font-size: 10vh;
+    text-align: center;
+  }
+  
+  .img-gallery {
+    margin-top: 6vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    /*grid styling based off of
+    "Simple CSS Image Grid". 2021. Ehtmlu.Com. https://ehtmlu.com/blog/simple-css-image-grid/.*/
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .img-gallery img{
+      width: 100%;
+  }

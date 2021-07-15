@@ -49,7 +49,163 @@ h1, h2, h3, h5, h6 {
   font-weight: 300;
 }
 
-/*HOME PAGE
+.app-splash {
+  position: fixed;
+  background: #fff;
+  color: #777;
+  display: flex;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.app-splash .app-logo {
+  width: 180px;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.calign {
+  text-align: center;
+}
+
+.large-text {
+  font-size: 1.6em;
+}
+
+.brand-color {
+  color: var(--brand-color);
+}
+
+.generic-entry {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+  padding: 1em;
+  background: #fff;
+}
+
+#root {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.page-content {
+  position: absolute;
+  top: var(--app-header-height);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 1em;
+}
+.page-content.no-pad {
+  padding: 0;
+}
+
+.page-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signinup-box,
+.signup-box {
+  max-width: 320px;
+  text-align: center;
+}
+.signinup-box h1,
+.signup-box h1 {
+  color: black;
+}
+
+.signinup-logo {
+  width: 200px;
+  margin-bottom: 1em;
+}
+
+.guide-step {
+  padding: 1em;
+  margin: 1.5em auto;
+  max-width: 600px;
+}
+.guide-step img {
+  width: 100%;
+  height: auto;
+}
+
+.packages-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.packages-grid .package-card {
+  width: calc(33.3% - 1em);
+  margin: 0.5em;
+}
+
+.package-dialog {
+  --width: 70%;
+}
+
+.package-dialog::part(body) {
+  margin-top: -3em;
+}
+
+/*PACKAGE PAGE
+  --------------------------
+  --------------------------
+  --------------------------*/
+#packg-hero-section {
+  background-image: url("/FYT-Hero.e873a6a8.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*so will have whitespace beneath*/
+  height: 80vh;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#pckg-hero-text h1 {
+  font-weight: normal;
+  color: #FFF;
+}
+
+.pckg-hero-h1 {
+  font-size: 14vh;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/*NEW PACKAGE PAGE 
+--------------------------
+--------------------------
+--------------------------*/
+#package-pg {
+  height: 150vh;
+}
+
+@media all and (max-width: 768px) {
+  .signinup-box {
+    width: 90%;
+    max-width: none;
+  }
+}
+.input-group {
+  margin-bottom: 0.5em;
+}
+
+.page-form {
+  max-width: 700px;
+}
+
+/*HOME PAGE STYLES
  --------------------------
  --------------------------
  --------------------------*/
@@ -156,7 +312,8 @@ a {
   font-size: 5vh;
   font-weight: lighter;
   font-family: var(--headings-font-family);
-  margin-left: 3vh;
+  margin-left: 3vh !important;
+  margin: 0;
 }
 
 .slider-txt span {
@@ -335,154 +492,6 @@ figure {
 
 .img-gallery img {
   width: 100%;
-}
-
-.app-splash {
-  position: fixed;
-  background: #fff;
-  color: #777;
-  display: flex;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.app-splash .app-logo {
-  width: 180px;
-  display: block;
-  margin-bottom: 1em;
-}
-
-.calign {
-  text-align: center;
-}
-
-.large-text {
-  font-size: 1.6em;
-}
-
-.brand-color {
-  color: var(--brand-color);
-}
-
-.generic-entry {
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.07);
-  border-radius: 5px;
-  margin-bottom: 0.5em;
-  padding: 1em;
-  background: #fff;
-}
-
-#root {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.page-content {
-  position: absolute;
-  top: var(--app-header-height);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding-bottom: 1em;
-}
-.page-content.no-pad {
-  padding: 0;
-}
-
-.page-centered {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.signinup-box,
-.signup-box {
-  max-width: 320px;
-  text-align: center;
-}
-.signinup-box h1,
-.signup-box h1 {
-  color: black;
-}
-
-.signinup-logo {
-  width: 200px;
-  margin-bottom: 1em;
-}
-
-.guide-step {
-  padding: 1em;
-  margin: 1.5em auto;
-  max-width: 600px;
-}
-.guide-step img {
-  width: 100%;
-  height: auto;
-}
-
-.packages-grid {
-  display: flex;
-  flex-wrap: wrap;
-}
-.packages-grid .package-card {
-  width: calc(33.3% - 1em);
-  margin: 0.5em;
-}
-
-.package-dialog {
-  --width: 70%;
-}
-
-.package-dialog::part(body) {
-  margin-top: -3em;
-}
-
-/*PACKAGE PAGE
-  --------------------------
-  --------------------------
-  --------------------------*/
-#packg-hero-section {
-  background-image: url("/FYT-Hero.e873a6a8.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*so will have whitespace beneath*/
-  height: 80vh;
-  position: relative;
-}
-
-#pckg-hero-text h3, h1 {
-  text-align: center;
-  font-weight: normal;
-  color: #FFF;
-}
-
-#package-pg {
-  margin-right: 5vh;
-  height: 300vh;
-  color: #777;
-  width: 100vw;
-}
-
-@media all and (max-width: 768px) {
-  .signinup-box {
-    width: 90%;
-    max-width: none;
-  }
-}
-.input-group {
-  margin-bottom: 0.5em;
-}
-
-.page-form {
-  max-width: 700px;
 }
 
 /* RESPONSIVE - TABLET SIZE
