@@ -47,7 +47,7 @@ class newPackageView {
   render(){
     const template = html`
       <td-app-header title="New Package" user="${JSON.stringify(Auth.currentUser)}"></td-app-header>
-      <div class="page-content">        
+      <div class="page-content" id = "package-pg">        
         <h1>New Package</h1>
         
         <sl-form class="page-form" @sl-submit=${this.newPackageSubmitHandler}>

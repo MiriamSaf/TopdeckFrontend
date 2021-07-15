@@ -124,7 +124,7 @@ class HomeView {
 
           
         </div>
-      <td-site-footer></td-site-footer>
+     <!-- <td-site-footer></td-site-footer>-->
       </div>
 
 
