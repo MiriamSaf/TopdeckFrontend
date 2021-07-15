@@ -28,12 +28,28 @@ class packagesView {
   render(){
     const template = html`
       <td-app-header user="${JSON.stringify(Auth.currentUser)}"></td-app-header>
-      <div class="page-content">  
+      <div>  <!-- remove page content as did not show the photo beneath it-->
 
+      <!-- section 1 - hero image -->
       <div id = "packg-hero-section">
         <h1 class = "pckg-hero-h1">Find a trip</h1>
-        
-      </div>
+      </div><!-- close home hero -->
+
+      <!-- section 2 - packages and find by -->
+      <div id = "packg-pckg-flex">
+        <div id = "right-container-pckg">
+          <div class = "packages-display">
+            box 1
+          </div>
+          <div class = "packages-display">
+            box 2
+          </div>
+        </div>
+
+        <div id = "left-container-pckg">
+        left
+        </div>
+      </div><!-- close pckg flex div-->
 
         <div class="packages-grid">
              ${this.tours == null ? html`
