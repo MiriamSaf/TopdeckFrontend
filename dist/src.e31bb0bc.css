@@ -56,6 +56,10 @@ h1, h2, h3, h5, h6 {
   font-weight: 300;
 }
 
+/*HOME PAGE
+ --------------------------
+ --------------------------
+ --------------------------*/
 /*section 1 Home hero section
 --------------------------*/
 #home-hero-section {
@@ -440,6 +444,25 @@ figure {
 
 .package-dialog::part(body) {
   margin-top: -3em;
+}
+
+/*PACKAGE PAGE
+  --------------------------
+  --------------------------
+  --------------------------*/
+#packg-hero-section {
+  background-image: url("/FYT-Hero.e873a6a8.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#pckg-hero-text h3, h1 {
+  text-align: center;
+  font-weight: normal;
+  color: #FFF;
 }
 
 @media all and (max-width: 768px) {

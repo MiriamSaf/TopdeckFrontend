@@ -30,6 +30,10 @@ class packagesView {
       <td-app-header user="${JSON.stringify(Auth.currentUser)}"></td-app-header>
       <div class="page-content">  
 
+      <div id = "packg-hero-section">
+        
+      </div>
+
         <div class="packages-grid">
              ${this.tours == null ? html`
              Waiting for data to test here
