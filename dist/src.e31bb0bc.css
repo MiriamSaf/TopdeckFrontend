@@ -196,7 +196,7 @@ and find by
 }
 
 #right-container-pckg {
-  height: 50vh;
+  height: 100vh;
   width: 70vw;
   background-color: #777;
   padding: 8vh;
@@ -206,6 +206,28 @@ and find by
 
 #left-container-pckg {
   padding: 8vh;
+}
+
+.packages-display {
+  padding-bottom: 5vh;
+}
+
+#pckg-img-1 {
+  background-image: url("/HOME-Popular-Bali.1538d806.jpg");
+}
+
+#pckg-img-2 {
+  background-image: url("/HOME-Popular-Med.5e94e1bc.jpg");
+}
+
+#pckg-img-1,
+#pckg-img-2 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  width: 45vh;
+  border-radius: 10px;
 }
 
 /*NEW PACKAGE PAGE 

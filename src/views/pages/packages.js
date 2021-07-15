@@ -39,10 +39,14 @@ class packagesView {
       <div id = "packg-pckg-flex">
         <div id = "right-container-pckg">
           <div class = "packages-display">
-            box 1
+            <div id = "pckg-img-1">
+
+            </div>
           </div>
           <div class = "packages-display">
-            box 2
+            <div id = "pckg-img-2">
+              
+            </div>
           </div>
         </div>
 
