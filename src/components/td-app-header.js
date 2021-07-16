@@ -135,7 +135,7 @@ customElements.define('td-app-header', class AppHeader extends LitElement {
       }
 
       .app-side-menu-logo {
-        width: 120px;
+
         margin-bottom: 1em;
         position: absolute;
         top: 2em;
@@ -150,11 +150,15 @@ customElements.define('td-app-header', class AppHeader extends LitElement {
 
       .hamburger-btn::part(base) {
         color: #000;
-        padding: 0 2em;
+        padding: 0 1em 0 1.5em;
       }
 
       sl-button {
         padding: 0 20px;
+      }
+
+      .hi-user {
+        font-size: 1.5em;
       }
 
       /* active nav links */
@@ -174,7 +178,7 @@ customElements.define('td-app-header', class AppHeader extends LitElement {
     </style>
 
     <header class="app-header">
-      <sl-icon-button class="hamburger-btn" name="list" @click="${this.hamburgerClick}" style="font-size: 2em;"></sl-icon-button>       
+      <sl-icon-button class="hamburger-btn" name="list" @click="${this.hamburgerClick}" style="font-size: 3em;"></sl-icon-button>       
       
       <div class="app-header-main">
         <a href="/" @click="${this.logoClick}">
@@ -191,11 +195,14 @@ customElements.define('td-app-header', class AppHeader extends LitElement {
             ${this.user.accessLevel == 2 ? html`
               <a href="/newPackage" @click="${anchorRoute}">Add Package</a>  
             ` : html``}
+            <p class="hi-user">Hi ${this.user && this.user.firstName}!</p>
 
             <sl-dropdown>
+              
               <a slot="trigger" href="#" @click="${(e) => e.preventDefault()}">
-                <sl-avatar style="--size: 50px;" image=${(this.user && this.user.avatar) ? `${App.apiBase}/images/${this.user.avatar}` : ''}></sl-avatar> 
-                ${this.user && this.user.firstName}
+              
+              <sl-avatar style="--size: 50px;" image=${(this.user && this.user.avatar) ? `${App.apiBase}/images/${this.user.avatar}` : ''}></sl-avatar> 
+                
               </a>
               <sl-menu>            
                 <sl-menu-item @click="${() => gotoRoute('/userDashboard')}">Me & My Trips</sl-menu-item>
@@ -209,11 +216,21 @@ customElements.define('td-app-header', class AppHeader extends LitElement {
 
     <sl-drawer class="app-side-menu" placement="left">
       <nav class="app-side-menu-items">
+      <a href="/" @click="${this.logoClick}">
+          <img class="app-side-menu-logo" src = "images/topdeck-black.png" alt = "top deck logo in black" height="70px">
+        </a>
         <a href="/" @click="${this.menuClick}">Home</a>
         ${this.user.accessLevel == 2 ? html`
           <a href="/newPackage" @click="${this.menuClick}">Add Package</a> 
           <a href="/admin" @click="${this.menuClick}">Admin</a>  
         ` : html``}
+
+        ${localStorage.accessToken == null? html`
+          <a href="/signin" @click="${this.menuClick}">Sign in to Dashboard</a>
+        `: html `
+          <a href="/userDashboard" @click="${this.menuClick}">My & My Trips</a>
+        `}
+
         <a href="/packages" @click="${this.menuClick}">Find a Tour</a>
         <a href="/travelTips" @click="${this.menuClick}">Travel Tips</a>
         <a href="/faqs" @click="${this.menuClick}">FAQs</a>
