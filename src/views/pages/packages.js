@@ -64,7 +64,42 @@ class packagesView {
               <h1>5 Nights | Departs Athens</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore <br>magna aliqua. Ut enim ad minim veniam</p>
             </div>
-          </div>
+
+          </div><!-- close pckg display -->
+
+          <div class = "packages-display">
+            <div id = "pckg-img-3">
+              <div class = "pckg-span" id = "america-span">
+                <span>#Party</span>
+              </div>
+            </div>
+            <div class = "pckg-disp-txt">
+              <h1><strong>American Dream</strong></h1>
+              <h2><i>North America</i></h2>
+              <h1>5 Nights | Departs New York</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore <br>magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+
+          </div><!-- close pckg display -->
+
+          <div class = "packages-display">
+            <div id = "pckg-img-4">
+              <div class = "pckg-span" id = "az-span">
+                <span>#Chill</span>
+              </div>
+            </div>
+            <div class = "pckg-disp-txt">
+              <h1><strong>Aztec Immersion</strong></h1>
+              <h2><i>South America</i></h2>
+              <h1>10 Nights | Departs Lima</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore <br>magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+
+          </div><!-- close pckg display -->
+        
+        
+
+
         </div>
 
         <div id = "left-container-pckg">
@@ -95,6 +130,7 @@ class packagesView {
          </td-packages>
         </div>
         
+        <td-site-footer></td-site-footer>
       </div>      
     `
     render(template, App.rootEl)

@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto+Condensed:wght@300;400&display=swap");
+/*
+#F0C6D8 (Pink)
+#DF5A36 (Red)
+#F9DE7E (Yellow)
+#C9E2D1 (Green), and
+#222C39 (Dark Blue)
+*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto+Condensed:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto+Condensed:wght@300;400&display=swap");
 :root {
@@ -196,7 +203,7 @@ and find by
 }
 
 #right-container-pckg {
-  height: 100vh;
+  height: 180vh;
   width: 70vw;
   padding: 9vh;
   padding-left: 11vh;
@@ -223,6 +230,14 @@ and find by
   background-color: #F0C6D8;
 }
 
+#america-span {
+  background-color: #C9E2D1;
+}
+
+#az-span {
+  background-color: #DF5A36;
+}
+
 .pckg-span {
   border-radius: 8px;
   text-align: center;
@@ -236,7 +251,9 @@ and find by
 }
 
 #pckg-img-1,
-#pckg-img-2 {
+#pckg-img-2,
+#pckg-img-3,
+#pckg-img-4 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,8 +267,18 @@ and find by
   background-image: url("/HOME-Popular-Med.5e94e1bc.jpg");
 }
 
+#pckg-img-3 {
+  background-image: url("/FYT-AmericanNights.e88c73d1.jpg");
+}
+
+#pckg-img-4 {
+  background-image: url("/FYT-AztecImmersion.a560441e.jpg");
+}
+
 #pckg-img-1,
-#pckg-img-2 {
+#pckg-img-2,
+#pckg-img-3,
+#pckg-img-4 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
