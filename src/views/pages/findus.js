@@ -26,11 +26,16 @@ class FindusView {
         <div id = "findus-info-container">
           <div id = "contact-contain">
             <div class = "contact-item" id = "emg-info-item">
-              emergency contact
+              <h1>Emergency Contact</h1>
+                <div class = "findus-crcl">
+                  <span>1300 886 332</span>
+                </div>
+                <p>If you have an emergency during your tour, please use this emergency number. For all booking enquiries, please use the relevant number for your country on this page.
+                </p>
             </div>
             
             <div class = "contact-item">
-            AUSTRALIA
+            <h1>Australia</h1>
             </div>
           </div><!-- close contact contain-->
         </div> <!-- close find us info container -->

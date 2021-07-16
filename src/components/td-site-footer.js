@@ -102,14 +102,15 @@ a {
 
 #footer-column-left a,
 #footer-column-mid a {
-  transition: text-shadow .4s;
+  transition: all ease .4s;
 }
 
 #footer-column-left a:hover, 
 #footer-column-mid a:hover{
   /* shadow style adapted from 
   https://www.sitepoint.com/quick-tip-fixing-font-weight-problem-hover-states/ */
-  text-shadow: 0 0 1px #FFF, 0 0 1px #FFF, 0 0 1px #FFF;
+  text-shadow: 0 0 1px var(--brand-red), 0 0 1px var(--brand-red), 0 0 1px var(--brand-red);
+  color: var(--brand-red);
 }
 
 .footer-right-item sl-icon, 

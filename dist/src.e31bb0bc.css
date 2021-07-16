@@ -13,6 +13,8 @@
   --heading-color: #333;
   --brand-pink: #F0C6D8;
   --brand-green: #C9E2D1;
+  --brand-blue: #222C39;
+  --brand-red: #DF5A36;
   --base-font-family: "Open Sans", "Times New Roman", Times, serif;
   --headings-font-family: "Roboto Condensed", "Open Sans";
   --body-bg: #fff;
@@ -328,12 +330,12 @@ and find by
 /*section 1 Hero
 --------------------------*/
 #findus-hero-section {
-  background-image: url("/FYT-Hero.e873a6a8.jpg");
+  background-image: url("/LookingMapHero.b2b27bd9.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   /*so will have whitespace beneath*/
-  height: 90vh;
+  height: 95vh;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -361,11 +363,33 @@ and find by
 }
 
 #contact-contain .contact-item {
-  background-color: #bdbdbd;
-  height: 40vh;
-  border-radius: 10px;
+  background-color: #f1f1f1;
+  height: 45vh;
+  border-radius: 8px;
   padding: 3vh;
-  width: 40%;
+  width: 35%;
+  text-align: center;
+}
+
+#contact-contain .contact-item h1 {
+  font-size: 3em;
+  color: var(--brand-blue);
+}
+
+#contact-contain .contact-item p {
+  font-size: 3.2vh;
+  font-family: var(--headings-font-family);
+}
+
+.findus-crcl {
+  text-align: center;
+  color: #FFF;
+  background-color: var(--brand-red);
+  padding-top: 2vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  padding-bottom: 2vh;
+  border-radius: 10px;
 }
 
 #emg-info-item {
