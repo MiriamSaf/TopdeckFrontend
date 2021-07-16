@@ -40,7 +40,9 @@ class packagesView {
         <div id = "right-container-pckg">
           <div class = "packages-display">
             <div id = "pckg-img-1">
-
+              <div class = pckg-span id = "adv-span">
+                <span>#Adventure</span>
+              </div>
             </div>
             <div class = "pckg-disp-txt">
               <h1><strong>Bali Adventurer</strong></h1>
@@ -52,7 +54,9 @@ class packagesView {
 
           <div class = "packages-display">
             <div id = "pckg-img-2">
-              
+              <div class = "pckg-span" id = "med-span">
+                <span>#Chill</span>
+              </div>
             </div>
             <div class = "pckg-disp-txt">
               <h1><strong>Mediterranean Reset</strong></h1>

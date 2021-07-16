@@ -196,18 +196,47 @@ h1,h2,h3,h5,h6 {
     width: 70vw;
     //background-color: #777;
     padding: 9vh;
+    padding-left: 11vh;
     display: flex;
     flex-direction: column;
   }
 
   #left-container-pckg{
     padding: 9vh;
+    padding-right: 11vh;
   }
 
   .packages-display{
     display: flex;
     flex-direction: row;
     padding-bottom: 5vh;
+  }
+
+  #med-span{
+    background-color: #F9DE7E;
+  }
+
+  #adv-span{
+    background-color: #F0C6D8;
+  }
+
+  .pckg-span{
+    border-radius: 8px;
+    text-align: center;
+    width: 20vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    top: 1vh;
+    position: relative;
+    color: #FFF;
+    margin-top: 20vh;
+  }
+
+  #pckg-img-1,
+  #pckg-img-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #pckg-img-1{
