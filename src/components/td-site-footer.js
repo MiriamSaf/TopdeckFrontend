@@ -98,6 +98,31 @@ a {
   color: white;
 }
 
+/* hover effecs */
+
+#footer-column-left a,
+#footer-column-mid a {
+  transition: text-shadow .4s;
+}
+
+#footer-column-left a:hover, 
+#footer-column-mid a:hover{
+  /* shadow style adapted from 
+  https://www.sitepoint.com/quick-tip-fixing-font-weight-problem-hover-states/ */
+  text-shadow: 0 0 1px #FFF, 0 0 1px #FFF, 0 0 1px #FFF;
+}
+
+.footer-right-item sl-icon, 
+.footer-icon-img
+{
+  transition: 0.3s ease-out;
+}
+
+.footer-right-item sl-icon:hover,
+.footer-icon-img:hover{
+  transform:scale(1.1) rotate(3deg);
+}
+
 
  
       /* RESPONSIVE - MOBILE ------------------- */
