@@ -15,10 +15,27 @@ class FindusView {
   render(){
     const template = html`
      <td-app-header title="Find Us" user=${JSON.stringify(Auth.currentUser)}></td-app-header>
-      <div class="page-content">
+      <div> <!-- remove page content class as did not show the photo beneath it-->
       
+        <!-- section 1 - hero image -->
+        <div id = "findus-hero-section">
+        <h1 class = "findus-hero-h1">Find us</h1>
+        </div><!-- close home hero -->
+
+        <!-- section 2 - info -->
+        <div id = "findus-info-container">
+          <div id = "contact-contain">
+            <div class = "contact-item" id = "emg-info-item">
+              emergency contact
+            </div>
+            
+            <div class = "contact-item">
+            AUSTRALIA
+            </div>
+          </div><!-- close contact contain-->
+        </div> <!-- close find us info container -->
        
-        <h3>Find Us content goes here</h3>
+        <h3></h3>
         
         <td-site-footer></td-site-footer>
       </div>

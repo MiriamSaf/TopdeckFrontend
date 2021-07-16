@@ -14434,7 +14434,7 @@ class FindusView {
   }
 
   render() {
-    const template = (0, _litHtml.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n     <td-app-header title=\"Find Us\" user=", "></td-app-header>\n      <div class=\"page-content\">\n      \n       \n        <h3>Find Us content goes here</h3>\n        \n        <td-site-footer></td-site-footer>\n      </div>\n      \n    "])), JSON.stringify(_Auth.default.currentUser));
+    const template = (0, _litHtml.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n     <td-app-header title=\"Find Us\" user=", "></td-app-header>\n      <div> <!-- remove page content class as did not show the photo beneath it-->\n      \n        <!-- section 1 - hero image -->\n        <div id = \"findus-hero-section\">\n        <h1 class = \"findus-hero-h1\">Find us</h1>\n        </div><!-- close home hero -->\n\n        <!-- section 2 - info -->\n        <div id = \"findus-info-container\">\n          <div id = \"contact-contain\">\n            <div class = \"contact-item\" id = \"emg-info-item\">\n              emergency contact\n            </div>\n            \n            <div class = \"contact-item\">\n            AUSTRALIA\n            </div>\n          </div><!-- close contact contain-->\n        </div> <!-- close find us info container -->\n       \n        <h3></h3>\n        \n        <td-site-footer></td-site-footer>\n      </div>\n      \n    "])), JSON.stringify(_Auth.default.currentUser));
     (0, _litHtml.render)(template, _App.default.rootEl);
   }
 

@@ -310,6 +310,60 @@ h1,h2,h3,h5,h6 {
   }
 
 
+  /*FIND US PAGE
+  --------------------------
+  --------------------------
+  --------------------------*/
+
+  /*section 1 Hero
+  --------------------------*/
+  #findus-hero-section{
+  background-image: url("./../../static/images/FYT-Hero.jpg");
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /*so will have whitespace beneath*/
+  height: 90vh;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.findus-hero-h1{
+  margin-top: 15vh;
+  font-size: 14vh;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/*section 2 Info
+  --------------------------*/
+#findus-info-container{
+  margin-top: 9vh;
+  margin-bottom: 9vh;
+}
+
+#contact-contain{
+  display: flex;
+  width: 100%;
+  margin: 1vh;
+  justify-content: center;
+}
+
+#contact-contain .contact-item{
+  background-color: rgb(189, 189, 189);
+  height: 40vh;
+  border-radius: 10px;
+  padding: 3vh;
+  width: 40%;
+
+}
+
+#emg-info-item{
+  margin-right: 9vh;
+}
+
 
 // RESPONSIVE - MOBILE -------------------
 @media all and (max-width: 768px){ 
