@@ -12,6 +12,64 @@ class HomeView {
     Utils.pageIntroAnim()    
   }
 
+  // Quiz dialog begins here
+  quizHandler(e){
+    e.preventDefault()
+    console.log('quiz handler')
+    const dialogEL = document.createElement('sl-dialog')
+
+    // add class name
+    dialogEL.className = 'quiz-dialog'
+
+    //- sl-dialog content 
+    const dialogContent = html`
+        <style>
+            .wrap {
+                display: flex;
+                width: 100%;
+            }
+
+            .content {
+                float: left;
+                padding-left: 1em;
+            }
+            h1 {
+                  color: black;
+                }
+
+
+            @media all and (max-width: 768px){
+
+              .wrap {
+                display: inline-block;
+              }
+
+            }
+
+        </style>
+        <div class="wrap">
+
+            <div class="content">
+                <h1>This is where the Quiz will go</h1>
+            
+            </div>
+        </div>
+      `
+    render(dialogContent, dialogEL)
+
+    //- append to document.body
+    document.body.append(dialogEL)
+
+    //- show sl-dialog
+    dialogEL.show()
+
+    //- on hide delete sl-dialog
+    dialogEL.addEventListener('sl-after-hide', () => {
+        dialogEL.remove()
+    })
+  }
+  //End of Quiz Dialog
+
   render(){
     const template = html`
       <td-app-header title="Home" user=${JSON.stringify(Auth.currentUser)}></td-app-header>
@@ -90,7 +148,7 @@ class HomeView {
   <div id = "home-quiz-section">
     <div id = "quiz-h1-box">
       <h1>Find out your travel style</h1>
-      <div id = "btn-outline" >Take the Quiz</div>
+      <a href="#" id = "btn-outline" @click=${this.quizHandler.bind(this)}>Take the Quiz</a>
     </div>
   </div><!--close home quiz section div-->
 
