@@ -42,16 +42,29 @@ class packagesView {
             <div id = "pckg-img-1">
 
             </div>
+            <div class = "pckg-disp-txt">
+              <h1><strong>Bali Adventurer</strong></h1>
+              <h2><i>South East Asia</i></h2>
+              <h1>9 Nights | Departs Denpaser</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore <br>magna aliqua. Ut enim ad minim veniam</p>
+            </div>
           </div>
+
           <div class = "packages-display">
             <div id = "pckg-img-2">
               
+            </div>
+            <div class = "pckg-disp-txt">
+              <h1><strong>Mediterranean Reset</strong></h1>
+              <h2><i>Europe</i></h2>
+              <h1>5 Nights | Departs Athens</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore <br>magna aliqua. Ut enim ad minim veniam</p>
             </div>
           </div>
         </div>
 
         <div id = "left-container-pckg">
-        left
+        left col
         </div>
       </div><!-- close pckg flex div-->
 
