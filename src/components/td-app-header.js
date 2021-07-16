@@ -132,6 +132,30 @@ customElements.define('td-app-header', class AppHeader extends LitElement {
         text-decoration: none;
         font-size: 1.3em;
         color: #333;
+        /*style for hover state beginning
+        adapted from
+        "Having Fun With Link Hover Effects | CSS-Tricks". 2021. CSS-Tricks. 
+        https://css-tricks.com/having-fun-with-link-hover-effects/. */
+        background:
+        linear-gradient(
+          to bottom, var(--brand-green) 0%,
+          var(--brand-green) 100%
+        );
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 0px 0px;
+        text-decoration: none;
+        transition: background-size .2s;
+      }
+
+        /* active nav links */
+        .app-top-nav a.active,
+      .app-side-menu-items a.active {
+        font-weight: bold;
+      }
+      /* nav active menu items expand on hover state */
+      .app-side-menu-items a:hover{
+        background-size: 4px 50px;
       }
 
       .app-side-menu-logo {
