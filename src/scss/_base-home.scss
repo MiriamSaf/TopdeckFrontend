@@ -259,10 +259,16 @@
     margin: auto;
     padding: 3vh;
     font-size: 3vh;
+    backdrop-filter: blur(2.5px);
+    transition: all ease 0.3s;
   }
-  
-  #quiz-btn:hover{
+
+  /*hover styling for quiz button*/
+  #btn-outline:hover{
     cursor:pointer;
+    backdrop-filter: blur(7px);
+    transform: scale(1.05);
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   
   

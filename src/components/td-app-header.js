@@ -191,6 +191,17 @@ customElements.define('td-app-header', class AppHeader extends LitElement {
         font-weight: bold;
       }
 
+      /* hover styles */
+
+      /* header image */
+      #header-td-img{
+        transition: 0.3s ease;
+      }
+
+      #header-td-img:hover{
+        transform:scale(1.1);
+      }
+
       /* RESPONSIVE - MOBILE ------------------- */
       @media all and (max-width: 768px){       
         
@@ -206,7 +217,7 @@ customElements.define('td-app-header', class AppHeader extends LitElement {
       
       <div class="app-header-main">
         <a href="/" @click="${this.logoClick}">
-          <img src = "images/topdeck-black.png" alt = "top deck logo in black" height="50px">
+          <img src = "images/topdeck-black.png" alt = "top deck logo in black" height="50px" id = "header-td-img">
         </a>
       </div>
 
