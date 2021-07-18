@@ -32,7 +32,8 @@ customElements.define('td-site-footer', class SiteFooter extends LitElement {
 footer{
   width: 100%;
   bottom: 0;
-  font-family: 'Roboto Condensed', 'Open Sans';   
+  font-family: 'Roboto Condensed', 'Open Sans';
+     
 }
 
 #home-footer{
@@ -40,6 +41,8 @@ footer{
     height: 70vh;
     display: flex;
     justify-content: space-around;
+    position: relative;
+    margin-top: 5em;
 }
 
 #footer-column-left,
@@ -147,13 +150,13 @@ a {
           </div>
 
 
-        <div id = "footer-column-mid" class = "footer-items">
-          <h1>Find a trip</h1>
-          <a href="/packages" @click="${this.iconClick}"><h2>#party</h2></a>
-          <a href="/packages" @click="${this.iconClick}"><h2>#chill</h2></a>
-          <a href="/packages" @click="${this.iconClick}"><h2>#adventure</h2></a>
-          <a href="/packages" @click="${this.iconClick}"><h2>#culture</h2></a>
-        </div>
+          <div id = "footer-column-mid" class = "footer-items">
+            <h1>Find a trip</h1>
+            <a href="/packages" @click="${this.iconClick}"><h2>#party</h2></a>
+            <a href="/packages" @click="${this.iconClick}"><h2>#chill</h2></a>
+            <a href="/packages" @click="${this.iconClick}"><h2>#adventure</h2></a>
+            <a href="/packages" @click="${this.iconClick}"><h2>#culture</h2></a>
+          </div>
 
         <div id = "footer-column-right" class = "footer-item">
           <!-- Topdeck logo -->
