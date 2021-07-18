@@ -6,7 +6,6 @@ import './components/td-packages'
 import './components/td-site-footer'
 
 
-
 // styles
 import './scss/master.scss'
 
@@ -14,7 +13,6 @@ import './scss/master.scss'
 document.addEventListener('DOMContentLoaded', () => {
   App.init()
 })
-
 
 
 // all imports available to all other pages
