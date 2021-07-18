@@ -36,6 +36,7 @@ class GetPackageTestView {
             </td-packages>
               `)}
             `}
+            </div>
 
             
         <td-site-footer></td-site-footer>

@@ -33,7 +33,6 @@ footer{
   width: 100%;
   bottom: 0;
   font-family: 'Roboto Condensed', 'Open Sans';   
-  display: inline-block;
 }
 
 #home-footer{

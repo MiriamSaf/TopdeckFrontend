@@ -1,4 +1,8 @@
-Testing GIT
+UPDATE LOCAL FILE FROM GIT --------------------------
+git pull
+
+TRASH LOCAL CHANGES --------------------------
+git stash
 
 UPDATING GIT ----------------------------------------
 git status
