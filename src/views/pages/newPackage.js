@@ -79,9 +79,9 @@ class newPackageView {
           <div class="input-group" style="margin-bottom: 2em;">
             <label>Trip Type</label><br>
             <sl-radio-group label="Select length" no-fieldset>
-              <sl-radio name="type" value="s">Best Sellers</sl-radio>
-              <sl-radio name="type" value="m">Top Trips</sl-radio>
-              <sl-radio name="type" value="l">Specials</sl-radio>
+              <sl-radio name="type" value="b">Best Sellers</sl-radio>
+              <sl-radio name="type" value="t">Top Trips</sl-radio>
+              <sl-radio name="type" value="s">Specials</sl-radio>
             </sl-radio-group>
           </div>
 

@@ -100,8 +100,8 @@ moreInfoHandler(){
                 <p class="price">$${this.price}</p>
 
                 <sl-button @click=${this.addFavHandler.bind(this)}>
-                <sl-icon slot="prefix" name="heart-fill"></sl-icon>
-                Add to Favourites
+                  <sl-icon slot="prefix" name="cart3"></sl-icon>
+                  Add to Cart
                 </sl-button>
             </div>
         </div>
@@ -128,11 +128,7 @@ moreInfoHandler(){
   render(){    
     return html`
     <style>
-        .author {
-            font-size: 0.9em;
-            font-style: italic;
-            opacity: 0.8;
-        }
+        
     </style>
 
     <sl-card>
@@ -140,7 +136,7 @@ moreInfoHandler(){
         <h2>${this.title}</h2>
         <h3>$${this.price}</h3>
         <sl-button @click=${this.moreInfoHandler.bind(this)}>More Info</sl-button>
-        <sl-icon-button name="heart-fill" label="Add to Favourites" @click=${this.addFavHandler}></sl-icon-button> 
+        <sl-icon-button name="cart3" label="Add to Cart" @click=${this.addFavHandler}></sl-icon-button> 
     </sl-card>
    `
   }

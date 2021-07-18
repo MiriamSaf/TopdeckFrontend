@@ -14175,7 +14175,7 @@ class newPackageView {
   }
 
   render() {
-    const template = (0, _litHtml.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      <td-app-header title=\"New Package\" user=\"", "\"></td-app-header>\n      <div class=\"page-content\" id = \"package-pg\">        \n        <h1>New Package</h1>\n        \n        <sl-form class=\"page-form\" @sl-submit=", ">\n          <div class=\"input-group\">\n            <sl-input name=\"title\" type=\"text\" placeholder=\"Package Title\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-textarea name=\"description\" rows=\"2\" placeholder=\"Short Description\" required></sl-textarea>\n          </div>\n          <div class=\"input-group\">\n            <sl-textarea name=\"longDescription\" rows=\"4\" placeholder=\"Long Description\" required></sl-textarea>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"date\" type=\"date\" placeholder=\"Start Date\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"duration\" type=\"number\" placeholder=\"Package duration\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"vibe\" type=\"text\" placeholder=\"Package Vibe\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"country\" type=\"text\" placeholder=\"Package country\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"region\" type=\"text\" placeholder=\"Package map region\" required></sl-input>\n          </div>\n\n          <div class=\"input-group\" style=\"margin-bottom: 2em;\">\n            <label>Trip Type</label><br>\n            <sl-radio-group label=\"Select length\" no-fieldset>\n              <sl-radio name=\"type\" value=\"s\">Best Sellers</sl-radio>\n              <sl-radio name=\"type\" value=\"m\">Top Trips</sl-radio>\n              <sl-radio name=\"type\" value=\"l\">Specials</sl-radio>\n            </sl-radio-group>\n          </div>\n\n          <div class=\"input-group\">\n            <sl-input name=\"depatureLocation\" type=\"text\" placeholder=\"Depature Location\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"endLocation\" type=\"text\" placeholder=\"End Location\" required></sl-input>\n          </div>\n\n          <div class=\"input-group\">              \n            <sl-input name=\"price\" type=\"text\" placeholder=\"Price\" required>\n              <span slot=\"prefix\">$</span>\n            </sl-input>\n          </div>\n\n          <div class=\"input-group\" style=\"margin-bottom: 2em;\">\n            <label>Image</label><br>\n            <input type=\"file\" name=\"image\" />              \n          </div>\n\n          <sl-button type=\"primary\" class=\"submit-btn\" submit>Add Package</sl-button>\n        </sl-form>        \n\n      </div>      \n    "])), JSON.stringify(_Auth.default.currentUser), this.newPackageSubmitHandler);
+    const template = (0, _litHtml.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      <td-app-header title=\"New Package\" user=\"", "\"></td-app-header>\n      <div class=\"page-content\" id = \"package-pg\">        \n        <h1>New Package</h1>\n        \n        <sl-form class=\"page-form\" @sl-submit=", ">\n          <div class=\"input-group\">\n            <sl-input name=\"title\" type=\"text\" placeholder=\"Package Title\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-textarea name=\"description\" rows=\"2\" placeholder=\"Short Description\" required></sl-textarea>\n          </div>\n          <div class=\"input-group\">\n            <sl-textarea name=\"longDescription\" rows=\"4\" placeholder=\"Long Description\" required></sl-textarea>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"date\" type=\"date\" placeholder=\"Start Date\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"duration\" type=\"number\" placeholder=\"Package duration\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"vibe\" type=\"text\" placeholder=\"Package Vibe\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"country\" type=\"text\" placeholder=\"Package country\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"region\" type=\"text\" placeholder=\"Package map region\" required></sl-input>\n          </div>\n\n          <div class=\"input-group\" style=\"margin-bottom: 2em;\">\n            <label>Trip Type</label><br>\n            <sl-radio-group label=\"Select length\" no-fieldset>\n              <sl-radio name=\"type\" value=\"b\">Best Sellers</sl-radio>\n              <sl-radio name=\"type\" value=\"t\">Top Trips</sl-radio>\n              <sl-radio name=\"type\" value=\"s\">Specials</sl-radio>\n            </sl-radio-group>\n          </div>\n\n          <div class=\"input-group\">\n            <sl-input name=\"depatureLocation\" type=\"text\" placeholder=\"Depature Location\" required></sl-input>\n          </div>\n          <div class=\"input-group\">\n            <sl-input name=\"endLocation\" type=\"text\" placeholder=\"End Location\" required></sl-input>\n          </div>\n\n          <div class=\"input-group\">              \n            <sl-input name=\"price\" type=\"text\" placeholder=\"Price\" required>\n              <span slot=\"prefix\">$</span>\n            </sl-input>\n          </div>\n\n          <div class=\"input-group\" style=\"margin-bottom: 2em;\">\n            <label>Image</label><br>\n            <input type=\"file\" name=\"image\" />              \n          </div>\n\n          <sl-button type=\"primary\" class=\"submit-btn\" submit>Add Package</sl-button>\n        </sl-form>        \n\n      </div>      \n    "])), JSON.stringify(_Auth.default.currentUser), this.newPackageSubmitHandler);
     (0, _litHtml.render)(template, _App.default.rootEl);
   }
 
@@ -14504,7 +14504,11 @@ var _Router = require("../../Router");
 
 var _Utils = _interopRequireDefault(require("../../Utils"));
 
+var _Toast = _interopRequireDefault(require("../../Toast"));
+
 var _Auth = _interopRequireDefault(require("../../Auth"));
+
+var _PackageAPI = _interopRequireDefault(require("./../../PackageAPI"));
 
 var _templateObject, _templateObject2, _templateObject3, _templateObject4;
 
@@ -14516,13 +14520,26 @@ class GetPackageTestView {
   init() {
     console.log('GetPackageTestView.init');
     document.title = 'Find a Tour TEST';
+    this.tours = null;
     this.render();
 
     _Utils.default.pageIntroAnim();
+
+    this.getPackages();
+  }
+
+  async getPackages() {
+    try {
+      this.tours = await _PackageAPI.default.getPackages();
+      console.log(this.tours);
+      this.render();
+    } catch (err) {
+      _Toast.default.show(err, 'error');
+    }
   }
 
   render() {
-    const template = (0, _litHtml.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n     <td-app-header title=\"FAQs\" user=", "></td-app-header>\n      <div class=\"page-content\">\n      \n        <h3>Find a Tour TEST page</h3>\n        <p class=\"para\"> And the Tours should appear below </p>\n\n       <div class=\"packages-grid\">\n             ", "\n            </div>\n\n            \n        <td-site-footer></td-site-footer>\n      </div>\n      \n    "])), JSON.stringify(_Auth.default.currentUser), this.tours == null ? (0, _litHtml.html)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n             Waiting for data to test here\n              <sl-spinner></sl-spinner>\n            "]))) : (0, _litHtml.html)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n              ", "\n            "])), this.tours.map(tour => (0, _litHtml.html)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n              <td-packages class=\"package-card\"\n                  title=\"", "\"\n                  description=\"", "\"\n                  price=", "\n                  image=\"", "\"\n                  date=\"", "\"\n                > \n            </td-packages>\n              "])), tour.name, tour.description, tour.price, tour.image, tour.date))));
+    const template = (0, _litHtml.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n     <td-app-header title=\"FAQs\" user=", "></td-app-header>\n      <div class=\"page-content\">\n      \n        <h3>Find a Tour TEST page</h3>\n        <p class=\"para\"> And the Tours should appear below </p>\n\n       <div class=\"packages-grid\">\n          ", "\n\n              <p>this is after the tour list</p> \n\n              <td-packages class=\"package-card\"\n                title=\"Test 2\"\n                description=\"Test 2 Description\"\n                price=$35\n                image=\"topdeck-black.png\"\n                date=\"31st August\"\n              > \n              </td-packages>\n              <p>And this is after a test 2 item</p> \n            </div>\n\n            \n        <td-site-footer></td-site-footer>\n      </div>\n      \n    "])), JSON.stringify(_Auth.default.currentUser), this.tours == null ? (0, _litHtml.html)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n             Waiting for data to test here\n              <sl-spinner style=\"font-size: 2em;\" ></sl-spinner>\n            "]))) : (0, _litHtml.html)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n              ", "\n            "])), this.tours.map(tour => (0, _litHtml.html)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n                <td-packages class=\"package-card\"\n                    title=\"", "\"\n                    description=\"", "\"\n                    price=", "\n                    image=\"", "\"\n                    date=\"", "\"\n                  > \n                </td-packages>\n              "])), tour.name, tour.description, tour.price, tour.image, tour.date))));
     (0, _litHtml.render)(template, _App.default.rootEl);
   }
 
@@ -14531,7 +14548,7 @@ class GetPackageTestView {
 var _default = new GetPackageTestView();
 
 exports.default = _default;
-},{"../../App":"App.js","lit-html":"../node_modules/lit-html/lit-html.js","../../Router":"Router.js","../../Utils":"Utils.js","../../Auth":"Auth.js"}],"Router.js":[function(require,module,exports) {
+},{"../../App":"App.js","lit-html":"../node_modules/lit-html/lit-html.js","../../Router":"Router.js","../../Utils":"Utils.js","../../Toast":"Toast.js","../../Auth":"Auth.js","./../../PackageAPI":"PackageAPI.js"}],"Router.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -14675,7 +14692,7 @@ class App {
   constructor() {
     this.name = "Topdeck";
     this.version = "1.0.0";
-    this.apiBase = 'https://topdeck-indigo.herokuapp.com';
+    this.apiBase = 'http://localhost:3000';
     this.rootEl = document.getElementById("root");
     this.version = "1.0.0";
   } // https://topdeck-indigo.herokuapp.com
@@ -16607,7 +16624,7 @@ customElements.define('va-packages', class Package extends _litElement.LitElemen
 
     dialogEL.className = 'package-dialog'; //- sl-dialog content (Paste #2)
 
-    const dialogContent = (0, _litElement.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n        <style>\n            .wrap {\n                display: flex;\n            }\n            .image {\n                width: 50%;\n            }\n            .image img {\n                width: 100%;\n            }\n            .content {\n                padding-left: 1em;\n            }\n            .gender span,\n            .length span {\n                text-transform: uppercase;\n                font-weight: bold;\n            }\n            .price {\n                font-size: 1.5em;\n                color: var(--brand-color);\n            }\n        </style>\n        <div class=\"wrap\">\n\n            <div class=\"content\">\n                <h1>", "</h1>\n                <p>", "</p>\n                <p class=\"price\">$", "</p>\n\n                <sl-button @click=", ">\n                <sl-icon slot=\"prefix\" name=\"heart-fill\"></sl-icon>\n                Add to Favourites\n                </sl-button>\n            </div>\n        </div>\n      "])), this.title, this.description, this.price, this.addFavHandler.bind(this));
+    const dialogContent = (0, _litElement.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n        <style>\n            .wrap {\n                display: flex;\n            }\n            .image {\n                width: 50%;\n            }\n            .image img {\n                width: 100%;\n            }\n            .content {\n                padding-left: 1em;\n            }\n            .gender span,\n            .length span {\n                text-transform: uppercase;\n                font-weight: bold;\n            }\n            .price {\n                font-size: 1.5em;\n                color: var(--brand-color);\n            }\n        </style>\n        <div class=\"wrap\">\n\n            <div class=\"content\">\n                <h1>", "</h1>\n                <p>", "</p>\n                <p class=\"price\">$", "</p>\n\n                <sl-button @click=", ">\n                  <sl-icon slot=\"prefix\" name=\"cart3\"></sl-icon>\n                  Add to Cart\n                </sl-button>\n            </div>\n        </div>\n      "])), this.title, this.description, this.price, this.addFavHandler.bind(this));
     (0, _litHtml.render)(dialogContent, dialogEL); //- append to document.body
 
     document.body.append(dialogEL); //- show sl-dialog
@@ -16624,7 +16641,7 @@ customElements.define('va-packages', class Package extends _litElement.LitElemen
   }
 
   render() {
-    return (0, _litElement.html)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    <style>\n        .author {\n            font-size: 0.9em;\n            font-style: italic;\n            opacity: 0.8;\n        }\n    </style>\n\n    <sl-card>\n        <img slot=\"image\" src=\"", "/images/", "\" />\n        <h2>", "</h2>\n        <h3>$", "</h3>\n        <sl-button @click=", ">More Info</sl-button>\n        <sl-icon-button name=\"heart-fill\" label=\"Add to Favourites\" @click=", "></sl-icon-button> \n    </sl-card>\n   "])), _App.default.apiBase, this.image, this.title, this.price, this.moreInfoHandler.bind(this), this.addFavHandler);
+    return (0, _litElement.html)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    <style>\n        \n    </style>\n\n    <sl-card>\n        <img slot=\"image\" src=\"", "/images/", "\" />\n        <h2>", "</h2>\n        <h3>$", "</h3>\n        <sl-button @click=", ">More Info</sl-button>\n        <sl-icon-button name=\"cart3\" label=\"Add to Cart\" @click=", "></sl-icon-button> \n    </sl-card>\n   "])), _App.default.apiBase, this.image, this.title, this.price, this.moreInfoHandler.bind(this), this.addFavHandler);
   }
 
 });
@@ -16780,7 +16797,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64528" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49931" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
