@@ -272,6 +272,7 @@ customElements.define('td-app-header', class AppHeader extends LitElement {
         <a href="/testimonies" @click="${this.menuClick}">Testimonies</a>
         <a href="/ourStory" @click="${this.menuClick}">Our Story</a>
         <a href="/findus" @click="${this.menuClick}">Find Us</a>
+        <a href="/getPackageTest" @click="${this.menuClick}">Find a Tour TEST page</a>
       </nav>  
     </sl-drawer>
     `

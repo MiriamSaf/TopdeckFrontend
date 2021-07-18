@@ -16,6 +16,8 @@ import testimoniesView from './views/pages/testimonies'
 import travelTipsView from './views/pages/travelTips'
 import findusView from './views/pages/findus'
 import adminView from './views/pages/admin'
+import getPackageTestView from './views/pages/getPackageTest'
+
 
 
 // define routes
@@ -37,6 +39,7 @@ const routes = {
 	'/travelTips': travelTipsView,		
 	'/findus': findusView,
 	'/admin': adminView,
+	'/getPackageTest': getPackageTestView,
 	
 }
 
