@@ -458,6 +458,34 @@ and find by
   width: 9vh;
 }
 
+/*FIND US PART 2 TESTING*/
+#section-contact-holder {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 9vh;
+}
+
+.contact-columns {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.contact-col-item {
+  background-color: #f1f1f1;
+  height: 45vh;
+  border-radius: 8px;
+  padding: 3vh;
+  width: 40vw;
+  text-align: center;
+}
+
+#social-links-contact,
+#add-marg-col {
+  margin-top: 5vh;
+}
+
 /*OUR STORY PAGE 
  --------------------------
  --------------------------
