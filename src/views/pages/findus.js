@@ -27,7 +27,7 @@ class FindusView {
           <div id = "contact-contain">
             <div class = "contact-item" id = "emg-info-item">
               <h1>Emergency Contact</h1>
-                <div class = "findus-crcl">
+                <div class = "findus-crcl" id = "find-us-emg-span">
                   <span>1300 886 332</span>
                 </div>
                 <p>If you have an emergency during your tour, please use this emergency number. For all booking enquiries, please use the relevant number for your country on this page.
@@ -45,12 +45,44 @@ class FindusView {
                 <p>Monday to Friday: 5am-6pm AEST</p>
             </div>
           </div><!-- close contact contain-->
+
           <div id = "second-contact-flex">
           <div class = "contact-item" id = "social-links-contact">
-            stuff
-          </div>
+            <h1>Socials</h1>
+            <div class ="social-link-div">
+                  <sl-icon name="facebook"></sl-icon>
+                  <span>TopDeckTravel</span>
+            </div><!-- close social link div -->
+
+            <div class ="social-link-div">
+                  <sl-icon name="instagram"></sl-icon>
+                  <span>topDeckTravel</span>
+            </div><!-- close social link div -->
+
+            <div class ="social-link-div">
+                  <sl-icon name="twitter"></sl-icon>
+                  <span>TopDeckTravel</span>
+            </div><!-- close social link div -->
+
+            <div class ="social-link-div">
+                  <sl-icon name="youtube"></sl-icon>
+                  <span>TopDeckTravel</span>
+            </div><!-- close social link div -->
+
+            <div class ="social-link-div">
+                  <img src = "images/navy-snapchat.png" alt = "snapchat icon" class = "social-icon-img">
+                  <span>#topDeckTravel</span>
+            </div><!-- close social link div -->
+
+            <div class ="social-link-div">
+                  <img src = "images/navy-tiktok.png" alt = "tiktok icon" class = "social-icon-img">
+                  <span>#topDeckTravel</span>
+            </div><!-- close social link div -->
+
+          </div><!-- close contact item dev -->
           <div class = "contact-item">
             stuff
+          </div> <!-- close contact item div -->
           </div>
         </div> <!-- close find us info container -->
        

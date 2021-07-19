@@ -366,7 +366,9 @@ h1,h2,h3,h5,h6 {
   text-align: center;
 }
 
-#contact-contain .contact-item h1{
+#contact-contain .contact-item h1, 
+#second-contact-flex .contact-item h1
+{
   font-size: 3em;
   color: var(--brand-blue);
 }
@@ -379,7 +381,6 @@ h1,h2,h3,h5,h6 {
 .findus-crcl{
   text-align: center;
   color:#FFF;
-  background-color: var(--brand-red);
   padding-top: 2vh;
   padding-left: 1vh;
   padding-right: 1vh;
@@ -387,9 +388,17 @@ h1,h2,h3,h5,h6 {
   border-radius: 10px;
 }
 
+#find-us-emg-span{
+  background-color: var(--brand-red);
+}
+
 #emg-info-item,
 #social-links-contact{
   margin-right: 5vh;
+}
+
+#social-links-contact{
+  height: 125vh !important;
 }
 
 #aus-num, 
@@ -402,7 +411,35 @@ h1,h2,h3,h5,h6 {
   margin-bottom: 2vh;
 }
 
+/*purple links social media*/
+.social-link-div{
+  display: flex;
+  justify-content: center;
+  background-color: var(--brand-pink);
+  color: var(--brand-blue);
+  text-align: center;
+  font-size: 6vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-radius: 10px;
+  margin-bottom: 5vh;
+}
 
+.social-link-div span{
+  padding-top: 1vh;
+  font-weight: lighter;
+  font-family: var(--headings-font-family);
+}
+
+.social-link-div sl-icon{
+  margin-right: 2vh;
+  font-size: 9vh;
+}
+
+.social-icon-img{
+  width: 9vh;
+  
+}
 
 // RESPONSIVE - MOBILE -------------------
 @media all and (max-width: 768px){ 
