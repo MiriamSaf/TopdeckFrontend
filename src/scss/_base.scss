@@ -351,14 +351,13 @@ h1,h2,h3,h5,h6 {
   margin: 1vh;
   justify-content: center;
 }
-
+/*second flex item*/
 #second-contact-flex{
   margin-top: 5vh;
 }
 
 #contact-contain .contact-item,
-#second-contact-flex .contact-item
-{
+#second-contact-flex .contact-item{
   background-color: rgb(241, 241, 241);
   height: 45vh;
   border-radius: 8px;

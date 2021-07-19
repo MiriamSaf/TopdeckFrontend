@@ -363,6 +363,7 @@ and find by
   justify-content: center;
 }
 
+/*second flex item*/
 #second-contact-flex {
   margin-top: 5vh;
 }
