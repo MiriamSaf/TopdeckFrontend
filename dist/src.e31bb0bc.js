@@ -14262,7 +14262,7 @@ class OurStoryView {
   }
 
   render() {
-    const template = (0, _litHtml.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n     <td-app-header user=", "></td-app-header>\n      <div>\n        <!-- section 1 - hero image -->\n        <div id = \"ourstory-hero-section\">\n        <h1 class = \"ourstory-hero-h1\">Our Story</h1>\n        </div><!-- close home hero -->\n       \n        \n        <td-site-footer></td-site-footer>\n      </div>\n      \n    "])), JSON.stringify(_Auth.default.currentUser));
+    const template = (0, _litHtml.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n     <td-app-header user=", "></td-app-header>\n      <div>\n        <!-- section 1 - hero image -->\n        <div id = \"ourstory-hero-section\">\n        <h1 class = \"ourstory-hero-h1\">Our Story</h1>\n        </div><!-- close hero -->\n\n        <!-- section 2 timeline -->\n        <div class = \"timeline-section\">\n          <div class = \"timeline-cols\">\n            <div>one</div>\n            <div>two</div>\n          </div><!-- close timeline cols div-->\n\n          <div id = \"tl-vert-line\"></div>\n\n          <div class = \"timeline-cols\">\n            <div>one</div>\n            <div>two</div>\n          </div><!-- close timeline cols div-->\n        </div><!-- close timeline section -->\n       \n        \n        <td-site-footer></td-site-footer>\n      </div>\n      \n    "])), JSON.stringify(_Auth.default.currentUser));
     (0, _litHtml.render)(template, _App.default.rootEl);
   }
 

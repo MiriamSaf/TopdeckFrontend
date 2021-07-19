@@ -481,6 +481,27 @@ and find by
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+/*SECTION 2 - TIMELINE
+-----------------------*/
+.timeline-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.timeline-cols {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 8vh;
+}
+
+#tl-vert-line {
+  margin-top: 20vh;
+  border-left: 5px solid var(--brand-blue);
+  height: 55vh;
+}
+
 @media all and (max-width: 768px) {
   .signinup-box {
     width: 90%;

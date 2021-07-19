@@ -19,7 +19,22 @@ class OurStoryView {
         <!-- section 1 - hero image -->
         <div id = "ourstory-hero-section">
         <h1 class = "ourstory-hero-h1">Our Story</h1>
-        </div><!-- close home hero -->
+        </div><!-- close hero -->
+
+        <!-- section 2 timeline -->
+        <div class = "timeline-section">
+          <div class = "timeline-cols">
+            <div>one</div>
+            <div>two</div>
+          </div><!-- close timeline cols div-->
+
+          <div id = "tl-vert-line"></div>
+
+          <div class = "timeline-cols">
+            <div>one</div>
+            <div>two</div>
+          </div><!-- close timeline cols div-->
+        </div><!-- close timeline section -->
        
         
         <td-site-footer></td-site-footer>
