@@ -15,10 +15,12 @@ class OurStoryView {
   render(){
     const template = html`
      <td-app-header user=${JSON.stringify(Auth.currentUser)}></td-app-header>
-      <div class="page-content">
-      
+      <div>
+        <!-- section 1 - hero image -->
+        <div id = "ourstory-hero-section">
+        <h1 class = "ourstory-hero-h1">Our Story</h1>
+        </div><!-- close home hero -->
        
-        <h3>Our Story content here</h3>
         
         <td-site-footer></td-site-footer>
       </div>

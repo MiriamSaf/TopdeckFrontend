@@ -14262,7 +14262,7 @@ class OurStoryView {
   }
 
   render() {
-    const template = (0, _litHtml.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n     <td-app-header user=", "></td-app-header>\n      <div class=\"page-content\">\n      \n       \n        <h3>Our Story content here</h3>\n        \n        <td-site-footer></td-site-footer>\n      </div>\n      \n    "])), JSON.stringify(_Auth.default.currentUser));
+    const template = (0, _litHtml.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n     <td-app-header user=", "></td-app-header>\n      <div>\n        <!-- section 1 - hero image -->\n        <div id = \"ourstory-hero-section\">\n        <h1 class = \"ourstory-hero-h1\">Our Story</h1>\n        </div><!-- close home hero -->\n       \n        \n        <td-site-footer></td-site-footer>\n      </div>\n      \n    "])), JSON.stringify(_Auth.default.currentUser));
     (0, _litHtml.render)(template, _App.default.rootEl);
   }
 
@@ -16746,7 +16746,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\static\\images\\FYT-Hero.jpg":[["FYT-Hero.e873a6a8.jpg","../static/images/FYT-Hero.jpg"],"../static/images/FYT-Hero.jpg"],"./..\\..\\static\\images\\HOME-Popular-Bali.jpg":[["HOME-Popular-Bali.1538d806.jpg","../static/images/HOME-Popular-Bali.jpg"],"../static/images/HOME-Popular-Bali.jpg"],"./..\\..\\static\\images\\HOME-Popular-Med.jpg":[["HOME-Popular-Med.5e94e1bc.jpg","../static/images/HOME-Popular-Med.jpg"],"../static/images/HOME-Popular-Med.jpg"],"./..\\..\\static\\images\\FYT-AmericanNights.jpg":[["FYT-AmericanNights.e88c73d1.jpg","../static/images/FYT-AmericanNights.jpg"],"../static/images/FYT-AmericanNights.jpg"],"./..\\..\\static\\images\\FYT-AztecImmersion.jpg":[["FYT-AztecImmersion.a560441e.jpg","../static/images/FYT-AztecImmersion.jpg"],"../static/images/FYT-AztecImmersion.jpg"],"./..\\..\\static\\images\\FU-HERO copy.jpg":[["FU-HERO copy.5aaf8b3e.jpg","../static/images/FU-HERO copy.jpg"],"../static/images/FU-HERO copy.jpg"],"./..\\..\\static\\images\\HOME-1.jpg":[["HOME-1.14760647.jpg","../static/images/HOME-1.jpg"],"../static/images/HOME-1.jpg"],"./..\\..\\static\\images\\Home-Man-By-Train.jpg":[["Home-Man-By-Train.e235c88a.jpg","../static/images/Home-Man-By-Train.jpg"],"../static/images/Home-Man-By-Train.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\..\\static\\images\\FYT-Hero.jpg":[["FYT-Hero.e873a6a8.jpg","../static/images/FYT-Hero.jpg"],"../static/images/FYT-Hero.jpg"],"./..\\..\\static\\images\\HOME-Popular-Bali.jpg":[["HOME-Popular-Bali.1538d806.jpg","../static/images/HOME-Popular-Bali.jpg"],"../static/images/HOME-Popular-Bali.jpg"],"./..\\..\\static\\images\\HOME-Popular-Med.jpg":[["HOME-Popular-Med.5e94e1bc.jpg","../static/images/HOME-Popular-Med.jpg"],"../static/images/HOME-Popular-Med.jpg"],"./..\\..\\static\\images\\FYT-AmericanNights.jpg":[["FYT-AmericanNights.e88c73d1.jpg","../static/images/FYT-AmericanNights.jpg"],"../static/images/FYT-AmericanNights.jpg"],"./..\\..\\static\\images\\FYT-AztecImmersion.jpg":[["FYT-AztecImmersion.a560441e.jpg","../static/images/FYT-AztecImmersion.jpg"],"../static/images/FYT-AztecImmersion.jpg"],"./..\\..\\static\\images\\FU-HERO copy.jpg":[["FU-HERO copy.5aaf8b3e.jpg","../static/images/FU-HERO copy.jpg"],"../static/images/FU-HERO copy.jpg"],"./..\\..\\static\\images\\OS-HERO.jpg":[["OS-HERO.d5f6d8ff.jpg","../static/images/OS-HERO.jpg"],"../static/images/OS-HERO.jpg"],"./..\\..\\static\\images\\HOME-1.jpg":[["HOME-1.14760647.jpg","../static/images/HOME-1.jpg"],"../static/images/HOME-1.jpg"],"./..\\..\\static\\images\\Home-Man-By-Train.jpg":[["Home-Man-By-Train.e235c88a.jpg","../static/images/Home-Man-By-Train.jpg"],"../static/images/Home-Man-By-Train.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _App = _interopRequireDefault(require("./App.js"));
@@ -16795,7 +16795,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51140" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64196" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
