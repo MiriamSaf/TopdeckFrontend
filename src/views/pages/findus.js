@@ -80,6 +80,7 @@ class FindusView {
             </div><!-- close social link div -->
 
           </div><!-- close contact item dev -->
+          
           <div class = "contact-item">
           <h1>United Kingdom</h1>
                 <div class = "findus-crcl" id ="uk-num">
@@ -90,9 +91,12 @@ class FindusView {
                 </div>
                 <p>Monday to Friday: 12pm - 8pm. GMT</p>
             </div>
-
+            
           </div> <!-- close contact item div -->
+         
         </div> <!-- close find us info container -->
+        
+        
        
         <h3></h3>
         
