@@ -161,19 +161,18 @@ class HomeView {
             <div id = "home-grid">
               <!-- include instagram images below -->
               <div class="img-gallery">
-                <!-- dummy content -->
-                <img src = "images/squareImg.jpg">
-                <img src = "images/squareImg.jpg">
-                <img src = "images/squareImg.jpg">
-                <img src = "images/squareImg.jpg">
-                <img src = "images/squareImg.jpg">
-                <img src = "images/squareImg.jpg">
-                <img src = "images/squareImg.jpg"> 
-                <img src = "images/squareImg.jpg">
-                <img src = "images/squareImg.jpg">
-                <img src = "images/squareImg.jpg">
-                <img src = "images/squareImg.jpg">
-                <img src = "images/squareImg.jpg">
+                <img src = "images/instagram/IG-1.jpg" alt = "topdeck instagram trip photo">
+                <img src = "images/instagram/IG-2.jpg" alt = "topdeck instagram trip photo">
+                <img src = "images/instagram/IG-3.jpg" alt = "topdeck instagram trip photo">
+                <img src = "images/instagram/IG-4.jpg" alt = "topdeck instagram trip photo">
+                <img src = "images/instagram/IG-5.jpg" alt = "topdeck instagram trip photo">
+                <img src = "images/instagram/IG-6.jpg" alt = "topdeck instagram trip photo">
+                <img src = "images/instagram/IG-7.jpg" alt = "topdeck instagram trip photo">
+                <img src = "images/instagram/IG-8.jpg" alt = "topdeck instagram trip photo">
+                <img src = "images/instagram/IG-9.jpg" alt = "topdeck instagram trip photo">
+                <img src = "images/instagram/IG-10.jpg" alt = "topdeck instagram trip photo">
+                <img src = "images/instagram/IG-11.jpg" alt = "topdeck instagram trip photo">
+                <img src = "images/instagram/IG-12.jpg" alt = "topdeck instagram trip photo">
               </div>
             </div>
 
