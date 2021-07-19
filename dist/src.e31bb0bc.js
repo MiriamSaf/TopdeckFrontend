@@ -13704,8 +13704,7 @@ class UserAPI {
          headers: { "Authorization": `Bearer ${localStorage.accessToken}`},
          body: userData
      })
-  
-     // if response not ok
+      // if response not ok
      if(!response.ok){
        // console log error
        const err = await response.json()
@@ -13713,8 +13712,7 @@ class UserAPI {
        // throw error (exit this function)      
        throw new Error('Problem updating user')
      }
-  
-     // convert response payload into json - store as data
+      // convert response payload into json - store as data
      const data = await response.json()
      
      // return data
@@ -14436,7 +14434,7 @@ class FindusView {
   }
 
   render() {
-    const template = (0, _litHtml.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n     <td-app-header title=\"Find Us\" user=", "></td-app-header>\n      <div class=\"page-content\">\n      \n       \n        <h3>Find Us content goes here</h3>\n        \n        <td-site-footer></td-site-footer>\n      </div>\n      \n    "])), JSON.stringify(_Auth.default.currentUser));
+    const template = (0, _litHtml.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n     <td-app-header title=\"Find Us\" user=", "></td-app-header>\n      <div> <!-- remove page content class as did not show the photo beneath it-->\n      \n        <!-- section 1 - hero image -->\n        <div id = \"findus-hero-section\">\n        <h1 class = \"findus-hero-h1\">Find us</h1>\n        </div><!-- close home hero -->\n\n        <!-- section 2 - info -->\n        <div id = \"findus-info-container\">\n          <div id = \"contact-contain\">\n            <div class = \"contact-item\" id = \"emg-info-item\">\n              <h1>Emergency Contact</h1>\n                <div class = \"findus-crcl\">\n                  <span>1300 886 332</span>\n                </div>\n                <p>If you have an emergency during your tour, please use this emergency number. For all booking enquiries, please use the relevant number for your country on this page.\n                </p>\n            </div>\n            \n            <div class = \"contact-item\">\n            <h1>Australia</h1>\n                <div class = \"findus-crcl\" id =\"aus-num\">\n                  <span>1300 886 332</span>\n                </div>\n                <div class = \"findus-crcl\" id = \"aus-num-2\">\n                  <span>+61 7 30634071</span>\n                </div>\n                <p>Monday to Friday: 5am-6pm AEST</p>\n            </div>\n          </div><!-- close contact contain-->\n        </div> <!-- close find us info container -->\n       \n        <h3></h3>\n        \n        <td-site-footer></td-site-footer>\n      </div>\n      \n    "])), JSON.stringify(_Auth.default.currentUser));
     (0, _litHtml.render)(template, _App.default.rootEl);
   }
 
@@ -16748,7 +16746,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\static\\images\\FYT-Hero.jpg":[["FYT-Hero.e873a6a8.jpg","../static/images/FYT-Hero.jpg"],"../static/images/FYT-Hero.jpg"],"./..\\..\\static\\images\\HOME-Popular-Bali.jpg":[["HOME-Popular-Bali.1538d806.jpg","../static/images/HOME-Popular-Bali.jpg"],"../static/images/HOME-Popular-Bali.jpg"],"./..\\..\\static\\images\\HOME-Popular-Med.jpg":[["HOME-Popular-Med.5e94e1bc.jpg","../static/images/HOME-Popular-Med.jpg"],"../static/images/HOME-Popular-Med.jpg"],"./..\\..\\static\\images\\FYT-AmericanNights.jpg":[["FYT-AmericanNights.e88c73d1.jpg","../static/images/FYT-AmericanNights.jpg"],"../static/images/FYT-AmericanNights.jpg"],"./..\\..\\static\\images\\FYT-AztecImmersion.jpg":[["FYT-AztecImmersion.a560441e.jpg","../static/images/FYT-AztecImmersion.jpg"],"../static/images/FYT-AztecImmersion.jpg"],"./..\\..\\static\\images\\LookingMapHero.jpg":[["LookingMapHero.b2b27bd9.jpg","../static/images/LookingMapHero.jpg"],"../static/images/LookingMapHero.jpg"],"./..\\..\\static\\images\\HOME-1.jpg":[["HOME-1.14760647.jpg","../static/images/HOME-1.jpg"],"../static/images/HOME-1.jpg"],"./..\\..\\static\\images\\Home-Man-By-Train.jpg":[["Home-Man-By-Train.e235c88a.jpg","../static/images/Home-Man-By-Train.jpg"],"../static/images/Home-Man-By-Train.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\..\\static\\images\\FYT-Hero.jpg":[["FYT-Hero.e873a6a8.jpg","../static/images/FYT-Hero.jpg"],"../static/images/FYT-Hero.jpg"],"./..\\..\\static\\images\\HOME-Popular-Bali.jpg":[["HOME-Popular-Bali.1538d806.jpg","../static/images/HOME-Popular-Bali.jpg"],"../static/images/HOME-Popular-Bali.jpg"],"./..\\..\\static\\images\\HOME-Popular-Med.jpg":[["HOME-Popular-Med.5e94e1bc.jpg","../static/images/HOME-Popular-Med.jpg"],"../static/images/HOME-Popular-Med.jpg"],"./..\\..\\static\\images\\FYT-AmericanNights.jpg":[["FYT-AmericanNights.e88c73d1.jpg","../static/images/FYT-AmericanNights.jpg"],"../static/images/FYT-AmericanNights.jpg"],"./..\\..\\static\\images\\FYT-AztecImmersion.jpg":[["FYT-AztecImmersion.a560441e.jpg","../static/images/FYT-AztecImmersion.jpg"],"../static/images/FYT-AztecImmersion.jpg"],"./..\\..\\static\\images\\FU-HERO copy.jpg":[["FU-HERO copy.5aaf8b3e.jpg","../static/images/FU-HERO copy.jpg"],"../static/images/FU-HERO copy.jpg"],"./..\\..\\static\\images\\HOME-1.jpg":[["HOME-1.14760647.jpg","../static/images/HOME-1.jpg"],"../static/images/HOME-1.jpg"],"./..\\..\\static\\images\\Home-Man-By-Train.jpg":[["Home-Man-By-Train.e235c88a.jpg","../static/images/Home-Man-By-Train.jpg"],"../static/images/Home-Man-By-Train.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _App = _interopRequireDefault(require("./App.js"));
@@ -16797,7 +16795,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54289" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50332" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -36,6 +36,13 @@ class FindusView {
             
             <div class = "contact-item">
             <h1>Australia</h1>
+                <div class = "findus-crcl" id ="aus-num">
+                  <span>1300 886 332</span>
+                </div>
+                <div class = "findus-crcl" id = "aus-num-2">
+                  <span>+61 7 30634071</span>
+                </div>
+                <p>Monday to Friday: 5am-6pm AEST</p>
             </div>
           </div><!-- close contact contain-->
         </div> <!-- close find us info container -->

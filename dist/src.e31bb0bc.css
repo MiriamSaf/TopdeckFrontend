@@ -330,7 +330,7 @@ and find by
 /*section 1 Hero
 --------------------------*/
 #findus-hero-section {
-  background-image: url("/LookingMapHero.b2b27bd9.jpg");
+  background-image: url("/FU-HERO copy.5aaf8b3e.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -394,6 +394,16 @@ and find by
 
 #emg-info-item {
   margin-right: 9vh;
+}
+
+#aus-num,
+#aus-num-2 {
+  background-color: #F9DE7E;
+  color: var(--brand-blue);
+}
+
+#aus-num {
+  margin-bottom: 2vh;
 }
 
 @media all and (max-width: 768px) {

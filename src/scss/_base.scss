@@ -318,7 +318,7 @@ h1,h2,h3,h5,h6 {
   /*section 1 Hero
   --------------------------*/
   #findus-hero-section{
-  background-image: url("./../../static/images/LookingMapHero.jpg");
+  background-image: url("./../../static/images/FU-HERO\ copy.jpg");
   background-position: center; 
   background-repeat: no-repeat;
   background-size: cover;
@@ -383,6 +383,16 @@ h1,h2,h3,h5,h6 {
 
 #emg-info-item{
   margin-right: 9vh;
+}
+
+#aus-num, 
+#aus-num-2{
+  background-color: #F9DE7E;
+  color: var(--brand-blue);
+}
+
+#aus-num{
+  margin-bottom: 2vh;
 }
 
 
