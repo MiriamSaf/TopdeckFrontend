@@ -96,13 +96,13 @@ class FindusView {
          
         </div> <!-- close find us info container -->
         
-        <!-- testigng opt 2 -->
+        <!-- TESTING opt 2 -->
        
         <div id = "section-contact-holder">
-          <div class = "contact-columns">
+          <div class = "contact-columns" id = "section-1-contact">
             <div>
 
-            <div class = "contact-col-item" id = "emg-info-item">
+            <div class = "contact-col-item">
               <h1>Emergency Contact</h1>
                 <div class = "findus-crcl" id = "find-us-emg-span">
                   <span>1300 886 332</span>
@@ -153,8 +153,9 @@ class FindusView {
 
             </div>
           </div>
-          <div class = "contact-columns">
-            <div>
+          <div class = "contact-columns" id = "section-2-contact">
+          <!-- first div-->  
+          <div>
 
             <div class = "contact-col-item">
             <h1>Australia</h1>

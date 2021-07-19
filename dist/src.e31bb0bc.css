@@ -463,7 +463,7 @@ and find by
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: 9vh;
+  padding: 16vh;
 }
 
 .contact-columns {
@@ -476,9 +476,19 @@ and find by
   background-color: #f1f1f1;
   height: 45vh;
   border-radius: 8px;
-  padding: 3vh;
+  padding: 5vh;
   width: 40vw;
   text-align: center;
+}
+
+.contact-col-item h1 {
+  font-size: 3em;
+  color: var(--brand-blue);
+}
+
+.contact-col-item p {
+  font-size: 3.2vh;
+  font-family: var(--headings-font-family);
 }
 
 #social-links-contact,

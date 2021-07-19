@@ -452,23 +452,36 @@ h1,h2,h3,h5,h6 {
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: 9vh;
+  padding: 16vh;
+ 
 }
 
 .contact-columns{
   display: flex;
   flex-direction: column;
   width: 50%;
+  
 }
 
 .contact-col-item{
   background-color: rgb(241, 241, 241);
   height: 45vh;
   border-radius: 8px;
-  padding: 3vh;
+  padding: 5vh;
   width: 40vw;
   text-align: center;
 }
+
+.contact-col-item h1{
+  font-size: 3em;
+  color: var(--brand-blue);
+}
+
+.contact-col-item p{
+  font-size: 3.2vh;
+  font-family: var(--headings-font-family);
+}
+
 #social-links-contact,
 #add-marg-col{
   margin-top: 5vh;
