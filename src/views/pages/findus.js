@@ -45,6 +45,13 @@ class FindusView {
                 <p>Monday to Friday: 5am-6pm AEST</p>
             </div>
           </div><!-- close contact contain-->
+          <div id = "second-contact-flex">
+          <div class = "contact-item" id = "social-links-contact">
+            stuff
+          </div>
+          <div class = "contact-item">
+            stuff
+          </div>
         </div> <!-- close find us info container -->
        
         <h3></h3>

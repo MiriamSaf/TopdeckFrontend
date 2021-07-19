@@ -355,14 +355,20 @@ and find by
   margin-bottom: 9vh;
 }
 
-#contact-contain {
+#contact-contain,
+#second-contact-flex {
   display: flex;
   width: 100%;
   margin: 1vh;
   justify-content: center;
 }
 
-#contact-contain .contact-item {
+#second-contact-flex {
+  margin-top: 5vh;
+}
+
+#contact-contain .contact-item,
+#second-contact-flex .contact-item {
   background-color: #f1f1f1;
   height: 45vh;
   border-radius: 8px;
@@ -392,8 +398,9 @@ and find by
   border-radius: 10px;
 }
 
-#emg-info-item {
-  margin-right: 9vh;
+#emg-info-item,
+#social-links-contact {
+  margin-right: 5vh;
 }
 
 #aus-num,
