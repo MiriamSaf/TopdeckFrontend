@@ -56,12 +56,12 @@ class FindusView {
 
             <div class ="social-link-div">
                   <sl-icon name="instagram"></sl-icon>
-                  <span>topDeckTravel</span>
+                  <span>topdecktravel</span>
             </div><!-- close social link div -->
 
             <div class ="social-link-div">
                   <sl-icon name="twitter"></sl-icon>
-                  <span>TopDeckTravel</span>
+                  <span>TopdeckTravel</span>
             </div><!-- close social link div -->
 
             <div class ="social-link-div">
@@ -71,19 +71,27 @@ class FindusView {
 
             <div class ="social-link-div">
                   <img src = "images/navy-snapchat.png" alt = "snapchat icon" class = "social-icon-img">
-                  <span>#topDeckTravel</span>
+                  <span>#topdecktravel</span>
             </div><!-- close social link div -->
 
             <div class ="social-link-div">
                   <img src = "images/navy-tiktok.png" alt = "tiktok icon" class = "social-icon-img">
-                  <span>#topDeckTravel</span>
+                  <span>#topdecktravel</span>
             </div><!-- close social link div -->
 
           </div><!-- close contact item dev -->
           <div class = "contact-item">
-            stuff
+          <h1>United Kingdom</h1>
+                <div class = "findus-crcl" id ="uk-num">
+                  <span>0845 257 5212</span>
+                </div>
+                <div class = "findus-crcl" id = "uk-num-2">
+                  <span>+44 (0)20 8987 3305</span>
+                </div>
+                <p>Monday to Friday: 12pm - 8pm. GMT</p>
+            </div>
+
           </div> <!-- close contact item div -->
-          </div>
         </div> <!-- close find us info container -->
        
         <h3></h3>

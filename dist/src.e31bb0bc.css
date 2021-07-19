@@ -383,7 +383,8 @@ and find by
   color: var(--brand-blue);
 }
 
-#contact-contain .contact-item p {
+#contact-contain .contact-item p,
+#second-contact-flex .contact-item p {
   font-size: 3.2vh;
   font-family: var(--headings-font-family);
 }
@@ -412,12 +413,15 @@ and find by
 }
 
 #aus-num,
-#aus-num-2 {
+#aus-num-2,
+#uk-num,
+#uk-num-2 {
   background-color: #F9DE7E;
   color: var(--brand-blue);
 }
 
-#aus-num {
+#aus-num,
+#uk-num {
   margin-bottom: 2vh;
 }
 
@@ -441,12 +445,15 @@ and find by
   font-family: var(--headings-font-family);
 }
 
+/*social icons*/
 .social-link-div sl-icon {
   margin-right: 2vh;
   font-size: 9vh;
 }
 
+/*social images*/
 .social-icon-img {
+  margin-right: 2vh;
   width: 9vh;
 }
 
