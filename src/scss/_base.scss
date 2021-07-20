@@ -339,20 +339,8 @@ h1,h2,h3,h5,h6 {
 
 /*section 2 Info
   --------------------------*/
-#findus-info-container{
-  margin-top: 9vh;
-  margin-bottom: 9vh;
-}
 
-#contact-contain,
-#second-contact-flex{
-  display: flex;
-  width: 100%;
-  margin: 1vh;
-  justify-content: center;
-}
-
-
+/*holds the span of number and sets specs*/
 .findus-crcl{
   text-align: center;
   color:#FFF;
@@ -367,8 +355,6 @@ h1,h2,h3,h5,h6 {
   background-color: var(--brand-red);
 }
 
-
-
 #aus-num, 
 #aus-num-2, 
 #uk-num, 
@@ -381,8 +367,6 @@ h1,h2,h3,h5,h6 {
 #uk-num{
   margin-bottom: 2vh;
 }
-
-
 
 .social-link-div span{
   padding-top: 1vh;
@@ -402,13 +386,15 @@ h1,h2,h3,h5,h6 {
   width: 9vh;
 }
 
-/*FIND US PART 2 TESTING*/
+/*large flex section holder*/
 #section-contact-holder{
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: 16vh;
- 
+  padding-left: 16vh;
+  padding-right: 16vh;
+  padding-top: 11vh;
+  padding-bottom: 4vh;
 }
 
 .contact-columns{
@@ -468,7 +454,7 @@ h1,h2,h3,h5,h6 {
 
 #social-links-contact,
 #add-marg-col{
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 
 /*div of social*/
