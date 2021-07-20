@@ -503,7 +503,6 @@ h1,h2,h3,h5,h6 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-  
   }
 
   .timeline-cols > div {
@@ -511,6 +510,7 @@ h1,h2,h3,h5,h6 {
     height: 55vh
   }
 
+  //part of timeline
   .timeline-item{
     width: 100%;
     padding: 10vh;
