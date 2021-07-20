@@ -12,7 +12,7 @@
 }
 
 .toast-entry {  
-  background:#fff;
+  background:#F9DE7E;
   margin: 0 auto;
   color: #333;  
   border-radius: 200px;
@@ -23,7 +23,7 @@
   text-align: center;
   transition: all .2 ease;
   &.is-error {
-    background: rgb(212, 25, 93);
+    background: #DF5A36;
     color:#fff;
   }  
 }

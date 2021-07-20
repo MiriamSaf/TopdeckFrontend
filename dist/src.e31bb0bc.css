@@ -1081,7 +1081,7 @@ sl-dialog::part(title) {
 }
 
 .toast-entry {
-  background: #fff;
+  background: #F9DE7E;
   margin: 0 auto;
   color: #333;
   border-radius: 200px;
@@ -1093,7 +1093,7 @@ sl-dialog::part(title) {
   transition: all 0.2 ease;
 }
 .toast-entry.is-error {
-  background: #d4195d;
+  background: #DF5A36;
   color: #fff;
 }
 

@@ -16676,7 +16676,7 @@ customElements.define('td-site-footer', class SiteFooter extends _litElement.Lit
   }
 
 });
-},{"@polymer/lit-element":"../node_modules/@polymer/lit-element/lit-element.js","../Router":"Router.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"@polymer/lit-element":"../node_modules/@polymer/lit-element/lit-element.js","../Router":"Router.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -16708,7 +16708,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -16743,12 +16743,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/master.scss":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/master.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\static\\images\\FYT-Hero.jpg":[["FYT-Hero.e873a6a8.jpg","../static/images/FYT-Hero.jpg"],"../static/images/FYT-Hero.jpg"],"./..\\..\\static\\images\\HOME-Popular-Bali.jpg":[["HOME-Popular-Bali.1538d806.jpg","../static/images/HOME-Popular-Bali.jpg"],"../static/images/HOME-Popular-Bali.jpg"],"./..\\..\\static\\images\\HOME-Popular-Med.jpg":[["HOME-Popular-Med.5e94e1bc.jpg","../static/images/HOME-Popular-Med.jpg"],"../static/images/HOME-Popular-Med.jpg"],"./..\\..\\static\\images\\FYT-AmericanNights.jpg":[["FYT-AmericanNights.e88c73d1.jpg","../static/images/FYT-AmericanNights.jpg"],"../static/images/FYT-AmericanNights.jpg"],"./..\\..\\static\\images\\FYT-AztecImmersion.jpg":[["FYT-AztecImmersion.a560441e.jpg","../static/images/FYT-AztecImmersion.jpg"],"../static/images/FYT-AztecImmersion.jpg"],"./..\\..\\static\\images\\FU-HERO copy.jpg":[["FU-HERO copy.5aaf8b3e.jpg","../static/images/FU-HERO copy.jpg"],"../static/images/FU-HERO copy.jpg"],"./..\\..\\static\\images\\OS-HERO.jpg":[["OS-HERO.d5f6d8ff.jpg","../static/images/OS-HERO.jpg"],"../static/images/OS-HERO.jpg"],"./..\\..\\static\\images\\HOME-1.jpg":[["HOME-1.14760647.jpg","../static/images/HOME-1.jpg"],"../static/images/HOME-1.jpg"],"./..\\..\\static\\images\\Home-Man-By-Train.jpg":[["Home-Man-By-Train.e235c88a.jpg","../static/images/Home-Man-By-Train.jpg"],"../static/images/Home-Man-By-Train.jpg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\..\\static\\images\\FYT-Hero.jpg":[["FYT-Hero.e873a6a8.jpg","../static/images/FYT-Hero.jpg"],"../static/images/FYT-Hero.jpg"],"./..\\..\\static\\images\\HOME-Popular-Bali.jpg":[["HOME-Popular-Bali.1538d806.jpg","../static/images/HOME-Popular-Bali.jpg"],"../static/images/HOME-Popular-Bali.jpg"],"./..\\..\\static\\images\\HOME-Popular-Med.jpg":[["HOME-Popular-Med.5e94e1bc.jpg","../static/images/HOME-Popular-Med.jpg"],"../static/images/HOME-Popular-Med.jpg"],"./..\\..\\static\\images\\FYT-AmericanNights.jpg":[["FYT-AmericanNights.e88c73d1.jpg","../static/images/FYT-AmericanNights.jpg"],"../static/images/FYT-AmericanNights.jpg"],"./..\\..\\static\\images\\FYT-AztecImmersion.jpg":[["FYT-AztecImmersion.a560441e.jpg","../static/images/FYT-AztecImmersion.jpg"],"../static/images/FYT-AztecImmersion.jpg"],"./..\\..\\static\\images\\FU-HERO copy.jpg":[["FU-HERO copy.5aaf8b3e.jpg","../static/images/FU-HERO copy.jpg"],"../static/images/FU-HERO copy.jpg"],"./..\\..\\static\\images\\OS-HERO.jpg":[["OS-HERO.d5f6d8ff.jpg","../static/images/OS-HERO.jpg"],"../static/images/OS-HERO.jpg"],"./..\\..\\static\\images\\HOME-1.jpg":[["HOME-1.14760647.jpg","../static/images/HOME-1.jpg"],"../static/images/HOME-1.jpg"],"./..\\..\\static\\images\\Home-Man-By-Train.jpg":[["Home-Man-By-Train.e235c88a.jpg","../static/images/Home-Man-By-Train.jpg"],"../static/images/Home-Man-By-Train.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _App = _interopRequireDefault(require("./App.js"));
