@@ -202,6 +202,17 @@ customElements.define('td-app-header', class AppHeader extends LitElement {
         transform:scale(1.1);
       }
 
+      .login-btn {
+        font-size: 1.3em;
+        transition: 0.3s ease-out;
+      }
+
+      .login-btn:hover{
+        color: var(--brand-red);
+      }
+
+
+
       /* RESPONSIVE - MOBILE ------------------- */
       @media all and (max-width: 768px){       
         
@@ -224,7 +235,7 @@ customElements.define('td-app-header', class AppHeader extends LitElement {
       <nav class="app-top-nav">
 
         ${localStorage.accessToken == null? html`
-          <sl-button class="anim-in" @click=${() => gotoRoute('/signin')}>Sign In</sl-button>
+          <a href="/signin" class="anim-in login-btn" @click=${() => gotoRoute('/signin')}>Sign In</a>
         ` : html`
 
             ${this.user.accessLevel == 2 ? html`
