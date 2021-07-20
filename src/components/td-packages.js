@@ -6,7 +6,7 @@ import App from '../App'
 
 
 
-customElements.define('va-packages', class Package extends LitElement {
+customElements.define('td-packages', class Package extends LitElement {
   constructor(){
     super()    
   }

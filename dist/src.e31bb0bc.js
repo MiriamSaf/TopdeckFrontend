@@ -7570,9 +7570,9 @@ var _litHtml = require("lit-html");
 
 var _Toast = _interopRequireDefault(require("./Toast"));
 
-function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13704,7 +13704,8 @@ class UserAPI {
          headers: { "Authorization": `Bearer ${localStorage.accessToken}`},
          body: userData
      })
-      // if response not ok
+  
+     // if response not ok
      if(!response.ok){
        // console log error
        const err = await response.json()
@@ -13712,7 +13713,8 @@ class UserAPI {
        // throw error (exit this function)      
        throw new Error('Problem updating user')
      }
-      // convert response payload into json - store as data
+  
+     // convert response payload into json - store as data
      const data = await response.json()
      
      // return data
@@ -16561,7 +16563,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-customElements.define('va-packages', class Package extends _litElement.LitElement {
+customElements.define('td-packages', class Package extends _litElement.LitElement {
   constructor() {
     super();
   }
@@ -16674,7 +16676,7 @@ customElements.define('td-site-footer', class SiteFooter extends _litElement.Lit
   }
 
 });
-},{"@polymer/lit-element":"../node_modules/@polymer/lit-element/lit-element.js","../Router":"Router.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"@polymer/lit-element":"../node_modules/@polymer/lit-element/lit-element.js","../Router":"Router.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -16706,7 +16708,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -16741,12 +16743,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/master.scss":[function(require,module,exports) {
+},{"./bundle-url":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/master.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\static\\images\\FYT-Hero.jpg":[["FYT-Hero.e873a6a8.jpg","../static/images/FYT-Hero.jpg"],"../static/images/FYT-Hero.jpg"],"./..\\..\\static\\images\\HOME-Popular-Bali.jpg":[["HOME-Popular-Bali.1538d806.jpg","../static/images/HOME-Popular-Bali.jpg"],"../static/images/HOME-Popular-Bali.jpg"],"./..\\..\\static\\images\\HOME-Popular-Med.jpg":[["HOME-Popular-Med.5e94e1bc.jpg","../static/images/HOME-Popular-Med.jpg"],"../static/images/HOME-Popular-Med.jpg"],"./..\\..\\static\\images\\FYT-AmericanNights.jpg":[["FYT-AmericanNights.e88c73d1.jpg","../static/images/FYT-AmericanNights.jpg"],"../static/images/FYT-AmericanNights.jpg"],"./..\\..\\static\\images\\FYT-AztecImmersion.jpg":[["FYT-AztecImmersion.a560441e.jpg","../static/images/FYT-AztecImmersion.jpg"],"../static/images/FYT-AztecImmersion.jpg"],"./..\\..\\static\\images\\FU-HERO copy.jpg":[["FU-HERO copy.5aaf8b3e.jpg","../static/images/FU-HERO copy.jpg"],"../static/images/FU-HERO copy.jpg"],"./..\\..\\static\\images\\OS-HERO.jpg":[["OS-HERO.d5f6d8ff.jpg","../static/images/OS-HERO.jpg"],"../static/images/OS-HERO.jpg"],"./..\\..\\static\\images\\HOME-1.jpg":[["HOME-1.14760647.jpg","../static/images/HOME-1.jpg"],"../static/images/HOME-1.jpg"],"./..\\..\\static\\images\\Home-Man-By-Train.jpg":[["Home-Man-By-Train.e235c88a.jpg","../static/images/Home-Man-By-Train.jpg"],"../static/images/Home-Man-By-Train.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\..\\static\\images\\FYT-Hero.jpg":[["FYT-Hero.e873a6a8.jpg","../static/images/FYT-Hero.jpg"],"../static/images/FYT-Hero.jpg"],"./..\\..\\static\\images\\HOME-Popular-Bali.jpg":[["HOME-Popular-Bali.1538d806.jpg","../static/images/HOME-Popular-Bali.jpg"],"../static/images/HOME-Popular-Bali.jpg"],"./..\\..\\static\\images\\HOME-Popular-Med.jpg":[["HOME-Popular-Med.5e94e1bc.jpg","../static/images/HOME-Popular-Med.jpg"],"../static/images/HOME-Popular-Med.jpg"],"./..\\..\\static\\images\\FYT-AmericanNights.jpg":[["FYT-AmericanNights.e88c73d1.jpg","../static/images/FYT-AmericanNights.jpg"],"../static/images/FYT-AmericanNights.jpg"],"./..\\..\\static\\images\\FYT-AztecImmersion.jpg":[["FYT-AztecImmersion.a560441e.jpg","../static/images/FYT-AztecImmersion.jpg"],"../static/images/FYT-AztecImmersion.jpg"],"./..\\..\\static\\images\\FU-HERO copy.jpg":[["FU-HERO copy.5aaf8b3e.jpg","../static/images/FU-HERO copy.jpg"],"../static/images/FU-HERO copy.jpg"],"./..\\..\\static\\images\\OS-HERO.jpg":[["OS-HERO.d5f6d8ff.jpg","../static/images/OS-HERO.jpg"],"../static/images/OS-HERO.jpg"],"./..\\..\\static\\images\\HOME-1.jpg":[["HOME-1.14760647.jpg","../static/images/HOME-1.jpg"],"../static/images/HOME-1.jpg"],"./..\\..\\static\\images\\Home-Man-By-Train.jpg":[["Home-Man-By-Train.e235c88a.jpg","../static/images/Home-Man-By-Train.jpg"],"../static/images/Home-Man-By-Train.jpg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _App = _interopRequireDefault(require("./App.js"));
@@ -16795,7 +16797,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49826" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61825" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
