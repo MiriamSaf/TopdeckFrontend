@@ -1,3 +1,7 @@
+CLONE (GET NEW) GIT REPOSITORY ----------------------
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+
+
 UPDATE LOCAL FILE FROM GIT --------------------------
 git pull
 
