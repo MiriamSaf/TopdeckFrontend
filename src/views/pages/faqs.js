@@ -38,17 +38,17 @@ class FaqsView {
         <div id = "section-contact-holder">
 
         <div class="details-group-example" >
-          <sl-details summary="First" open >
+          <sl-details summary="First FAQ" open>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </sl-details>
 
-          <sl-details summary="Second">
+          <sl-details summary="Second FAQ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </sl-details>
 
-          <sl-details summary="Third">
+          <sl-details summary="Third FAQ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </sl-details>
