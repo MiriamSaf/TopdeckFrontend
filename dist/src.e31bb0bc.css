@@ -508,16 +508,24 @@ and find by
 }
 
 .timeline-cols {
-  width: 50%;
+  margin-top: 15vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  padding: 8vh;
+  flex-wrap: wrap;
 }
 
-#tl-vert-line {
-  margin-top: 20vh;
-  border-left: 5px solid var(--brand-blue);
+.timeline-cols > div {
+  flex-basis: 50%;
   height: 55vh;
+}
+
+.timeline-item {
+  width: 100%;
+  padding: 10vh;
+}
+
+#col-two {
+  border-left: 5px solid var(--brand-blue);
 }
 
 @media all and (max-width: 768px) {

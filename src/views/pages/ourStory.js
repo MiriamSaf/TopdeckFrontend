@@ -24,19 +24,13 @@ class OurStoryView {
         <!-- section 2 timeline -->
         <div class = "timeline-section">
           <div class = "timeline-cols">
-            <div>one</div>
-            <div>two</div>
+            <div class = "timeline-item">one</div>
+            <div class = "timeline-item" id = "col-two">two</div>
+            <div class = "timeline-item">one</div>
+            <div class = "timeline-item" id = "col-two">two</div>
           </div><!-- close timeline cols div-->
-
-          <div id = "tl-vert-line"></div>
-
-          <div class = "timeline-cols">
-            <div>one</div>
-            <div>two</div>
-          </div><!-- close timeline cols div-->
-        </div><!-- close timeline section -->
-       
-        
+          </div>
+    
         <td-site-footer></td-site-footer>
       </div>
       

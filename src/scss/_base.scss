@@ -499,17 +499,26 @@ h1,h2,h3,h5,h6 {
   }
 
   .timeline-cols{
-    width: 50%;
+    margin-top: 15vh;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    padding: 8vh;
+    flex-wrap: wrap;
+  
   }
 
-  //vertical line
-  #tl-vert-line{
-    margin-top: 20vh;
+  .timeline-cols > div {
+    flex-basis: 50% ;
+    height: 55vh
+  }
+
+  .timeline-item{
+    width: 100%;
+    padding: 10vh;
+  }
+
+  //vertical line as the border left
+  #col-two{
     border-left: 5px solid var(--brand-blue);
-    height: 55vh;
   }
 
 // RESPONSIVE - MOBILE 
