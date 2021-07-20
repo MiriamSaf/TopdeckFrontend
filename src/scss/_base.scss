@@ -351,33 +351,7 @@ h1,h2,h3,h5,h6 {
   margin: 1vh;
   justify-content: center;
 }
-/*second flex item*/
-#second-contact-flex{
-  margin-top: 5vh;
-}
 
-#contact-contain .contact-item,
-#second-contact-flex .contact-item{
-  background-color: rgb(241, 241, 241);
-  height: 45vh;
-  border-radius: 8px;
-  padding: 3vh;
-  width: 35%;
-  text-align: center;
-}
-
-#contact-contain .contact-item h1, 
-#second-contact-flex .contact-item h1
-{
-  font-size: 3em;
-  color: var(--brand-blue);
-}
-
-#contact-contain .contact-item p,
-#second-contact-flex .contact-item p{
-  font-size: 3.2vh;
-  font-family: var(--headings-font-family);
-}
 
 .findus-crcl{
   text-align: center;
@@ -393,14 +367,7 @@ h1,h2,h3,h5,h6 {
   background-color: var(--brand-red);
 }
 
-#emg-info-item,
-#social-links-contact{
-  margin-right: 5vh;
-}
 
-#social-links-contact{
-  height: 125vh !important;
-}
 
 #aus-num, 
 #aus-num-2, 
@@ -415,19 +382,7 @@ h1,h2,h3,h5,h6 {
   margin-bottom: 2vh;
 }
 
-/*purple links social media*/
-.social-link-div{
-  display: flex;
-  justify-content: center;
-  background-color: var(--brand-pink);
-  color: var(--brand-blue);
-  text-align: center;
-  font-size: 6vh;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  border-radius: 10px;
-  margin-bottom: 5vh;
-}
+
 
 .social-link-div span{
   padding-top: 1vh;
@@ -460,7 +415,34 @@ h1,h2,h3,h5,h6 {
   display: flex;
   flex-direction: column;
   width: 50%;
-  
+  align-items: stretch;
+}
+
+/*purple links social media*/
+.social-link-div{
+  display: flex;
+  justify-content: center;
+  background-color: var(--brand-pink);
+  color: var(--brand-blue);
+  text-align: center;
+  font-size: 6vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-radius: 10px;
+  margin-bottom: 10vh;
+}
+
+#tiktok-social-div{
+  margin-bottom: 0vh !important;
+}
+
+/*smaller div - no need for height*/
+.smaller-contact{
+  background-color: rgb(241, 241, 241);
+  border-radius: 8px;
+  padding: 5vh;
+  width: 40vw;
+  text-align: center;
 }
 
 .contact-col-item{
@@ -472,7 +454,9 @@ h1,h2,h3,h5,h6 {
   text-align: center;
 }
 
-.contact-col-item h1{
+.smaller-contact h1,
+.contact-col-item h1,
+#social-links-contact h1{
   font-size: 3em;
   color: var(--brand-blue);
 }
@@ -485,6 +469,15 @@ h1,h2,h3,h5,h6 {
 #social-links-contact,
 #add-marg-col{
   margin-top: 5vh;
+}
+
+/*div of social*/
+#social-links-contact{
+  background-color: rgb(241, 241, 241);
+  border-radius: 8px;
+  padding: 5vh;
+  width: 40vw;
+  text-align: center;
 }
  /*OUR STORY PAGE 
   --------------------------

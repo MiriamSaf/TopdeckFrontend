@@ -22,7 +22,7 @@ class FindusView {
         <h1 class = "findus-hero-h1">Find us</h1>
         </div><!-- close home hero -->
 
-        <!-- section 2 - info -->
+        <!-- section 2 - info --><!--
         <div id = "findus-info-container">
           <div id = "contact-contain">
             <div class = "contact-item" id = "emg-info-item">
@@ -45,7 +45,7 @@ class FindusView {
                 <p>Monday to Friday: 5am-6pm AEST</p>
             </div>
           </div><!-- close contact contain-->
-
+<!--
           <div id = "second-contact-flex">
           <div class = "contact-item" id = "social-links-contact">
             <h1>Socials</h1>
@@ -53,33 +53,33 @@ class FindusView {
                   <sl-icon name="facebook"></sl-icon>
                   <span>TopDeckTravel</span>
             </div><!-- close social link div -->
-
+<!--
             <div class ="social-link-div">
                   <sl-icon name="instagram"></sl-icon>
                   <span>topdecktravel</span>
-            </div><!-- close social link div -->
+            </div><!-- close social link div 
 
             <div class ="social-link-div">
                   <sl-icon name="twitter"></sl-icon>
                   <span>TopdeckTravel</span>
-            </div><!-- close social link div -->
+            </div>
 
             <div class ="social-link-div">
                   <sl-icon name="youtube"></sl-icon>
                   <span>TopDeckTravel</span>
-            </div><!-- close social link div -->
+            </div>
 
             <div class ="social-link-div">
                   <img src = "images/navy-snapchat.png" alt = "snapchat icon" class = "social-icon-img">
                   <span>#topdecktravel</span>
-            </div><!-- close social link div -->
+            </div>
 
             <div class ="social-link-div">
                   <img src = "images/navy-tiktok.png" alt = "tiktok icon" class = "social-icon-img">
                   <span>#topdecktravel</span>
-            </div><!-- close social link div -->
+            </div>
 
-          </div><!-- close contact item dev -->
+          </div>
           
           <div class = "contact-item">
           <h1>United Kingdom</h1>
@@ -92,10 +92,10 @@ class FindusView {
                 <p>Monday to Friday: 12pm - 8pm. GMT</p>
             </div>
             
-          </div> <!-- close contact item div -->
+          </div> 
          
-        </div> <!-- close find us info container -->
-        
+        </div>  close find us info container -->
+
         <!-- TESTING opt 2 -->
        
         <div id = "section-contact-holder">
@@ -116,7 +116,7 @@ class FindusView {
             <!-- div 2 -->
             <div>
 
-            <div class = "contact-col-item" id = "social-links-contact">
+            <div id = "social-links-contact">
             <h1>Socials</h1>
             <div class ="social-link-div">
                   <sl-icon name="facebook"></sl-icon>
@@ -143,7 +143,7 @@ class FindusView {
                   <span>#topdecktravel</span>
             </div><!-- close social link div -->
 
-            <div class ="social-link-div">
+            <div class ="social-link-div" id = "tiktok-social-div">
                   <img src = "images/navy-tiktok.png" alt = "tiktok icon" class = "social-icon-img">
                   <span>#topdecktravel</span>
             </div><!-- close social link div -->
@@ -153,7 +153,9 @@ class FindusView {
 
             </div>
           </div>
-          <div class = "contact-columns" id = "section-2-contact">
+        
+        <!-- COLUMN 2 -->
+        <div class = "contact-columns" id = "section-2-contact">
           <!-- first div-->  
           <div>
 
@@ -168,11 +170,13 @@ class FindusView {
                 <p>Monday to Friday: 5am-6pm AEST</p>
             </div>
 
-            </div>
-            <div>
+          </div><!-- close first div -->
+          
+          
+          <div> <!-- div 2 - UK -->
 
             <div class = "contact-col-item" id = "add-marg-col">
-          <h1>United Kingdom</h1>
+                <h1>United Kingdom</h1>
                 <div class = "findus-crcl" id ="uk-num">
                   <span>0845 257 5212</span>
                 </div>
@@ -180,11 +184,37 @@ class FindusView {
                   <span>+44 (0)20 8987 3305</span>
                 </div>
                 <p>Monday to Friday: 12pm - 8pm. GMT</p>
-            </div>
+            </div><!-- close contact col item div -->
 
-            </div>
-          </div>
-        </div>
+          </div> <!-- close div num 2 - UK-->
+
+          <!-- div 3 -->
+          <div id = "add-marg-col" class = "smaller-contact">
+                <h1>New Zealand</h1>
+                <div class = "findus-crcl" id ="uk-num">
+                  <span>0800 525 366</span>
+                </div>
+          </div><!-- close contact col item div -->
+
+           <!-- div 4 -->
+           <div id = "add-marg-col" class = "smaller-contact">
+                <h1>North America</h1>
+                <div class = "findus-crcl" id ="uk-num">
+                  <span>1 800 607 1399</span>
+                </div>
+          </div><!-- close contact col item div -->
+
+          <!-- div 5 -->
+          <div id = "add-marg-col" class = "smaller-contact">
+                <h1>South Africa</h1>
+                <div class = "findus-crcl" id ="uk-num">
+                  <span>0800 982 308</span>
+                </div>
+          </div><!-- close contact col item div -->
+
+
+        </div><!-- close section 2 col -->
+      </div>
         
         <td-site-footer></td-site-footer>
       </div>
