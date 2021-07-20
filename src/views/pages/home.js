@@ -37,6 +37,10 @@ class HomeView {
                   color: black;
                 }
 
+            .quiz-dialog::part(body){
+              margin-top: -3em;
+            }
+
 
             @media all and (max-width: 768px){
 
@@ -50,9 +54,65 @@ class HomeView {
         <div class="wrap">
 
             <div class="content">
-                <h1>This is where the Quiz will go</h1>
+
+                <h1>Topdeck <strong>#vibe</strong> Quiz</h1>
+                
+                <div class="qset">
+                  <div class="question-box q1">
+                    Do you enjoy slow paced, relaxing tours?
+                    <div class="qcol go">
+                      <div class="button r1">Yes, this is me</div>
+                    </div>
+                    <div class="qcol next">
+                      <div class="button">Not me</div>
+                    </div>
+                  </div>
+                  <div class="response-box a1">
+                    Your vibe is <span class="qvibe">#chill</span>
+                    <div class="button">Check out #chill tours</div>
+                  </div>
+                </div>
+
+
+                <div class="qset">
+                  <div class="question-box q2">
+                    Do you enjoy experiences with people from different backgrounds?
+                    <div class="qcol go">
+                      <div class="button r2">Yes, this is me</div>
+                    </div>
+                    <div class="qcol next">
+                      <div class="button">Not me</div>
+                    </div>
+                  </div>
+                  <div class="response-box a2">
+                    Your vibe is <span class="qvibe">#culture</span>
+                    <div class="button">Check out #culture tours</div>
+                  </div>
+                </div>
+
+
+                <div class="qset">
+                  <div class="question-box q2">
+                    <div class="qcol go">
+                      Do you enjoy having a fun time socializing with others?
+                      <div class="button r3">Yes, this is me</div>
+                    </div>
+                    <div class="qcol go">
+                      Do you love living on the edge, exploring everything?
+                      <div class="button r4">Yes, this is me</div>
+                    </div>
+                  </div>
+                  <div class="response-box a3">
+                    Your vibe is <span class="qvibe">#party</span>
+                    <div class="button">Check out #party tours</div>
+                  </div>
+                  <div class="response-box a4">
+                    Your vibe is <span class="qvibe">#adventure </span>
+                    <div class="button">Check out #adventure  tours</div>
+                  </div>
+                </div>
             
-            </div>
+            </div> 
         </div>
       `
     render(dialogContent, dialogEL)
