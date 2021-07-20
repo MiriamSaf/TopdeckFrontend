@@ -24,13 +24,17 @@ class OurStoryView {
         <!-- section 2 timeline -->
         <div class = "timeline-section">
           <div class = "timeline-cols">
-            <div class = "timeline-item">one</div>
-            <div class = "timeline-item" id = "col-two">
+            <div class = "timeline-item">
+           
+            one</div>
+            <div class = "timeline-item">
+            <div class="line"></div> 
             <span class="dot"></span>  
-            two
+            <!-- actual content-->
+            <div class = "content-timeline">two</div>
             </div>
             <div class = "timeline-item">one</div>
-            <div class = "timeline-item" id = "col-two">
+            <div class = "timeline-item">
             <span class="dot"></span>  
             two</div>
           </div><!-- close timeline cols div-->

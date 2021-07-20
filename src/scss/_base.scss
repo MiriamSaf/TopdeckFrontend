@@ -522,26 +522,31 @@ h1,h2,h3,h5,h6 {
     //padding: 10vh;
   }
 
-  //vertical line as the border left
-  #col-two{
-    border-left: 5px solid var(--brand-blue);
+  //vertical line 
+  .line{
+    height: 55vh;
+    width: 1vh;
+    background-color: var(--brand-blue);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-top: 25vh;
   }
 
-
+  /*styles circle on line*/
   .dot{
     height: 7vh;
     width: 7vh;
     background-color: var(--brand-yellow);
     border-radius: 50%;
-    display: inline-block;
     position: absolute;
-    
-transform: translate(-50%, -50%);
-    //left: 49%;
-    //text-align: center;
-    //margin-left: -2vh;
+    transform: translate(-50%, -50%);
     margin-top: -1vh;
   }
+
+  /*content in the timeline*/
+ .content-timeline{
+  padding: 10vh;
+ }
 
 // RESPONSIVE - MOBILE 
 // -------------------
