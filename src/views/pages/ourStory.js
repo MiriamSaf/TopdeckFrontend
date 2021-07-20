@@ -24,9 +24,16 @@ class OurStoryView {
         <!-- section 2 timeline -->
         <div class = "timeline-section">
           <div class = "timeline-cols">
+            <!-- timeline one -->
             <div class = "timeline-item">
-           
-            one</div>
+              <div class = "content-timeline">
+              <h1>1973</h1>
+              <p>The first ever Top Deck tour happened when founder Skroo Turner and Friends bought 
+                a red double decker bus and travelled across Europe from London to Morocco!</p>
+              </div>
+            
+            </div>
+
             <div class = "timeline-item">
             <div class="line"></div> 
             <span class="dot"></span>  
