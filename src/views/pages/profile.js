@@ -21,7 +21,7 @@ class ProfileView {
 
       }
     </style>
-      <td-app-header title="Profile" user="${JSON.stringify(Auth.currentUser)}"></td-app-header>
+      <td-app-header user="${JSON.stringify(Auth.currentUser)}"></td-app-header>
       <div class="page-content calign">  
 
           ${Auth.currentUser && Auth.currentUser.avatar ? html`

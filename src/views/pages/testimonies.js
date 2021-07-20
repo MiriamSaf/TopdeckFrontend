@@ -14,7 +14,7 @@ class TestimoniesView {
 
   render(){
     const template = html`
-     <td-app-header title="What They Say" user=${JSON.stringify(Auth.currentUser)}></td-app-header>
+     <td-app-header user=${JSON.stringify(Auth.currentUser)}></td-app-header>
       <div class="page-content">
       
        

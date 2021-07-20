@@ -15,7 +15,7 @@ class favouritePackagesView {
 
   render(){
     const template = html`
-      <td-app-header title="Favourite Packages" user="${JSON.stringify(Auth.currentUser)}"></td-app-header>
+      <td-app-header user="${JSON.stringify(Auth.currentUser)}"></td-app-header>
       <div class="page-content">        
         <h1>Favourite Packages</h1>
         <p>Page content ...</p>

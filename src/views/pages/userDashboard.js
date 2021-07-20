@@ -29,7 +29,7 @@ class UserDashboardView {
 
 
 
-     <td-app-header title="My & My Trips" user=${JSON.stringify(Auth.currentUser)}></td-app-header>
+     <td-app-header user=${JSON.stringify(Auth.currentUser)}></td-app-header>
       <div class="page-content">
       
        

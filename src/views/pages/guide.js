@@ -26,7 +26,7 @@ class GuideView {
 
   render(){
     const template = html`
-      <td-app-header title="Guide" user="${JSON.stringify(Auth.currentUser)}"></td-app-header>
+      <td-app-header user="${JSON.stringify(Auth.currentUser)}"></td-app-header>
       <div class="page-content calign">        
         
         Some intro information

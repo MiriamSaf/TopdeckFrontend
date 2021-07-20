@@ -46,7 +46,7 @@ class newPackageView {
 
   render(){
     const template = html`
-      <td-app-header title="New Package" user="${JSON.stringify(Auth.currentUser)}"></td-app-header>
+      <td-app-header user="${JSON.stringify(Auth.currentUser)}"></td-app-header>
       <div class="page-content" id = "package-pg">        
         <h1>New Package</h1>
         

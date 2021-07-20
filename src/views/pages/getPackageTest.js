@@ -28,7 +28,7 @@ class GetPackageTestView {
 
   render(){
     const template = html`
-     <td-app-header title="FAQs" user=${JSON.stringify(Auth.currentUser)}></td-app-header>
+     <td-app-header user=${JSON.stringify(Auth.currentUser)}></td-app-header>
       <div class="page-content">
       
         <h3>Find a Tour TEST page</h3>

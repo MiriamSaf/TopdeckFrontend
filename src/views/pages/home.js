@@ -72,7 +72,7 @@ class HomeView {
 
   render(){
     const template = html`
-      <td-app-header title="Home" user=${JSON.stringify(Auth.currentUser)}></td-app-header>
+      <td-app-header user=${JSON.stringify(Auth.currentUser)}></td-app-header>
       <div class="view-screen">
         <div id = "home-container">
           <!-- section 1 Hero image -->

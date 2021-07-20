@@ -27,7 +27,7 @@ class SignUpView{
 
   render(){
     const template = html`      
-              <td-app-header title="Sign up" user="${JSON.stringify(Auth.currentUser)}"></td-app-header>
+              <td-app-header user="${JSON.stringify(Auth.currentUser)}"></td-app-header>
 
       <div class="page-content page-centered">      
         <div class="signinup-box">

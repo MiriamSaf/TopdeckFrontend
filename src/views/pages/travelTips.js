@@ -14,7 +14,7 @@ class TravelTipsView {
 
   render(){
     const template = html`
-     <td-app-header title="Travel Tips" user=${JSON.stringify(Auth.currentUser)}></td-app-header>
+     <td-app-header user=${JSON.stringify(Auth.currentUser)}></td-app-header>
       <div class="page-content">
       
        
