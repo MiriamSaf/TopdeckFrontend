@@ -573,4 +573,11 @@ h1,h2,h3,h5,h6 {
     width: 90%;
     max-width: none;
   }
+
+  //large screen view
+  @media all and (max-width: 2559px) {
+    .social-link-div{
+      margin-bottom: 6vh !important;
+    }
+  }
 }
