@@ -7570,9 +7570,9 @@ var _litHtml = require("lit-html");
 
 var _Toast = _interopRequireDefault(require("./Toast"));
 
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13704,8 +13704,7 @@ class UserAPI {
          headers: { "Authorization": `Bearer ${localStorage.accessToken}`},
          body: userData
      })
-  
-     // if response not ok
+      // if response not ok
      if(!response.ok){
        // console log error
        const err = await response.json()
@@ -13713,8 +13712,7 @@ class UserAPI {
        // throw error (exit this function)      
        throw new Error('Problem updating user')
      }
-  
-     // convert response payload into json - store as data
+      // convert response payload into json - store as data
      const data = await response.json()
      
      // return data
@@ -14264,7 +14262,7 @@ class OurStoryView {
   }
 
   render() {
-    const template = (0, _litHtml.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n     <td-app-header user=", "></td-app-header>\n      <div>\n        <!-- section 1 - hero image -->\n        <div id = \"ourstory-hero-section\">\n        <h1 class = \"ourstory-hero-h1\">Our Story</h1>\n        </div><!-- close hero -->\n\n        <!-- section 2 timeline -->\n        <div class = \"timeline-section\">\n          <div class = \"timeline-cols\">\n            <div class = \"timeline-item\">one</div>\n            <div class = \"timeline-item\" id = \"col-two\">two</div>\n            <div class = \"timeline-item\">one</div>\n            <div class = \"timeline-item\" id = \"col-two\">two</div>\n          </div><!-- close timeline cols div-->\n          </div>\n    \n        <td-site-footer></td-site-footer>\n      </div>\n      \n    "])), JSON.stringify(_Auth.default.currentUser));
+    const template = (0, _litHtml.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n     <td-app-header user=", "></td-app-header>\n      <div>\n        <!-- section 1 - hero image -->\n        <div id = \"ourstory-hero-section\">\n        <h1 class = \"ourstory-hero-h1\">Our Story</h1>\n        </div><!-- close hero -->\n\n        <!-- section 2 timeline -->\n        <div class = \"timeline-section\">\n          <div class = \"timeline-cols\">\n            <div class = \"timeline-item\">one</div>\n            <div class = \"timeline-item\" id = \"col-two\">\n            <span class=\"dot\"></span>  \n            two\n            </div>\n            <div class = \"timeline-item\">one</div>\n            <div class = \"timeline-item\" id = \"col-two\">\n            <span class=\"dot\"></span>  \n            two</div>\n          </div><!-- close timeline cols div-->\n          </div>\n    \n        <td-site-footer></td-site-footer>\n      </div>\n      \n    "])), JSON.stringify(_Auth.default.currentUser));
     (0, _litHtml.render)(template, _App.default.rootEl);
   }
 
@@ -16797,7 +16795,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61825" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51551" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

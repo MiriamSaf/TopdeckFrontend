@@ -470,6 +470,10 @@ h1,h2,h3,h5,h6 {
   --------------------------
   --------------------------*/
   #ourstory-hero-section{
+    /*Image Reference:
+    Travel Weekly. 2021. "[Top Deck Tour Bus]". Travel Weekly. 
+    https://www.travelweekly.com.au/article/topdeck-responds-allegations-alarming-unscrupulous-corporate-conduct/ 
+    */
     background-image: url("./../../static/images/OS-HERO.jpg");
     background-position: center; 
     background-repeat: no-repeat;
@@ -488,6 +492,8 @@ h1,h2,h3,h5,h6 {
     font-size: 14vh;
     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
+
+
 
   /*SECTION 2 - TIMELINE
   -----------------------*/
@@ -513,12 +519,28 @@ h1,h2,h3,h5,h6 {
   //part of timeline
   .timeline-item{
     width: 100%;
-    padding: 10vh;
+    //padding: 10vh;
   }
 
   //vertical line as the border left
   #col-two{
     border-left: 5px solid var(--brand-blue);
+  }
+
+
+  .dot{
+    height: 7vh;
+    width: 7vh;
+    background-color: var(--brand-yellow);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    
+transform: translate(-50%, -50%);
+    //left: 49%;
+    //text-align: center;
+    //margin-left: -2vh;
+    margin-top: -1vh;
   }
 
 // RESPONSIVE - MOBILE 
