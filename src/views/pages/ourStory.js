@@ -164,7 +164,11 @@ class OurStoryView {
             <span class="tl-bottom-square">
               <h1>And now in 2021</h1>
             </span>  
-           
+                <div class = "timeline-extra-content">
+                  <p>
+                  Top Deck remains committed to providing exciting travel experiences and with the COVID pandemic still affecting the world, your safety and wellbeing is our highest priority. With new flexible booking options and COVID safe itineraries, we are ready to come through the darkness and show you the world once again.
+                  </p>
+                </div>
             </div>
 
 

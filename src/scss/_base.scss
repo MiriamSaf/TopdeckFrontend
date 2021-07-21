@@ -597,6 +597,17 @@ h1,h2,h3,h5,h6 {
   font-size: 4.3vh;
  }
 
+ .timeline-extra-content{
+   margin-top: 45vh;
+  width: 120%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: var(--headings-font-family);
+  font-size: 4.3vh;
+ }
+
 // RESPONSIVE - MOBILE 
 // -------------------
 @media all and (max-width: 768px){ 
