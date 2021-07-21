@@ -233,13 +233,11 @@ class HomeView {
     answerFour.classList.remove('hidden')
   }
 
-  // not working when I tried to hide/remove the dialog
+  // not working when I tried to Hide the dialogEL
   checkClick(e){
     e.preventDefault()
     const pathname = e.target.closest('a').pathname
-    // goto route  
     gotoRoute(pathname)
-
   }
 
 

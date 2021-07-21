@@ -7850,13 +7850,12 @@ class HomeView {
     const answerFour = document.getElementById('a4');
     questionThree.classList.add('hidden');
     answerFour.classList.remove('hidden');
-  } // not working when I tried to hide/remove the dialog
+  } // not working when I tried to Hide the dialogEL
 
 
   checkClick(e) {
     e.preventDefault();
-    const pathname = e.target.closest('a').pathname; // goto route  
-
+    const pathname = e.target.closest('a').pathname;
     (0, _Router.gotoRoute)(pathname);
   }
 
@@ -16864,7 +16863,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64000" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55786" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
