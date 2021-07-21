@@ -12,6 +12,20 @@ class HomeView {
     Utils.pageIntroAnim()    
   }
 
+  yesOneHandler(e){
+    e.preventDefault()
+	
+    const questionOne = document.getElementById('q1')
+    const answerOne = document.getElementById('a1')
+    console.log('quiz yesOneHandler')
+
+    // add class name
+    questionOne.classList.add('hidden')
+    // remove class name = removeClass()
+    answerOne.classList.remove('hidden')
+  }
+
+
   // Quiz dialog begins here
   quizHandler(e){
     e.preventDefault()
@@ -41,6 +55,53 @@ class HomeView {
               margin-top: -3em;
             }
 
+            .row {
+              display: flex;
+              width: 100%;
+            }
+
+            .qcol{
+              display: flex;
+              flex-direction: column;
+              width: 45%;
+              align-items: stretch;
+            }
+
+            .qvibe {
+              color: var(--brand-pink);
+              font-size: 2em;
+            }
+
+            .qbutton {
+              border-radius: 10px;
+              text-align: center;
+              width: 100%;
+              padding-top: 2vh;
+              padding-bottom: 2vh;
+              left: 2.5vh;
+            }
+
+            .button-go {
+              background-color: #C9E2D1;
+              color: #fff;
+            }
+
+            .button-tours {
+              background-color: #222C39;
+              color: #fff;
+            }
+
+            .button-next {
+              background-color: #F9DE7E;
+              color: #fff;
+            }
+
+            .hidden {
+              display: none;
+            }
+
+
+
 
             @media all and (max-width: 768px){
 
@@ -58,57 +119,58 @@ class HomeView {
                 <h1>Topdeck <strong>#vibe</strong> Quiz</h1>
                 
                 <div class="qset">
-                  <div class="question-box q1">
-                    Do you enjoy slow paced, relaxing tours?
-                    <div class="qcol go">
-                      <div class="button r1">Yes, this is me</div>
+                  <div id="q1" class="question-box ">
+                    <div class="row">Do you enjoy slow paced, relaxing tours?
                     </div>
-                    <div class="qcol next">
-                      <div class="button">Not me</div>
+                    <div class="qcol">
+                      <a href="#" class="qbutton button-go r1" @click=${this.yesOneHandler}>Yes, this is me</a>
+                    </div>
+                    <div class="qcol">
+                      <div class="qbutton button-next">Not me</div>
                     </div>
                   </div>
-                  <div class="response-box a1">
+                  <div id="a1" class="response-box hidden">
                     Your vibe is <span class="qvibe">#chill</span>
-                    <div class="button">Check out #chill tours</div>
+                    <div class="qbutton button-tours">Check out #chill tours</div>
                   </div>
                 </div>
 
 
                 <div class="qset">
-                  <div class="question-box q2">
+                  <div class="question-box q2 hidden">
                     Do you enjoy experiences with people from different backgrounds?
-                    <div class="qcol go">
-                      <div class="button r2">Yes, this is me</div>
+                    <div class="qcol">
+                      <div class="qbutton button-go r2">Yes, this is me</div>
                     </div>
-                    <div class="qcol next">
-                      <div class="button">Not me</div>
+                    <div class="qcol">
+                      <div class="qbutton button-next">Not me</div>
                     </div>
                   </div>
-                  <div class="response-box a2">
+                  <div class="response-box a2 hidden">
                     Your vibe is <span class="qvibe">#culture</span>
-                    <div class="button">Check out #culture tours</div>
+                    <div class="qbutton button-tours">Check out #culture tours</div>
                   </div>
                 </div>
 
 
                 <div class="qset">
-                  <div class="question-box q2">
-                    <div class="qcol go">
+                  <div class="question-box q2 hidden">
+                    <div class="qcol">
                       Do you enjoy having a fun time socializing with others?
-                      <div class="button r3">Yes, this is me</div>
+                      <div class="qbutton button-go r3">Yes, this is me</div>
                     </div>
-                    <div class="qcol go">
+                    <div class="qcol">
                       Do you love living on the edge, exploring everything?
-                      <div class="button r4">Yes, this is me</div>
+                      <div class="qbutton button-go r4">Yes, this is me</div>
                     </div>
                   </div>
-                  <div class="response-box a3">
+                  <div class="response-box a3 hidden">
                     Your vibe is <span class="qvibe">#party</span>
-                    <div class="button">Check out #party tours</div>
+                    <div class="qbutton button-tours">Check out #party tours</div>
                   </div>
-                  <div class="response-box a4">
+                  <div class="response-box a4 hidden">
                     Your vibe is <span class="qvibe">#adventure </span>
-                    <div class="button">Check out #adventure  tours</div>
+                    <div class="qbutton button-tours">Check out #adventure  tours</div>
                   </div>
                 </div>
             
