@@ -102,9 +102,14 @@ class packagesView {
 
         </div>
 
+        <!-- left find by col -->
         <div id = "left-container-pckg">
-        left col
-        </div>
+          <h1 id = "pckg-findby-h1">Find By:</h1>
+          <sl-input placeholder = "Search" pill>
+            <sl-icon name="search" slot="prefix"></sl-icon>
+          </sl-input>
+        </div><!-- close left col -->
+
       </div><!-- close pckg flex div-->
 
         <div class="packages-grid">

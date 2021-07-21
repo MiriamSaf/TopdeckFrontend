@@ -154,6 +154,8 @@ h1,h2,h3,h5,h6 {
   margin-top: -3em;
 }
 
+
+
 /*PACKAGE PAGE
   --------------------------
   --------------------------
@@ -197,17 +199,24 @@ h1,h2,h3,h5,h6 {
 
   #right-container-pckg{
     height: 180vh;
-    width: 70vw;
+    width: 68vw;
     //background-color: #777;
     padding: 9vh;
-    padding-left: 11vh;
+    padding-left: 15vh;
     display: flex;
     flex-direction: column;
   }
 
   #left-container-pckg{
-    padding: 9vh;
-    padding-right: 11vh;
+    background-color: rgb(241, 241, 241);
+    margin-top: 9vh;
+    border-radius: 10px;
+    width: 25%;
+    padding: 5vh;
+    margin-right: 16vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .packages-display{
@@ -300,6 +309,14 @@ h1,h2,h3,h5,h6 {
     font-size: 2vh;
     margin-top: -1vh;
   }
+  /*FIND BY - LEFT Col*/
+  #pckg-findby-h1{
+    text-align: center;
+    font-size: 7vh;
+    color: var(--brand-blue);
+  }
+
+
   /*NEW PACKAGE PAGE 
   --------------------------
   --------------------------
