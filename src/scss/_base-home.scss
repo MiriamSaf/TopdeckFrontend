@@ -7,6 +7,8 @@
   .view-screen {
     height: 100vh;
     width: 100vw;
+    /*prevent horizontal scrollbar*/
+    overflow-x:hidden;
     overflow-y: scroll;
   }
   /*section 1 Home hero section

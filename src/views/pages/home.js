@@ -9,12 +9,8 @@ class HomeView {
     console.log('HomeView.init')
     document.title = 'Home'    
     this.render()    
-    Utils.pageIntroAnim()    
+    Utils.HomePageAnim()    
   }
-
-
-
-
 
   // Quiz dialog begins here
   quizHandler(e){
