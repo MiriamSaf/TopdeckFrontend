@@ -9,7 +9,8 @@ class OurStoryView {
     console.log('OurStoryView.init')
     document.title = 'Our Story'    
     this.render()    
-    Utils.pageIntroAnim()    
+    Utils.pageIntroAnim() 
+    Utils.OurStoryAnim()   
   }
 
   render(){
