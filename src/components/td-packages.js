@@ -132,11 +132,11 @@ moreInfoHandler(){
     </style>
 
     <sl-card>
-        <img slot="image" src="${App.apiBase}/images/${this.image}" />
+        <img src="${App.apiBase}/images/${this.image}" width="130px"/>
         <h2>${this.title}</h2>
         <h3>$${this.price}</h3>
         <sl-button @click=${this.moreInfoHandler.bind(this)}>More Info</sl-button>
-        <sl-icon-button name="cart3" label="Add to Cart" @click=${this.addFavHandler}></sl-icon-button> 
+        <sl-icon-button name="heart-fill" label="Add to Favourites" @click=${this.addFavHandler}></sl-icon-button> 
     </sl-card>
    `
   }

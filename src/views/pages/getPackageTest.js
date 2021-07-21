@@ -28,45 +28,48 @@ class GetPackageTestView {
 
   render(){
     const template = html`
-     <td-app-header user=${JSON.stringify(Auth.currentUser)}></td-app-header>
+      <td-app-header user=${JSON.stringify(Auth.currentUser)}></td-app-header>
       <div class="page-content">
       
-        <h3>Find a Tour TEST page</h3>
-        <p class="para"> And the Tours should appear below </p>
+        <div class="mobile-filters">
+          This div will only show in the mobile view and contain the filter component
+        </div>
 
-       <div class="packages-grid">
-          ${this.tours == null ? html`
-             Waiting for data to test here
-              <sl-spinner style="font-size: 2em;" ></sl-spinner>
-            ` : html`
-              ${this.tours.map(tour => html `
-                <td-packages class="package-card"
-                    title="${tour.name}"
-                    description="${tour.description}"
-                    price=${tour.price}
-                    image="${tour.image}"
-                    date="${tour.date}"
-                  > 
-                </td-packages>
-              `)}
-            `}
+        <div class="main-row">
+          This div contains the two columns - 
 
-              <p>this is after the tour list</p> 
+          <div id="left-column" class="tour-column">
+            This is the left column with the package cards
 
-              <td-packages class="package-card"
-                title="Test 2"
-                description="Test 2 Description"
-                price=$35
-                image="topdeck-black.png"
-                date="31st August"
-              > 
-              </td-packages>
-              <p>And this is after a test 2 item</p> 
+            <div class="packages-grid">
+                ${this.tours == null ? html`
+                  <sl-spinner style="font-size: 2em;" ></sl-spinner>
+                  ` : html`
+                    ${this.tours.map(tour => html `
+                      <td-packages class="package-card"
+                          title="${tour.title}"
+                          description="${tour.description}"
+                          price=${tour.price}
+                          image="${tour.image}"
+                          date="${tour.date}"
+                        > 
+                      </td-packages>
+                    `)}
+                  `}
             </div>
 
-            
+            <div id="right-column" class="tour-column">
+              This is the right column for the filter component
+              - set to width 0 and hidden in mobile view
+
+            </div>
+
+          </div>
+
+
+        </div>
         <td-site-footer></td-site-footer>
-      </div>
+      </div> 
       
     `
 
