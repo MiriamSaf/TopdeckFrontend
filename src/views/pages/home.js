@@ -14,16 +14,15 @@ class HomeView {
 
   yesOneHandler(e){
     e.preventDefault()
-	
     const questionOne = document.getElementById('q1')
     const answerOne = document.getElementById('a1')
-    console.log('quiz yesOneHandler')
-
     // add class name
     questionOne.classList.add('hidden')
     // remove class name = removeClass()
     answerOne.classList.remove('hidden')
   }
+
+
 
 
   // Quiz dialog begins here
@@ -126,6 +125,7 @@ class HomeView {
                       <a href="#" class="qbutton button-go r1" @click=${this.yesOneHandler}>Yes, this is me</a>
                     </div>
                     <div class="qcol">
+                    <a href="#" class="qbutton button-next" @click=${this.nextOneHandler}>Not me</a>
                       <div class="qbutton button-next">Not me</div>
                     </div>
                   </div>
