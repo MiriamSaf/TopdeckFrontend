@@ -15,13 +15,14 @@ class HomeView {
   yesOneHandler(e){
     e.preventDefault()
 	
-    const questionOne = this.shadowRoot.querySelector('.q1')
-    const answerOne = this.shadowRoot.querySelector('.a1')
+    const questionOne = document.getElementById('q1')
+    const answerOne = document.getElementById('a1')
+    console.log('quiz yesOneHandler')
 
     // add class name
     questionOne.classList.add('hidden')
     // remove class name = removeClass()
-    answerOne.removeClass('hidden')
+    answerOne.classList.remove('hidden')
   }
 
 
@@ -118,17 +119,17 @@ class HomeView {
                 <h1>Topdeck <strong>#vibe</strong> Quiz</h1>
                 
                 <div class="qset">
-                  <div class="question-box q1">
+                  <div id="q1" class="question-box ">
                     <div class="row">Do you enjoy slow paced, relaxing tours?
                     </div>
                     <div class="qcol">
-                      <a href="#" class="qbutton button-go r1" @click=${this.yesOneHandler.bind(this)}>Yes, this is me</a>
+                      <a href="#" class="qbutton button-go r1" @click=${this.yesOneHandler}>Yes, this is me</a>
                     </div>
                     <div class="qcol">
                       <div class="qbutton button-next">Not me</div>
                     </div>
                   </div>
-                  <div class="response-box a1 hidden">
+                  <div id="a1" class="response-box hidden">
                     Your vibe is <span class="qvibe">#chill</span>
                     <div class="qbutton button-tours">Check out #chill tours</div>
                   </div>
