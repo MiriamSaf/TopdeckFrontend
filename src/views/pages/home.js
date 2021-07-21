@@ -12,15 +12,6 @@ class HomeView {
     Utils.pageIntroAnim()    
   }
 
-  yesOneHandler(e){
-    e.preventDefault()
-    const questionOne = document.getElementById('q1')
-    const answerOne = document.getElementById('a1')
-    // add class name
-    questionOne.classList.add('hidden')
-    // remove class name = removeClass()
-    answerOne.classList.remove('hidden')
-  }
 
 
 
@@ -119,58 +110,58 @@ class HomeView {
                 
                 <div class="qset">
                   <div id="q1" class="question-box ">
-                    <div class="row">Do you enjoy slow paced, relaxing tours?
+                    <div class="row">Do you enjoy slow paced, relaxing tours? </div>
+                    <div class="qcol">
+                      <a href="#" class="qbutton button-go" @click=${this.yesOneHandler}>Yes, this is me</a>
                     </div>
                     <div class="qcol">
-                      <a href="#" class="qbutton button-go r1" @click=${this.yesOneHandler}>Yes, this is me</a>
-                    </div>
-                    <div class="qcol">
-                    <a href="#" class="qbutton button-next" @click=${this.nextOneHandler}>Not me</a>
-                      <div class="qbutton button-next">Not me</div>
+                      <a href="#" class="qbutton button-next" @click=${this.nextOneHandler}>Not me</a>
                     </div>
                   </div>
                   <div id="a1" class="response-box hidden">
                     Your vibe is <span class="qvibe">#chill</span>
-                    <div class="qbutton button-tours">Check out #chill tours</div>
+                    <a href="/packages" class="qbutton button-tours" @click="${this.checkClick}">Check out #chill tours</h3></a>
                   </div>
                 </div>
 
 
                 <div class="qset">
-                  <div class="question-box q2 hidden">
+                  <div id="q2" class="question-box hidden">
                     Do you enjoy experiences with people from different backgrounds?
                     <div class="qcol">
-                      <div class="qbutton button-go r2">Yes, this is me</div>
+                      <a href="#" class="qbutton button-go" @click=${this.yesTwoHandler}>Yes, this is me</a>
                     </div>
                     <div class="qcol">
-                      <div class="qbutton button-next">Not me</div>
+                      <a href="#" class="qbutton button-next" @click=${this.nextTwoHandler}>Not me</a>
                     </div>
                   </div>
-                  <div class="response-box a2 hidden">
+                  <div id="a2" class="response-box hidden">
                     Your vibe is <span class="qvibe">#culture</span>
-                    <div class="qbutton button-tours">Check out #culture tours</div>
+                    <a href="/packages" class="qbutton button-tours" @click="${this.checkClick}">Check out #culture tours</a>
                   </div>
                 </div>
 
 
                 <div class="qset">
-                  <div class="question-box q2 hidden">
+                  <div id="q3" class="question-box hidden">
                     <div class="qcol">
                       Do you enjoy having a fun time socializing with others?
-                      <div class="qbutton button-go r3">Yes, this is me</div>
+                      <a href="#" class="qbutton button-go" @click=${this.yesThreeHandler}>Yes, this is me</a>
+
                     </div>
                     <div class="qcol">
                       Do you love living on the edge, exploring everything?
-                      <div class="qbutton button-go r4">Yes, this is me</div>
+                      <a href="#" class="qbutton button-go" @click=${this.yesFourHandler}>Yes, this is me</a>
+
                     </div>
                   </div>
-                  <div class="response-box a3 hidden">
+                  <div  id="a3" class="response-box hidden">
                     Your vibe is <span class="qvibe">#party</span>
-                    <div class="qbutton button-tours">Check out #party tours</div>
+                    <a href="/packages" class="qbutton button-tours" @click="${this.checkClick}">Check out #party tours</a>
                   </div>
-                  <div class="response-box a4 hidden">
+                  <div  id="a4"class="response-box hidden">
                     Your vibe is <span class="qvibe">#adventure </span>
-                    <div class="qbutton button-tours">Check out #adventure  tours</div>
+                    <a href="/packages" class="qbutton button-tours" @click="${this.checkClick}">Check out #adventure  tours</a>
                   </div>
                 </div>
             
@@ -191,6 +182,70 @@ class HomeView {
     })
   }
   //End of Quiz Dialog
+
+  yesOneHandler(e){
+    e.preventDefault()
+    const questionOne = document.getElementById('q1')
+    const answerOne = document.getElementById('a1')
+    // add class name
+    questionOne.classList.add('hidden')
+    // remove class name = removeClass()
+    answerOne.classList.remove('hidden')
+  }
+
+  nextOneHandler(e){
+    e.preventDefault()
+    const questionOne = document.getElementById('q1')
+    const questionTwo = document.getElementById('q2')
+    questionOne.classList.add('hidden')
+    questionTwo.classList.remove('hidden')
+  }
+
+  yesTwoHandler(e){
+    e.preventDefault()
+    const questionTwo = document.getElementById('q2')
+    const answerTwo = document.getElementById('a2')
+    questionTwo.classList.add('hidden')
+    answerTwo.classList.remove('hidden')
+  }
+
+  nextTwoHandler(e){
+    e.preventDefault()
+    const questionTwo = document.getElementById('q2')
+    const questionThree = document.getElementById('q3')
+    questionTwo.classList.add('hidden')
+    questionThree.classList.remove('hidden')
+  }
+
+  yesThreeHandler(e){
+    e.preventDefault()
+    const questionThree = document.getElementById('q3')
+    const answerThree = document.getElementById('a3')
+    questionThree.classList.add('hidden')
+    answerThree.classList.remove('hidden')
+  }
+
+  yesFourHandler(e){
+    e.preventDefault()
+    const questionThree = document.getElementById('q3')
+    const answerFour = document.getElementById('a4')
+    questionThree.classList.add('hidden')
+    answerFour.classList.remove('hidden')
+  }
+
+  // not working when I tried to hide/remove the dialog
+  checkClick(e){
+    e.preventDefault()
+    const pathname = e.target.closest('a').pathname
+    // goto route  
+    gotoRoute(pathname)
+
+  }
+
+
+
+
+
 
   render(){
     const template = html`
