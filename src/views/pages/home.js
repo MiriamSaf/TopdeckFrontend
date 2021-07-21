@@ -45,8 +45,8 @@ class HomeView {
             }
 
             .qcol{
-              float: left;
-              width: 45%;
+              display: flex;
+
               align-items: stretch;
             }
 
@@ -62,6 +62,7 @@ class HomeView {
               padding-top: 2vh;
               padding-bottom: 2vh;
               left: 2.5vh;
+              margin: 1em;
             }
 
             .button-go {
@@ -70,8 +71,10 @@ class HomeView {
             }
 
             .button-tours {
+              display: block;
               background-color: #222C39;
               color: #fff;
+              width: 100%; 
             }
 
             .button-next {
@@ -112,7 +115,7 @@ class HomeView {
                     </div>
                   </div>
                   <div id="a1" class="response-box hidden">
-                    Your vibe is <span class="qvibe">#chill</span>
+                    Your vibe is <span class="qvibe">#chill</span><br>
                     <a href="/packages" class="qbutton button-tours" @click="${this.checkClick}">Check out #chill tours</h3></a>
                   </div>
                 </div>
@@ -129,7 +132,7 @@ class HomeView {
                     </div>
                   </div>
                   <div id="a2" class="response-box hidden">
-                    Your vibe is <span class="qvibe">#culture</span>
+                    Your vibe is <span class="qvibe">#culture</span><br>
                     <a href="/packages" class="qbutton button-tours" @click="${this.checkClick}">Check out #culture tours</a>
                   </div>
                 </div>
@@ -149,11 +152,11 @@ class HomeView {
                     </div>
                   </div>
                   <div  id="a3" class="response-box hidden">
-                    Your vibe is <span class="qvibe">#party</span>
+                    Your vibe is <span class="qvibe">#party</span><br>
                     <a href="/packages" class="qbutton button-tours" @click="${this.checkClick}">Check out #party tours</a>
                   </div>
                   <div  id="a4"class="response-box hidden">
-                    Your vibe is <span class="qvibe">#adventure </span>
+                    Your vibe is <span class="qvibe">#adventure </span><br>
                     <a href="/packages" class="qbutton button-tours" @click="${this.checkClick}">Check out #adventure  tours</a>
                   </div>
                 </div>
