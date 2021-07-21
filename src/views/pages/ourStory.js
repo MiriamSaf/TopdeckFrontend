@@ -27,19 +27,23 @@ class OurStoryView {
             <!-- timeline one -->
             <div class = "timeline-item">
               <div class = "content-timeline">
-              <h1>1973</h1>
-              <p>The first ever Top Deck tour happened when founder Skroo Turner and Friends bought 
-                a red double decker bus and travelled across Europe from London to Morocco!</p>
+                <h1>1973</h1>
+                <p>The first ever Top Deck tour happened when founder Skroo Turner and Friends bought 
+                  a red double decker bus and travelled across Europe from London to Morocco!</p>
               </div>
-            
             </div>
 
+            <!-- timeline two-->
             <div class = "timeline-item">
-            <div class="line"></div> 
-            <span class="dot"></span>  
-            <!-- actual content-->
-            <div class = "content-timeline">two</div>
+              <div class="line"></div> 
+              <span class="dot"></span>  
+              <!-- actual content-->
+                <div class = "content-timeline" class = "img-timeline">
+                  <img src = "images/OS-BUS.png" alt = "red double decker bus img">
+                </div>
             </div>
+
+            <!-- timeline three -->
             <div class = "timeline-item">one</div>
             <div class = "timeline-item">
             <span class="dot"></span>  

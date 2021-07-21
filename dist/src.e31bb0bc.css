@@ -557,6 +557,11 @@ and find by
   text-align: center;
 }
 
+.content-timeline img {
+  width: 90%;
+  margin-top: -5vh;
+}
+
 .content-timeline h1 {
   color: var(--brand-blue);
   font-family: var(--base-font-family);
