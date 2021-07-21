@@ -12,6 +12,19 @@ class HomeView {
     Utils.pageIntroAnim()    
   }
 
+  yesOneHandler(e){
+    e.preventDefault()
+	
+    const questionOne = this.shadowRoot.querySelector('.q1')
+    const answerOne = this.shadowRoot.querySelector('.a1')
+
+    // add class name
+    questionOne.classList.add('hidden')
+    // remove class name = removeClass()
+    answerOne.removeClass('hidden')
+  }
+
+
   // Quiz dialog begins here
   quizHandler(e){
     e.preventDefault()
@@ -82,6 +95,12 @@ class HomeView {
               color: #fff;
             }
 
+            .hidden {
+              display: none;
+            }
+
+
+
 
             @media all and (max-width: 768px){
 
@@ -103,13 +122,13 @@ class HomeView {
                     <div class="row">Do you enjoy slow paced, relaxing tours?
                     </div>
                     <div class="qcol">
-                      <div class="qbutton button-go r1">Yes, this is me</div>
+                      <a href="#" class="qbutton button-go r1" @click=${this.yesOneHandler.bind(this)}>Yes, this is me</a>
                     </div>
                     <div class="qcol">
                       <div class="qbutton button-next">Not me</div>
                     </div>
                   </div>
-                  <div class="response-box a1">
+                  <div class="response-box a1 hidden">
                     Your vibe is <span class="qvibe">#chill</span>
                     <div class="qbutton button-tours">Check out #chill tours</div>
                   </div>
@@ -117,7 +136,7 @@ class HomeView {
 
 
                 <div class="qset">
-                  <div class="question-box q2">
+                  <div class="question-box q2 hidden">
                     Do you enjoy experiences with people from different backgrounds?
                     <div class="qcol">
                       <div class="qbutton button-go r2">Yes, this is me</div>
@@ -126,7 +145,7 @@ class HomeView {
                       <div class="qbutton button-next">Not me</div>
                     </div>
                   </div>
-                  <div class="response-box a2">
+                  <div class="response-box a2 hidden">
                     Your vibe is <span class="qvibe">#culture</span>
                     <div class="qbutton button-tours">Check out #culture tours</div>
                   </div>
@@ -134,7 +153,7 @@ class HomeView {
 
 
                 <div class="qset">
-                  <div class="question-box q2">
+                  <div class="question-box q2 hidden">
                     <div class="qcol">
                       Do you enjoy having a fun time socializing with others?
                       <div class="qbutton button-go r3">Yes, this is me</div>
@@ -144,11 +163,11 @@ class HomeView {
                       <div class="qbutton button-go r4">Yes, this is me</div>
                     </div>
                   </div>
-                  <div class="response-box a3">
+                  <div class="response-box a3 hidden">
                     Your vibe is <span class="qvibe">#party</span>
                     <div class="qbutton button-tours">Check out #party tours</div>
                   </div>
-                  <div class="response-box a4">
+                  <div class="response-box a4 hidden">
                     Your vibe is <span class="qvibe">#adventure </span>
                     <div class="qbutton button-tours">Check out #adventure  tours</div>
                   </div>
