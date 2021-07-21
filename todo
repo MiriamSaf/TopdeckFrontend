@@ -11,9 +11,13 @@ git stash
 UPDATING GIT ----------------------------------------
 git status
 git add .
-git commit -m "message"
+git commit -m "m"
 git push origin main
 
+
+GIT IGNORE -----------------------------
+git rm -r --cached dist
+// this line seemed to work
 
 ------- user funtions still not correct ---------
 Need to add code to divert users who hit a url which requires signin
