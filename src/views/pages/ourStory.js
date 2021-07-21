@@ -151,6 +151,26 @@ class OurStoryView {
               </div>
             </div>
 
+               <!-- timeline thirteen -2020-->
+               <div class = "timeline-item">
+             <div class = "content-timeline">
+               
+              </div>
+             </div>
+
+             <!-- timeline fourteen -south america -->
+             <div class = "timeline-item">
+           
+            <span class="tl-bottom-square">
+              <h1>And now in 2021</h1>
+            </span>  
+           
+            </div>
+
+
+           
+
+           
 
           </div><!-- close timeline cols div-->
           </div>
