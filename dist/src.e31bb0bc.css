@@ -592,7 +592,7 @@ and find by
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--brand-yellow);
+  color: #F9DE7E;
 }
 
 .content-timeline p {
