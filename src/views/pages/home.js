@@ -37,9 +37,7 @@ class HomeView {
                 float: left;
                 padding-left: 1em;
             }
-            h1 {
-                  color: black;
-                }
+            h1 { color: black; }
 
             .quiz-dialog::part(body){
               margin-top: -3em;
@@ -51,8 +49,7 @@ class HomeView {
             }
 
             .qcol{
-              display: flex;
-              flex-direction: column;
+              float: left;
               width: 45%;
               align-items: stretch;
             }
@@ -239,10 +236,6 @@ class HomeView {
     const pathname = e.target.closest('a').pathname
     gotoRoute(pathname)
   }
-
-
-
-
 
 
   render(){
