@@ -537,6 +537,10 @@ and find by
   margin-top: 25vh;
 }
 
+#last-line {
+  height: 75vh;
+}
+
 /*styles circle on line*/
 .dot {
   height: 7vh;

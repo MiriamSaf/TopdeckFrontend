@@ -43,7 +43,7 @@ class OurStoryView {
                 </div>
             </div>
 
-            <!-- timeline three -->
+            <!-- timeline three -festival img -->
             <div class = "timeline-item">
               <!-- actual content-->
               <div class = "content-timeline" class = "img-timeline">
@@ -69,46 +69,86 @@ class OurStoryView {
               </div>
              </div>
             
-            <!-- timeline six -->
+            <!-- timeline six - sydney opera img -->
             <div class = "timeline-item">
             <div class="line"></div> 
             <span class="dot"></span>  
+              <!-- actual content-->
+              <div class = "content-timeline" class = "img-timeline">
+                  <img src = "images/OS-SYDNEY.png" alt = "sydney opera img">
+              </div>
             </div>
 
-            <!-- timeline seven -->
-            <div class = "timeline-item">one</div>
+            <!-- timeline seven -egypt img -->
+            <div class = "timeline-item">
+              <!-- actual content-->
+              <div class = "content-timeline" class = "img-timeline">
+                  <img src = "images/OS-EGYPT.png" alt = "egypt pyramids img">
+              </div>
+            </div>
             
-            <!-- timeline eight -->
+            <!-- timeline eight - 1980s -->
             <div class = "timeline-item">
             <div class="line"></div> 
             <span class="dot"></span>  
+            <div class = "content-timeline">
+                <h1>1980'S</h1>
+                <p>As Top Deck expands, Egypt, Israel and Jordan are added to the list!</p>
+              </div>
             </div>
 
-             <!-- timeline nine -->
-             <div class = "timeline-item">one</div>
+             <!-- timeline nine - USA -->
+             <div class = "timeline-item">
+             <div class = "content-timeline">
+                <h1>2013</h1>
+                <p>After 30 years tourin', Top Deck starts touring the USA!</p>
+              </div>
+             </div>
             
-            <!-- timeline ten -->
+            <!-- timeline ten - USA img -->
             <div class = "timeline-item">
             <div class="line"></div> 
             <span class="dot"></span>  
+             <!-- actual content-->
+             <div class = "content-timeline" class = "img-timeline">
+                  <img src = "images/OS-USA.png" alt = "statue of liberty img">
+              </div>
             </div>
 
-             <!-- timeline eleven -->
-             <div class = "timeline-item">one</div>
+             <!-- timeline eleven - Asia -->
+             <div class = "timeline-item">
+              <!-- actual content-->
+              <div class = "content-timeline" class = "img-timeline">
+                  <img src = "images/OS-ASIA.png" alt = "Asian person and building img">
+              </div>
+             </div>
             
-            <!-- timeline twelve -->
+            <!-- timeline twelve - 2015-->
             <div class = "timeline-item">
             <div class="line"></div> 
             <span class="dot"></span>  
+            <div class = "content-timeline">
+                <h1>2015</h1>
+                <p>With total world domination in sight, the lush Asian continent is added to the tour list!</p>
+              </div>
             </div>
 
-             <!-- timeline thirteen -->
-             <div class = "timeline-item">one</div>
+             <!-- timeline thirteen -2020-->
+             <div class = "timeline-item">
+             <div class = "content-timeline">
+                <h1>2020</h1>
+                <p>Top Deck introduces South American tours.  Unfortunately March 2020 sees the global COVID pandemic take off stopping international travel.</p>
+              </div>
+             </div>
             
-            <!-- timeline fourteen -->
+            <!-- timeline fourteen -south america -->
             <div class = "timeline-item">
-            <div class="line"></div> 
+            <div class="line" id = "last-line"></div> 
             <span class="dot"></span>  
+              <!-- actual content-->
+              <div class = "content-timeline" class = "img-timeline">
+                  <img src = "images/OS-SOUTHAMERICA.png" alt = "South America img">
+              </div>
             </div>
 
 
