@@ -536,6 +536,11 @@ h1,h2,h3,h5,h6 {
     height: 75vh;
   }
 
+  /*last row to be made longer than others */
+  #last-tl-item{
+    height: 80vh;
+  }
+
   /*bottomost square div*/
   .tl-bottom-square{
     height: 25vh;
@@ -546,6 +551,29 @@ h1,h2,h3,h5,h6 {
     position: absolute;
     transform: translate(-50%, 0%);
     margin-top: -1vh;
+  }
+
+  /*yellow bottom square*/
+  .tl-bottom-y-sq{
+    background-color: #F9DE7E;
+    height: 13vh;
+    width: 45vh;
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(-50%, 40%);
+    margin-top: -1vh;
+    transition: all ease 0.5s;
+  }
+
+  /*yellow square text*/
+  .tl-bottom-y-sq h3{
+    font-size: 5.5vh;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease 0.4s;
   }
 
   /*styles circle on line*/
@@ -582,7 +610,7 @@ h1,h2,h3,h5,h6 {
 
  /*bottom square text*/
  .tl-bottom-square h1{
-   font-size: 6.8vh;
+  font-size: 6.8vh;
   position: absolute;
   width: 100%;
   top: 50%;
@@ -607,6 +635,20 @@ h1,h2,h3,h5,h6 {
   font-family: var(--headings-font-family);
   font-size: 4.3vh;
  }
+
+ /*Hover state*/
+
+ /*yellow bottom square*/
+ .tl-bottom-y-sq:hover{
+  cursor: pointer;
+  background-color:var(--brand-blue);
+  text-shadow: 0 0 1px #F9DE7E, 0 0 1px #F9DE7E, 0 0 1px #F9DE7E;
+ }
+
+ .tl-bottom-y-sq h3:hover{
+  color: #F9DE7E !important;
+ }
+
 
 // RESPONSIVE - MOBILE 
 // -------------------
