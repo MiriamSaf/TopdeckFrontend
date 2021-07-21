@@ -9,7 +9,7 @@ class FindusView {
     console.log('FindusView.init')
     document.title = 'Find Us'    
     this.render()    
-    Utils.pageIntroAnim()    
+    Utils.FindUsAnim()    
   }
 
   render(){

@@ -11,7 +11,7 @@ class packagesView {
     document.title = 'Packages'
     this.tours = null
     this.render()    
-    Utils.pageIntroAnim()
+    Utils.AddTourAnim()
     this.getPackages()
   }
 
