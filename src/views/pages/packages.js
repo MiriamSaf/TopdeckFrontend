@@ -107,7 +107,7 @@ class packagesView {
           
           <h1 id = "pckg-findby-h1">Find By:</h1>
           
-          <div class = "left-col-item">
+          <div>
             <sl-input  id = "search-input" placeholder = "Search" pill>
               <sl-icon name="search" slot="prefix"></sl-icon>
             </sl-input>
@@ -121,6 +121,18 @@ class packagesView {
                 <sl-menu-item>#chill</sl-menu-item>
                 <sl-menu-item>#party</sl-menu-item>
                 <sl-menu-item>#culture</sl-menu-item>
+              </sl-menu>
+            </sl-dropdown>
+          </div>
+
+          <div class = "left-col-item">
+            <sl-dropdown>
+            <sl-button id = "dropdown-vibe" slot="trigger" caret>Select Region</sl-button>
+              <sl-menu>
+                <sl-menu-item>Asia</sl-menu-item>
+                <sl-menu-item>Europe</sl-menu-item>
+                <sl-menu-item>North America</sl-menu-item>
+                <sl-menu-item>South America</sl-menu-item>
               </sl-menu>
             </sl-dropdown>
           </div>
