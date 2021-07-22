@@ -102,22 +102,84 @@ moreInfoHandler(){
   render(){    
     return html`
     <style>
+      .packages-display{
+          display: flex;
+          flex-direction: row;
+          padding-bottom: 5vh;
+        }
 
+      .pckg-span{
+          border-radius: 8px;
+          text-align: center;
+          width: 20vh;
+          padding-top: 1vh;
+          padding-bottom: 1vh;
+          top: 1vh;
+          position: relative;
+          color: #FFF;
+          background-color: #C9E2D1;
+          margin-top: 20vh;
+        }
+
+
+
+      .pckg-img {
+          background-image: url("${App.apiBase}/images/${this.image}");
+        display: flex;
+          justify-content: center;
+          align-items: center;    
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 32vh;
+        width: 48vh;
+        border-radius: 10px;
+        margin-right: 4vh;
+        }
+
+
+      .pckg-disp-txt{
+          margin-top: 2vh;
+        }
+
+        .pckg-disp-txt h1{
+          color: var( --base-txt-color);
+          text-align: left;
+        }
+
+        .pckg-disp-txt h2{
+          font-size: 3vh;
+          margin-top: -2vh;
+        }
+
+        .pckg-disp-txt p{
+          font-size: 2vh;
+          margin-top: -1vh;
+  }
 
         
     </style>
 
     <sl-card>
 
+      <div class = "packages-display">
 
+        <div class = "pckg-img">
+          <div class = "pckg-span">
+            <sl-button @click=${this.moreInfoHandler.bind(this)}><span>${this.vibe}</span></sl-button>
+          </div>
+        </div>
 
+        <div class = "pckg-disp-txt">
+          <h1><strong>${this.title}</strong></h1>
+          <h2><i>${this.country}</i></h2>
+          <h1>${this.duration} Nights | ${this.depatureLocation}</h1>
+          <p>${this.description}</p>
+          <sl-icon-button name="heart-fill" label="Add to Favourites" @click=${this.addFavHandler}></sl-icon-button> 
+        </div>
 
+      </div>
 
-        <img src="${App.apiBase}/images/${this.image}" width="130px"/>
-        <h2>${this.title}</h2>
-        <h3>$${this.price}</h3>
-        <sl-button @click=${this.moreInfoHandler.bind(this)}>More Info</sl-button>
-        <sl-icon-button name="heart-fill" label="Add to Favourites" @click=${this.addFavHandler}></sl-icon-button> 
     </sl-card>
    `
   }
