@@ -146,6 +146,18 @@ class packagesView {
             <img id = "coloured-map-col" src = "images/map-coloured.png" alt = "world map coloured">
           </div>
           
+          <div class = "left-col-item">
+            <h1 id = "pckg-sort-h1">Sort By:</h1>
+          </div>
+
+          <div class = "left-col-item">
+            <span class = "pckg-yellow-left-crcl" id = "top-rated-btn">Top Rated</span>
+          </div>
+
+          <div class = "left-col-item" id = "most-pop-btn">
+            <span class = "pckg-yellow-left-crcl"  >Most Popular</span>
+          </div>
+
           
         </div><!-- close left col -->
 
