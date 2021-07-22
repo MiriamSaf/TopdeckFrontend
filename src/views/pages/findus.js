@@ -39,30 +39,49 @@ class FindusView {
             <div>
             <div id = "social-links-contact">
             <h1>Socials</h1>
-            <div class ="social-link-div">
-                  <sl-icon name="facebook"></sl-icon>
-                  <span>TopDeckTravel</span>
-            </div><!-- close social link div -->
-            <div class ="social-link-div">
-                  <sl-icon name="instagram"></sl-icon>
-                  <span>topdecktravel</span>
-            </div><!-- close social link div -->
-            <div class ="social-link-div">
-                  <sl-icon name="twitter"></sl-icon>
-                  <span>TopdeckTravel</span>
-            </div><!-- close social link div -->
-            <div class ="social-link-div">
-                  <sl-icon name="youtube"></sl-icon>
-                  <span>TopDeckTravel</span>
-            </div><!-- close social link div -->
-            <div class ="social-link-div">
-                  <img src = "images/navy-snapchat.png" alt = "snapchat icon" class = "social-icon-img">
-                  <span>#topdecktravel</span>
-            </div><!-- close social link div -->
-            <div class ="social-link-div" id = "tiktok-social-div">
-                  <img src = "images/navy-tiktok.png" alt = "tiktok icon" class = "social-icon-img">
-                  <span>#topdecktravel</span>
-            </div><!-- close social link div -->
+
+            <a href="https://www.facebook.com/TopdeckTravel/" target="_blank">
+              <div class ="social-link-div">
+                    <sl-icon name="facebook"></sl-icon>
+                    <span>TopDeckTravel</span>
+              </div><!-- close social link div -->
+            </a> 
+
+            <a href="https://www.instagram.com/topdecktravel/" target="_blank">
+              <div class ="social-link-div">
+                    <sl-icon name="instagram"></sl-icon>
+                    <span>topdecktravel</span>
+              </div><!-- close social link div -->
+            </a> 
+
+            <a href="https://twitter.com/TopdeckTravel/" target="_blank">
+              <div class ="social-link-div">
+                    <sl-icon name="twitter"></sl-icon>
+                    <span>TopdeckTravel</span>
+              </div><!-- close social link div -->
+            </a>
+            
+            <a href="https://www.youtube.com/user/TopDeckTravel/" target="_blank">
+              <div class ="social-link-div">
+                    <sl-icon name="youtube"></sl-icon>
+                    <span>TopDeckTravel</span>
+              </div><!-- close social link div -->
+            </a>
+            
+            <a href="https://www.snapchat.com/" target="_blank">
+              <div class ="social-link-div">
+                    <img src = "images/navy-snapchat.png" alt = "snapchat icon" class = "social-icon-img">
+                    <span>#topdecktravel</span>
+              </div><!-- close social link div -->
+            </a>
+            
+            <a href="https://www.tiktok.com/" target="_blank">
+              <div class ="social-link-div" id = "tiktok-social-div">
+                    <img src = "images/navy-tiktok.png" alt = "tiktok icon" class = "social-icon-img">
+                    <span>#topdecktravel</span>
+              </div><!-- close social link div -->
+            </a>
+            
           </div><!-- close contact item dev -->
             </div>
           </div>
