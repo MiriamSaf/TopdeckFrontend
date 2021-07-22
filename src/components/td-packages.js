@@ -13,45 +13,19 @@ customElements.define('td-packages', class Package extends LitElement {
 
   static get properties(){
     return {
-      title: {
-        type: String
-      },
-      description: {
-        type: String
-      },
-      longDescription: {
-        type: String
-      },
-      date: {
-        type: Date
-      },
-      duration: {
-        type: Number
-      },
-      vibe: {
-        type: String
-      },
-      country: {
-        type: String
-      },
-      region: {
-        type: String
-      },
-      type: {
-        type: String
-      },
-      depatureLocation: {
-        type: String
-      },
-      endLocation: {
-        type: String
-      },
-      price: {
-        type: String
-      },
-      image: {
-        type: String
-      }
+      title: { type: String },
+      description: { type: String },
+      longDescription: { type: String },
+      date: { type: Date },
+      duration: { type: Number },
+      vibe: { type: String },
+      country: { type: String },
+      region: { type: String },
+      type: { type: String },
+      depatureLocation: { type: String },
+      endLocation: { type: String },
+      price: { type: Number },
+      image: { type: String }
     }
   }
 
@@ -128,10 +102,17 @@ moreInfoHandler(){
   render(){    
     return html`
     <style>
+
+
         
     </style>
 
     <sl-card>
+
+
+
+
+
         <img src="${App.apiBase}/images/${this.image}" width="130px"/>
         <h2>${this.title}</h2>
         <h3>$${this.price}</h3>

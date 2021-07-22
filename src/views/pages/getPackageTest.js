@@ -49,11 +49,21 @@ class GetPackageTestView {
                       <td-packages class="package-card"
                           title="${tour.title}"
                           description="${tour.description}"
+                          longDescription="${tour.longDescription}"
+                          date="${tour.date}"
+                          duration="${tour.duration}"
+                          vibe="${tour.vibe}"
+                          country="${tour.country}"
+                          region="${tour.region}"
+                          type="${tour.type}"
+                          depatureLocation="${tour.depatureLocation}"
+                          endLocation="${tour.endLocation}"
                           price=${tour.price}
                           image="${tour.image}"
-                          date="${tour.date}"
                         > 
                       </td-packages>
+
+
                     `)}
                   `}
             </div>
