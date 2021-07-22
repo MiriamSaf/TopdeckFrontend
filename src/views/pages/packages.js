@@ -30,10 +30,10 @@ class packagesView {
       <td-app-header user="${JSON.stringify(Auth.currentUser)}"></td-app-header>
       <div>  <!-- remove page content as did not show the photo beneath it-->
 
-      <!-- section 1 - hero image -->
-      <div id = "packg-hero-section">
-        <h1 class = "pckg-hero-h1">Find a trip</h1>
-      </div><!-- close home hero -->
+        <!-- section 1 - hero image -->
+        <div id = "packg-hero-section">
+          <h1 class = "pckg-hero-h1">Find a trip</h1>
+        </div><!-- close home hero -->
 
       <!-- section 2 - packages and find by -->
       <div id = "packg-pckg-flex">
@@ -163,28 +163,10 @@ class packagesView {
 
       </div><!-- close pckg flex div-->
 
-        <div class="packages-grid">
-             ${this.tours == null ? html`
-             Waiting for data to test here
-              <sl-spinner></sl-spinner>
-            ` : html`
-              ${this.tours.map(tour => html `
-              <td-packages class="package-card"
-                  title="${tour.name}"
-                  description="${tour.description}"
-                  price=${tour.price}
-                  image="${tour.image}"
-                  date="${tour.date}"
-                > 
-            </td-packages>
-              `)}
-            `}
+      </div>
+  </div>
 
 
-
-
-         </td-packages>
-        </div>
         
         <td-site-footer></td-site-footer>
       </div>      

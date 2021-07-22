@@ -41,7 +41,7 @@ class GetPackageTestView {
           <div id="left-column" class="tour-column">
             This is the left column with the package cards
 
-            <div class="packages-grid">
+            <div >
                 ${this.tours == null ? html`
                   <sl-spinner style="font-size: 2em;" ></sl-spinner>
                   ` : html`
