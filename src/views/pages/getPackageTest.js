@@ -41,12 +41,12 @@ class GetPackageTestView {
           <div id="left-column" class="tour-column">
             This is the left column with the package cards
 
-            <div >
+            <div class="tour-box">
                 ${this.tours == null ? html`
                   <sl-spinner style="font-size: 2em;" ></sl-spinner>
                   ` : html`
                     ${this.tours.map(tour => html `
-                      <td-packages class="package-card"
+                      <td-packages 
                           title="${tour.title}"
                           description="${tour.description}"
                           longDescription="${tour.longDescription}"
@@ -62,8 +62,6 @@ class GetPackageTestView {
                           image="${tour.image}"
                         > 
                       </td-packages>
-
-
                     `)}
                   `}
             </div>

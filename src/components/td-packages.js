@@ -160,13 +160,13 @@ moreInfoHandler(){
         
     </style>
 
-    <sl-card>
+    
 
       <div class = "packages-display">
 
         <div class = "pckg-img">
-          <div class = "pckg-span">
-            <sl-button @click=${this.moreInfoHandler.bind(this)}><span>${this.vibe}</span></sl-button>
+          <div class = "pckg-span" @click=${this.moreInfoHandler.bind(this)}>
+            <span>${this.vibe}</span>
           </div>
         </div>
 
@@ -180,7 +180,7 @@ moreInfoHandler(){
 
       </div>
 
-    </sl-card>
+    
    `
   }
   
