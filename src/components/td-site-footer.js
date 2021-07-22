@@ -129,12 +129,83 @@ a {
 
 
  
-      /* RESPONSIVE - MOBILE ------------------- */
+        /*FOOTER RESPONSIVE TABLET
+      --------------------------
+      --------------------------
+      --------------------------*/
       @media all and (max-width: 768px){       
         
         .footer-sections {
           display: inline-block;
         }
+        
+        #home-footer{
+            height: 120vh;
+            display: flex;
+            flex-direction: column;
+        }
+        #home-footer #footer-column-right{
+          /*align-items: center;*/
+          
+          margin-left: 5vh;
+        }
+
+        .footer-icon-img{
+          width: 7vh;
+          margin: 1vh;
+        }
+
+        #footer-column-right sl-icon{
+          font-size: 7vh;
+          margin: 1vh;
+      }
+
+
+        .footer-items{
+          margin-left: 5vh;
+        }
+
+        #topdeck-logo-white {
+          width: 40vh;
+          padding-top: 0vh;
+          margin-top: -20vh;
+        }
+
+        #footer-column-left, #footer-column-mid {
+          padding-top: 0vh;
+          
+        }
+
+        #footer-column-left{
+          margin-top: -10vh;
+        }
+
+        #footer-column-mid {
+          margin-top: -25vh;
+        }
+
+        #footer-column-right {
+          margin-top: -7vh;
+        }
+
+        #footer-column-left, 
+        #footer-column-left h1, 
+        #footer-column-mid, 
+        #footer-column-right {
+          line-height: 2vh;
+        }
+
+        /*style of text in footer*/
+        .footer-items h1{
+            font-weight:bold;
+            font-size: 5vh; 
+        }
+
+        .footer-items h2 {
+            font-size: 4vh;
+            font-weight: lighter;
+        }
+
       }
 
     </style>
