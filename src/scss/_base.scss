@@ -198,7 +198,7 @@ h1,h2,h3,h5,h6 {
   }
 
   #right-container-pckg{
-    height: 180vh;
+    height: 160vh;
     width: 68vw;
     //background-color: #777;
     padding: 9vh;
@@ -213,6 +213,7 @@ h1,h2,h3,h5,h6 {
     border-radius: 10px;
     width: 25%;
     padding: 5vh;
+    height: 135vh;
     margin-right: 16vh;
     display: flex;
     flex-direction: column;
@@ -324,17 +325,20 @@ h1,h2,h3,h5,h6 {
   }
 
   .pckg-yellow-left-crcl{
+    font-family: var( --headings-font-family);
+    font-weight: bolder;
+    font-size: 3vh;
     background-color: #F9DE7E;
     width: 50vh;
     height: 5vh;
-    padding: 3vh;
-    padding-left: 7vh;
-    padding-right: 7vh;
+    padding: 2.5vh;
+    padding-left: 6vh;
+    padding-right: 6vh;
     border-radius: 30px;
   }
 
   #most-pop-btn{
-    margin-top: 10vh !important;
+    margin-top: 8vh;
   }
 
   .left-col-item{
