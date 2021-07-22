@@ -104,9 +104,10 @@ class packagesView {
 
         <!-- left find by col -->
         <div id = "left-container-pckg">
-          
+          <div>
           <h1 id = "pckg-findby-h1">Find By:</h1>
-          
+          </div>
+
           <div>
             <sl-input  id = "search-input" placeholder = "Search" pill>
               <sl-icon name="search" slot="prefix"></sl-icon>
@@ -136,6 +137,15 @@ class packagesView {
               </sl-menu>
             </sl-dropdown>
           </div>
+
+          <div class = "left-col-item">
+          <h1 id = "pckg-launch-h1">Launch Map</h1>
+          </div>
+
+          <div class = "left-col-item">
+            <img id = "coloured-map-col" src = "images/map-coloured.png" alt = "world map coloured">
+          </div>
+          
           
         </div><!-- close left col -->
 
