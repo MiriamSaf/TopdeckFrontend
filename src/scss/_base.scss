@@ -316,6 +316,19 @@ h1,h2,h3,h5,h6 {
     color: var(--brand-blue);
   }
 
+  .left-col-item{
+    margin-top: 3vh;
+  }
+
+  #dropdown-vibe::part(base){
+    border-radius: 20px;
+    width: 35vh;
+  }
+
+  #search-input::part(base){
+    width: 35vh;
+  }
+
 
   /*NEW PACKAGE PAGE 
   --------------------------
