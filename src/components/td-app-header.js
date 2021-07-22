@@ -266,7 +266,7 @@ customElements.define('td-app-header', class AppHeader extends LitElement {
           <img class="app-side-menu-logo" src = "images/topdeck-black.png" alt = "top deck logo in black" height="70px">
         </a>
         <a href="/" @click="${this.menuClick}">Home</a>
-        <a href="/packages" @click="${this.menuClick}">Find a Tour</a>
+        <a href="/packages" @click="${this.menuClick}">Find a Trip</a>
         ${this.user.accessLevel == 2 ? html`
           <a href="/newPackage" @click="${this.menuClick}">Add Package</a> 
           <a href="/admin" @click="${this.menuClick}">Admin</a>  

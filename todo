@@ -20,23 +20,12 @@ git rm -r --cached dist
 // this line seemed to work
 
 ------- user funtions still not correct ---------
-Need to add code to divert users who hit a url which requires signin
-Need code to refresh page when user sign out
+Need to add code to divert users who hit a url which requires signin 
+  = Netlify doesn't allow this anyway. No need for this project.
+Need code to refresh page when user signs out
 
+------- funtions which need fixing ---------
+Quiz modal - needs to close when navigating to the package/find a tour page
 
-    ---- package is a reserved word? -----
-    ${this.packages == null ? html`
-          <sl-spinner></sl-spinner>
-        ` : html`
-          ${this.packages.map(package => html `
-              <td-packages class="package-card"
-                  title="${package.title}"
-                  description="${package.description}"
-                  price=${package.price}
-                  image="${package.image}"
-                >
-            </td-packages>
-          `)}
-        `}
 
 
