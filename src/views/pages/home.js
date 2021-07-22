@@ -229,11 +229,17 @@ class HomeView {
     answerFour.classList.remove('hidden')
   }
 
-  // not working when I tried to Hide the dialogEL
+  // not working when I tried to Hide the dialog
   checkClick(e){
     e.preventDefault()
     const pathname = e.target.closest('a').pathname
+    const dialog = document.querySelector('sl-dialog')
     gotoRoute(pathname)
+    console.log(dialog)
+    dialog.hide()
+    dialog.addEventListener('sl-after-hide', () => {
+        dialog.remove()
+    })
   }
 
 

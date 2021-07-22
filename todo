@@ -22,7 +22,7 @@ git rm -r --cached dist
 ------- user funtions still not correct ---------
 Need to add code to divert users who hit a url which requires signin 
   = Netlify doesn't allow this anyway. No need for this project.
-Need code to refresh page when user signs out
+Need code/page to refresh page when user signs out
 
 ------- funtions which need fixing ---------
 Quiz modal - needs to close when navigating to the package/find a tour page
