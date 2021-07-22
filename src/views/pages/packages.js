@@ -94,8 +94,6 @@ class packagesView {
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore <br>magna aliqua. Ut enim ad minim veniam</p>
                 </div>
               </div><!-- close pckg display -->
-
-              
           
           </div>  <!-- close right col -->
 
@@ -163,7 +161,7 @@ class packagesView {
 
 
         <!-- when removing this section of code, it throws the footer out-->
-        <div class="packages-box">
+        <div >
           ${this.tours == null ? html`
             <sl-spinner></sl-spinner>
           ` : html`
