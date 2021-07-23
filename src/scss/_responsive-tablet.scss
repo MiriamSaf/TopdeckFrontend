@@ -114,6 +114,86 @@
         margin-left: 10vh;
         margin-right: 10vh;
       }
+     
+       
+      /*FIND US PAGE
+      --------------------------
+      --------------------------
+      --------------------------*/
+
+      /*container for flex items*/
+      #section-contact-holder {
+        padding-left: 5vh;
+        padding-right: 5vh;
+        padding-top: 5vh;
+        padding-bottom: 4vh;
+      }
+
+      .contact-col-item p {
+        font-size: 1.9vh;
+      }
+
+      .findus-crcl {
+        padding-top: 1vh;
+        padding-left: 0.5vh;
+        padding-right: 0.5vh;
+        padding-bottom: 1vh;
+    }
+
+    
+      .social-link-div span {
+        font-size: 2.5vh;
+      }
+
+      .social-link-div sl-icon {
+        margin-right: 2vh; 
+        margin-left: 1vh;
+        font-size: 3vh;
+        width: 50px;
+        height: 50px;
+      }
+
+      .social-icon-img {
+        margin-right: 2vh;
+        width: 50px;
+        height: 50px;
+      }
+
+      #social-links-contact {
+        padding: 2vh;
+      }
+
+      .social-link-div {
+        height: 90px;
+        padding-bottom: 0vh;
+        border-radius: 10px;
+        margin-bottom: 4vh;
+      }
+
+      .smaller-contact {
+        padding: 2.8vh;
+      }
+    
+      .smaller-contact h1, .contact-col-item h1, #social-links-contact h1 {
+        font-size: 2.5em;
+        color: var(--brand-blue);
+      }
+
+      .contact-col-item {
+        background-color: #f1f1f1;
+        height: 35vh;
+        border-radius: 8px;
+        padding: 5vh;
+        width: 40vw;
+        text-align: center;
+    }
+
+    #emg-contact{
+        height: 41vh;
+    }
+  
+  
+  
 
 
   }
