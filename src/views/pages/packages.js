@@ -160,23 +160,7 @@ class packagesView {
 
 
 
-        <!-- when removing this section of code, it throws the footer out-->
-        <div >
-          ${this.tours == null ? html`
-            <sl-spinner></sl-spinner>
-          ` : html`
-            ${this.tours.map(tour => html `
-              <td-packages 
-                  title="${tour.name}"
-                  description="${tour.description}"
-                  price=${tour.price}
-                  image="${tour.image}"
-                  date="${tour.date}"
-                > 
-              </td-packages>
-            `)}
-          `}
-        </div> <!-- close packages-box --> 
+
 
         
         <td-site-footer></td-site-footer>
