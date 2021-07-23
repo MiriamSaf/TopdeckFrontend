@@ -39,6 +39,8 @@ class OurStoryView {
               <span class="dot"></span>  
               <!-- actual content-->
                 <div class = "content-timeline" class = "img-timeline">
+                  <!-- Image reference: 
+                  Millering. N.d. "An icon of London red double decker bus shuttle. Vector flat cartoon illustration. Travel. Business". Shutterstock. Accessed July 15, 2021. https://www.shutterstock.com/image-vector/icon-london-red-double-decker-bus-1741582967 -->
                   <img src = "images/OS-BUS.png" alt = "red double decker bus img">
                 </div>
             </div>
@@ -47,6 +49,8 @@ class OurStoryView {
             <div class = "timeline-item">
               <!-- actual content-->
               <div class = "content-timeline" class = "img-timeline">
+                  <!-- Image reference: 
+                  Shoorsha. 2021. "Musical open air festival stages with people dancing". Freepik. https://www.freepik.com/premium-vector/musical-open-air-festival-stages-with-people-dancing-flat-illustration-isolated-white_13077092.htm -->
                   <img src = "images/OS-FESTIVAL.png" alt = "festival img">
                 </div>
             </div>
@@ -75,6 +79,8 @@ class OurStoryView {
             <span class="dot"></span>  
               <!-- actual content-->
               <div class = "content-timeline" class = "img-timeline">
+                  <!-- Image reference:
+                  iBrandify. 2016. "Sydney Opera House". Deposit Photos. https://depositphotos.com/106196858/stock-illustration-sydney-opera-house.html -->
                   <img src = "images/OS-SYDNEY.png" alt = "sydney opera img">
               </div>
             </div>
@@ -83,6 +89,8 @@ class OurStoryView {
             <div class = "timeline-item">
               <!-- actual content-->
               <div class = "content-timeline" class = "img-timeline">
+                  <!-- Image reference: 
+                  nacino001. 2017. "Vector Egypt Travel". Favpng. https://favpng.com/png_view/vector-egypt-travel-egypt-landscape-flat-design-drawing-png/5JR7nFBY -->
                   <img src = "images/OS-EGYPT.png" alt = "egypt pyramids img">
               </div>
             </div>
@@ -111,6 +119,7 @@ class OurStoryView {
             <span class="dot"></span>  
              <!-- actual content-->
              <div class = "content-timeline" class = "img-timeline">
+                  <!-- Image reference: -->
                   <img src = "images/OS-USA.png" alt = "statue of liberty img">
               </div>
             </div>
@@ -119,6 +128,8 @@ class OurStoryView {
              <div class = "timeline-item">
               <!-- actual content-->
               <div class = "content-timeline" class = "img-timeline">
+                  <!-- Image reference: 
+                  Macrovector. 2018. "USA flat icon set with american national symbols attraction". Freepik. https://www.freepik.com/free-vector/usa-flat-icons-set-with-american-national-symbols-attractions_3796710.htm#&position=0 -->
                   <img src = "images/OS-ASIA.png" alt = "Asian person and building img">
               </div>
              </div>
@@ -147,6 +158,8 @@ class OurStoryView {
             <span class="dot"></span>  
               <!-- actual content-->
               <div class = "content-timeline" class = "img-timeline">
+                  <!-- Image reference: 
+                  ma_rish. N.d. "South america love - concept with icons vector image". Vectorstock. Accessed July 16, 2021. https://www.vectorstock.com/royalty-free-vector/south-america-love-concept-with-icons-vector-1157293 -->
                   <img src = "images/OS-SOUTHAMERICA.png" alt = "South America img">
               </div>
             </div>
