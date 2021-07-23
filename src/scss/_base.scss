@@ -725,6 +725,37 @@ h1,h2,h3,h5,h6 {
   color: #F9DE7E !important;
  }
 
+ /*FAQs PAGE
+  --------------------------
+  --------------------------
+  --------------------------*/
+
+  /*section 1 Hero
+  --------------------------*/
+  #faqs-hero-section{
+    /*Image Reference:
+    Kelley, Leah. 2020. "Woman Looking At The Map". Pexels. https://www.pexels.com/photo/woman-looking-at-the-map-3935702/ */
+    background-image: url("./../../static/images/FAQ-HERO.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /*so will have whitespace beneath*/
+    height: 95vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .faqs-hero-h1{
+    margin-top: 15vh;
+    width: 50%;
+    font-size: 14vh;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+
 
 // RESPONSIVE - MOBILE 
 // -------------------
