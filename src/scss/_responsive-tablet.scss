@@ -114,8 +114,7 @@
         margin-left: 10vh;
         margin-right: 10vh;
       }
-     
-       
+
       /*FIND US PAGE
       --------------------------
       --------------------------
@@ -172,7 +171,7 @@
 
       .smaller-contact {
         padding: 2.8vh;
-      }
+    }
     
       .smaller-contact h1, .contact-col-item h1, #social-links-contact h1 {
         font-size: 2.5em;
@@ -191,9 +190,70 @@
     #emg-contact{
         height: 41vh;
     }
-  
-  
-  
 
+    /*OUR STORY PAGE
+      --------------------------
+      --------------------------
+      --------------------------*/
+
+    .content-timeline p, .timeline-extra-content {
+        font-size: 3vh !important;
+    }
+    
+    .timeline-cols > div {
+      height: 50vh;
+    }
+
+    .tl-bottom-square {
+      height: 15vh !important;
+      width: 40vh !important;
+    }
+
+    .timeline-extra-content {
+      margin-top: 35vh;
+    }
+
+    .tl-bottom-y-sq {
+      height: 9vh;
+      width: 30vh;
+  }
+
+  .tl-bottom-y-sq h3 {
+    font-size: 4vh;
+  }
 
   }
+
+  /*small laptop*/
+  @media all and (max-width: 1024px){   
+    /*OUR STORY PAGE*/
+    .content-timeline {
+      padding-left: 5vh;
+      padding-right: 5vh;
+      padding-bottom: 5vh;
+      padding-top: 5vh;
+      text-align: center;
+  }
+    /*paragraph styling*/
+    .content-timeline p,
+    .timeline-extra-content{
+      font-size: 3.8vh;
+  }
+
+  .content-timeline img {
+    width: 100%;
+    margin-top: 7vh;
+  }
+
+  /*blue bottom rectangle*/
+  .tl-bottom-square {
+    height: 17vh;
+    width: 45vh;
+  }
+
+  .tl-bottom-square h1 {
+    font-size: 5vh;
+  }
+
+
+}
