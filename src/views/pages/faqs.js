@@ -30,11 +30,13 @@ class FaqsView {
       }
     </style>
      <td-app-header user=${JSON.stringify(Auth.currentUser)}></td-app-header>
-      <div class="page-content">
+      <div>
+
+      <!-- section 1 - hero image -->
+      <div id = "faqs-hero-section">
+        <h1 class = "faqs-hero-h1">Frequently Asked Questions</h1>
+        </div><!-- close home hero -->
       
-        <h3>FAQs Content</h3>
-        <p class="para">hello
-        </p>
         <div id = "section-contact-holder">
 
         <div class="details-group-example" >
