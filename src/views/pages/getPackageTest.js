@@ -32,14 +32,16 @@ class GetPackageTestView {
       <div class="page-content">
       
         <div class="mobile-filters">
-          This div will only show in the mobile view and contain the filter component
+          <!--This div will only show in the mobile view and contain the filter component -->
         </div>
 
         <div class="main-row">
-          This div contains the two columns - 
+          <!--This div contains the two columns -->
+          
 
           <div id="left-column" class="tour-column">
-            This is the left column with the package cards
+             <!--This is the left column with the package cards -->
+            
 
             <div class="tour-box">
                 ${this.tours == null ? html`
@@ -64,11 +66,11 @@ class GetPackageTestView {
                       </td-packages>
                     `)}
                   `}
-            </div>
+            </div><!--close tour-box -->
 
             <div id="right-column" class="tour-column">
-              This is the right column for the filter component
-              - set to width 0 and hidden in mobile view
+              <!--This is the right column for the filter component
+              - set to width 0 and hidden in mobile view -->
 
             </div>
 
