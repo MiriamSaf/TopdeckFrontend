@@ -17,7 +17,7 @@ git push origin main
 
 GIT IGNORE -----------------------------
 git rm -r --cached dist
-// this line seemed to work
+// this line seemed to work = but didn't work for .chache files
 
 ------- user funtions still not correct ---------
 Need to add code to divert users who hit a url which requires signin 

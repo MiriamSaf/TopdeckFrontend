@@ -47,22 +47,22 @@ moreInfoHandler(){
             .wrap {
                 display: flex;
             }
-            .image {
-                width: 50%;
+            h1 {
+              color: var(--brand-blue);
+              font-weight: bold;
             }
-            .image img {
-                width: 100%;
-            }
+            
             .content {
                 padding-left: 1em;
             }
-            .gender span,
-            .length span {
-                text-transform: uppercase;
-                font-weight: bold;
-            }
-            .price {
+            .p-detail {
                 font-size: 1.5em;
+            }
+            .p-vibe {
+                text-transform: uppercase;
+             }
+            .price {
+                font-size: 1.2em;
                 color: var(--brand-color);
             }
         </style>
@@ -70,12 +70,20 @@ moreInfoHandler(){
 
             <div class="content">
                 <h1>${this.title}</h1>
-                <p>${this.description}</p>
-                <p class="price">$${this.price}</p>
+                <p><span class="p-detail">${this.description}</span></p>
+                <p>${this.longDescription}</p>
+                <p>Date: <span class="p-detail">${this.date}</span></p>
+                <p>Duration: <span class="p-detail">${this.duration} Nights</span></p>
+                <p>Vibe: <span class="p-detail p-vibe">#${this.vibe}</span></p>
+                <p>Country: <span class="p-detail">${this.country}</span></p>
+                <p>Region: <span class="p-detail">${this.region}</span></p>
+                <p>Depature Location: <span class="p-detail">${this.depatureLocation}</span></p>
+                <p>Destination Location: <span class="p-detail">${this.endLocation}</span></p>
+                <p class="price">AU $${this.price}</p>
 
                 <sl-button @click=${this.addFavHandler.bind(this)}>
-                  <sl-icon slot="prefix" name="cart3"></sl-icon>
-                  Add to Cart
+                  <sl-icon slot="prefix" name="heart-fill"></sl-icon>
+                  Add to Favourites
                 </sl-button>
             </div>
         </div>
