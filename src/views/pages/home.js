@@ -334,16 +334,27 @@ class HomeView {
             <div id = "home-grid">
               <!-- include instagram images below -->
               <div class="img-gallery">
+                <!-- 1) Image Reference: Top Deck [@topdecktravel]."Pisa needs YOU! No one's been holding up that tower for the past year...". Instagram, @bertohernandez, June 10, 2021, https://www.instagram.com/p/CP7csahCpRJ/ -->
                 <img src = "images/instagram/IG-1.jpg" alt = "topdeck instagram trip photo">
+                <!-- 2) Image Reference: Top Deck [@topdecktravel]."Funniest thing you heard on a Topdeck trip? Spill the tea". Instagram, @rhysjohnston_96, June 5, 2021, https://www.instagram.com/p/CPu25PAiv1j/-->
                 <img src = "images/instagram/IG-2.jpg" alt = "topdeck instagram trip photo">
+                 <!-- 3) Image Reference: Top Deck [@topdecktravel]."Best thing about the Big Apple? Tell us!". Instagram, @izzyalyce, June 3, 2021, https://www.instagram.com/p/CPpdZwLiC-u/-->
                 <img src = "images/instagram/IG-3.jpg" alt = "topdeck instagram trip photo">
+                 <!-- 4) Image Reference: Top Deck [@topdecktravel]."WE MISS YOU! Can’t wait to see you guys back living the travel dream ASAP. Topdeck crew x". Instagram, @kat_dylan, May 21, 2021, https://www.instagram.com/p/CPIEyWei8MP/-->
                 <img src = "images/instagram/IG-4.jpg" alt = "topdeck instagram trip photo">
+                 <!-- 5) Image Reference: Top Deck [@topdecktravel]."Who says three’s a crowd? Tag your top two partners in crime". Instagram, May 20, 2021, https://www.instagram.com/p/CPEcebMCxQT/-->
                 <img src = "images/instagram/IG-5.jpg" alt = "topdeck instagram trip photo">
+                <!-- 6) Image Reference: Top Deck [@topdecktravel]."Warning: Topdeck trips may cause sky-high levels of envy". Instagram, @izzubunn, May 13, 2021, https://www.instagram.com/p/COyMX8CiMB_/-->
                 <img src = "images/instagram/IG-6.jpg" alt = "topdeck instagram trip photo">
+                <!-- 7) Image Reference: Top Deck [@topdecktravel]."Icebreaker: who’s booked their NZ trip?". Instagram, @katy_forbes, May 09, 2021, https://www.instagram.com/p/COo3y75CgTf/-->
                 <img src = "images/instagram/IG-7.jpg" alt = "topdeck instagram trip photo">
+                <!-- 8) Image Reference: Top Deck [@topdecktravel]."Did someone say trans-Tasman bubble... 👀 You ready?". Instagram, @gamstyo, April 8, 2021, https://www.instagram.com/p/CNYMOHpi1mS/ -->
                 <img src = "images/instagram/IG-8.jpg" alt = "topdeck instagram trip photo">
+                <!-- 9) Image Reference: Top Deck [@topdecktravel]."A couple of savvy #topdeckers snagged themselves an epic view. Can you name it?". Instagram, @yellow_dust, March 17, 2021, https://www.instagram.com/p/CMfU_5VCuIw/-->
                 <img src = "images/instagram/IG-9.jpg" alt = "topdeck instagram trip photo">
+                <!-- 10) Image Reference: Top Deck [@topdecktravel]."Tell us, what's your fave thing about Amsterdam?". Instagram, @victoriampearson, March 7, 2021, https://www.instagram.com/p/CMHIRCYCfF9/ -->
                 <img src = "images/instagram/IG-10.jpg" alt = "topdeck instagram trip photo">
+                <!-- 11) Image Reference: Top Deck [@topdecktravel]."A trip to Japan? With all the ramen, okonimiyaki, udon, katsu, yakatori and sake your fat pants can handle (make sure you pack those)? You with us?". Instagram, @lostwithrensan, March 6, 2021, https://www.instagram.com/p/CMDqBoziYqh/-->
                 <img src = "images/instagram/IG-11.jpg" alt = "topdeck instagram trip photo">
                 <img src = "images/instagram/IG-12.jpg" alt = "topdeck instagram trip photo">
               </div>
