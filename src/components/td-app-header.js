@@ -126,7 +126,7 @@ customElements.define('td-app-header', class AppHeader extends LitElement {
         color: #000;
       }
       
-      .app-side-menu-items a {
+      .a-hover {
         display: block;
         padding: .5em;
         text-decoration: none;
@@ -146,6 +146,10 @@ customElements.define('td-app-header', class AppHeader extends LitElement {
         background-size: 0px 0px;
         text-decoration: none;
         transition: background-size .2s;
+      }
+
+      .a-logo {
+        padding-bottom: 1em;
       }
 
         /* active nav links */
@@ -262,29 +266,31 @@ customElements.define('td-app-header', class AppHeader extends LitElement {
 
     <sl-drawer class="app-side-menu" placement="left">
       <nav class="app-side-menu-items">
-      <a href="/" @click="${this.logoClick}">
-          <img class="app-side-menu-logo" src = "images/topdeck-black.png" alt = "top deck logo in black" height="70px">
-        </a>
-        <a href="/" @click="${this.menuClick}">Home</a>
-        <a href="/packages" @click="${this.menuClick}">Find a Trip</a>
+        <div class="a-logo"> 
+          <a href="/" @click="${this.logoClick}">
+            <img class="app-side-menu-logo" src = "images/topdeck-black.png" alt = "top deck logo in black" height="70px">
+          </a>
+        </div>
+        <a class="a-hover" href="/" @click="${this.menuClick}">Home</a>
+        <a class="a-hover" href="/packages" @click="${this.menuClick}">Find a Trip</a>
         ${this.user.accessLevel == 2 ? html`
-          <a href="/newPackage" @click="${this.menuClick}">Add Package</a> 
-          <a href="/admin" @click="${this.menuClick}">Admin</a>  
+          <a class="a-hover" href="/newPackage" @click="${this.menuClick}">Add Package</a> 
+          <a class="a-hover" href="/admin" @click="${this.menuClick}">Admin</a>  
         ` : html``}
 
         ${localStorage.accessToken == null? html`
-          <a href="/signin" @click="${this.menuClick}">Sign in to Dashboard</a>
+          <a class="a-hover" href="/signin" @click="${this.menuClick}">Sign in to Dashboard</a>
         `: html `
-          <a href="/userDashboard" @click="${this.menuClick}">My & My Trips</a>
+          <a class="a-hover" href="/userDashboard" @click="${this.menuClick}">My & My Trips</a>
         `}
 
         
-        <a href="/travelTips" @click="${this.menuClick}">Travel Tips</a>
-        <a href="/faqs" @click="${this.menuClick}">FAQs</a>
-        <a href="/testimonies" @click="${this.menuClick}">Testimonies</a>
-        <a href="/ourStory" @click="${this.menuClick}">Our Story</a>
-        <a href="/findus" @click="${this.menuClick}">Find Us</a>
-        <a href="/getPackageTest" @click="${this.menuClick}">Find a Tour TEST page</a>
+        <a class="a-hover" href="/travelTips" @click="${this.menuClick}">Travel Tips</a>
+        <a class="a-hover" href="/faqs" @click="${this.menuClick}">FAQs</a>
+        <a class="a-hover" href="/testimonies" @click="${this.menuClick}">Testimonies</a>
+        <a class="a-hover" href="/ourStory" @click="${this.menuClick}">Our Story</a>
+        <a class="a-hover" href="/findus" @click="${this.menuClick}">Find Us</a>
+        <a class="a-hover" href="/getPackageTest" @click="${this.menuClick}">Find a Tour TEST page</a>
       </nav>  
     </sl-drawer>
     `
