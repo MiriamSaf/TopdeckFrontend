@@ -32,6 +32,10 @@ customElements.define('td-packages', class Package extends LitElement {
   firstUpdated(){
     super.firstUpdated()
   }
+
+  bookTourHandler(){
+    gotoRoute(`/viewBookingCard?id=${this.id}`)
+  }
 //if inside a method of event handler add the bind(this) as below
 moreInfoHandler(){
     //- create sl-dialog
@@ -85,6 +89,11 @@ moreInfoHandler(){
                   <sl-icon slot="prefix" name="heart-fill"></sl-icon>
                   Add to Favourites
                 </sl-button>
+                <sl-button class="left-block" @click=${this.bookTourHandler.bind(this)}>Make a Booking</sl-button>
+
+
+
+
             </div>
         </div>
       `
