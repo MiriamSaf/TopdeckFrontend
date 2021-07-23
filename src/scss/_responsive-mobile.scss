@@ -16,7 +16,7 @@
         
     #home-hero-text h1{
         font-size: 8vh;
-        }
+     }
 
     /*section 2 Top Deck Tours 
     --------------------------*/
@@ -28,8 +28,8 @@
 
     #med-reset,
     #bali-adventure{
-    height: 30vh;
-    width: 48vh;
+     height: 30vh;
+     width: 48vh;
     }
 
     /*Section 3 - feedback section 
@@ -95,6 +95,30 @@
         margin-left: 5vh;
         margin-right: 5vh;
       }
+ 
+    /*FIND US PAGE
+    --------------------------
+    --------------------------
+    --------------------------*/
+
+    #section-contact-holder {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-col-item, 
+    #social-links-contact,
+    .smaller-contact{
+        width: 82vw;
+    }
+
+    #social-links-contact{
+        margin-bottom: 3vh;
+    }
+
+    .social-link-div span {
+        font-size: 4vh;
+    }
 
     
 
