@@ -121,7 +121,7 @@ customElements.define('td-app-header', class AppHeader extends LitElement {
 
       .app-top-nav a {
         display: inline-block;
-        padding: .8em 2em;
+        padding: .8em 3.7em;
         text-decoration: none;
         color: #000;
       }
