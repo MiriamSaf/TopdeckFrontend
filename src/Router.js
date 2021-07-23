@@ -17,7 +17,7 @@ import travelTipsView from './views/pages/travelTips'
 import findusView from './views/pages/findus'
 import adminView from './views/pages/admin'
 import getPackageTestView from './views/pages/getPackageTest'
-
+import bookTourView from './views/pages/bookTour'
 
 
 // define routes
@@ -40,6 +40,7 @@ const routes = {
 	'/findus': findusView,
 	'/admin': adminView,
 	'/getPackageTest': getPackageTestView,
+	'/bookTour': bookTourView,
 	
 }
 
