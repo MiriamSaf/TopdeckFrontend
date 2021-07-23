@@ -15,7 +15,7 @@ class FindusView {
   render(){
     const template = html`
      <td-app-header user=${JSON.stringify(Auth.currentUser)}></td-app-header>
-      <div> <!-- remove page content class as did not show the photo beneath it-->
+      <div id="findus-outer" class="view-screen"> <!-- remove page content class as did not show the photo beneath it-->
       
         <!-- section 1 - hero image -->
         <div id = "findus-hero-section">

@@ -15,7 +15,7 @@ class OurStoryView {
   render(){
     const template = html`
      <td-app-header user=${JSON.stringify(Auth.currentUser)}></td-app-header>
-      <div>
+      <div id="ourstory-outer">
         <!-- section 1 - hero image -->
         <div id = "ourstory-hero-section">
         <h1 class = "ourstory-hero-h1">Our Story</h1>
