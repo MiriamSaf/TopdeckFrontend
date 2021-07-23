@@ -235,7 +235,7 @@ customElements.define('td-app-header', class AppHeader extends LitElement {
       <nav class="app-top-nav">
 
         ${localStorage.accessToken == null? html`
-          <a href="/signin" class="anim-in login-btn" @click=${() => gotoRoute('/signin')}>Sign In</a>
+          <a href="/signin" class="anim-in login-btn" @click="${anchorRoute}">Sign In</a>
         ` : html`
 
             ${this.user.accessLevel == 2 ? html`
