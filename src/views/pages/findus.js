@@ -26,7 +26,7 @@ class FindusView {
         <div id = "section-contact-holder">
           <div class = "contact-columns" id = "section-1-contact">
             <div>
-            <div class = "contact-col-item">
+            <div class = "contact-col-item" id = "emg-contact">
               <h1>Emergency Contact</h1>
                 <div class = "findus-crcl" id = "find-us-emg-span">
                   <span>1300 886 332</span>
