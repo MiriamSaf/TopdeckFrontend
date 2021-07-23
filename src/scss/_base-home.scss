@@ -55,7 +55,6 @@
   #home-poptour-section{
     height: 100vh;
     background-color: #FFF;
-    //background-image: url("./../../static/images/gray-worldmap.png");
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,9 +81,13 @@
     position: relative;
   }
   #bali-adventure{
-    background-image: url("./../../static/images/HOME-Popular-Bali.jpg");
+   /*Image reference: 
+   Podvalny, Alexandr. 2019. "Handara Gate Under Blue Sky". Pexels. https://www.pexels.com/photo/handara-gate-uner-blue-sky-2166553/ */
+   background-image: url("./../../static/images/HOME-Popular-Bali.jpg");
   }
-  
+
+  /*Image reference: 
+  Riciardus. 2017. "Rear View of Woman Sitting on a rock". Pexels. https://www.pexels.com/photo/rear-view-of-woman-sitting-on-a-rock-307006/ */
   #med-reset{
     background-image: url("./../../static/images/HOME-Popular-Med.jpg");
   }
@@ -226,6 +229,8 @@
   --------------------------*/
   #home-quiz-section{
     height: 100vh;
+    /*Image reference:
+    Porapak, Apichodilok. 2017. "Man Sitting Beside Black Backpack Near Railway". Pexels. https://www.pexels.com/photo/man-sitting-beside-black-backpack-near-railway-346768/ */
     background-image: url("./../../static/images/Home-Man-By-Train.jpg");
     background-position: center; 
     background-repeat: no-repeat;
