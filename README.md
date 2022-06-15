@@ -1,12 +1,13 @@
 # h1-frontend
 Curtin Assignment
 
+Members who contributed to frontend code 
+Miriam Saftlas, 
+Peta Stewart, 
+Ryley Segreto-Brown
+
 Members who contributed to backend code 
-Miriam Saftlas
-,Peta Stewart
+Miriam Saftlas, Peta Stewart, James Johnson
 
 Members who worked on other parts of project
-Jamie Wright
-,Kristy Stevens
-,Ryley Segreto-Brown
-,James Johnson
+Jamie Wright (PM), Kristy Stevens (UX/UI), Ryley Segreto-Brown, James Johnson
